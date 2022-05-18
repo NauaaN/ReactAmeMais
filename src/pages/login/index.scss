@@ -1,0 +1,158 @@
+.login {
+    display: flex;
+    flex-direction: column;
+}
+
+.login2 {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image: url('');
+    background-size: 100%;
+    background-repeat: no-repeat;
+   
+    
+  
+   
+}
+
+.textom{
+    color:white;
+    margin-left: -11em;
+    margin-bottom: 1.2em;
+    margin-top: 20em;
+    font-size: 1em;
+    background-color: rgba(254, 193, 138, 1);
+    padding: 0.8em 2.8em;
+    border-radius: 20em;
+    font-family: 'sb';
+ }
+
+.faixa {
+display: flex;
+justify-content:space-between;
+background-color: rgba(0, 107, 140, 1);
+margin-top: -0.1em;
+
+}
+
+.esp{
+    margin-top: 1.2em;
+}
+
+.esp2 {
+    margin-left: 2em;
+}
+
+.bot1S{
+    background-color: #A3E0F3;
+    color: #006B8C;
+    border-radius: 100px;
+    font-family: 'sb';
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px 30px;
+   
+}
+
+.texto{
+   color:white;
+   margin-right: 4em;
+   margin-bottom: 1.2em;
+   margin-top: 1.2em;
+   font-size: 1.2em;
+   background-color: rgba(254, 193, 138, 1);
+   padding: 0.8em 2.8em;
+   border-radius: 20em;
+   font-family: 'sb';
+}
+
+input {
+    background-color: rgba(196, 196, 196, 1);
+    margin-left: 30em;
+    width: 28em;
+    height: 4em;
+    border-radius: 2.2em;
+    border: none;
+    margin: 0px;
+}
+
+.pa {
+    background-color: white;
+    border-radius: 2em;
+    opacity: 92%;
+}
+
+.entra {
+   margin-top: 38px; 
+   font-family: 'sb';
+   margin-bottom: 0.6em;  
+    
+}
+.teste{
+    
+    font-size: 4em;
+    margin-left: 0.6em;
+    margin-right: 3.8em;
+    
+}
+
+.ca {
+    font-family: 'sb';
+    margin-left: 2.4em;
+    font-size: 1.3em;
+}
+
+.conta {
+    display: flex;
+    flex-direction: row;
+}
+
+.c1 {
+    font-family: 'rr';
+    margin-left: 3em;
+    font-size: 1.1em;
+    margin-top: 1.4em;
+}
+
+.c2 {
+    font-family: 'rr';
+    margin-left: 0.4em;
+    font-size: 1.1em;
+    color: rgba(38, 109, 215, 1);
+    margin-bottom: 1em;
+    margin-top: 1.4em;
+}
+
+.L {
+    display:flex;
+    align-items: center;
+   
+    margin-left: 9em;
+    margin-bottom: 4em;
+    
+}
+.botao{
+    font-family: 'sr' ;
+    font-size: 17px;
+    width: 12em; 
+    border-radius: 30px;
+    background-color: #A3E0F3;
+    border: none;
+    margin: 0px;
+    padding: 15px 50px;
+
+}
+.tamanho{
+    font-size: 1.3em;
+    font-family: 'rr';
+}
+
+.t2 {
+    margin-left: -2em;
+}

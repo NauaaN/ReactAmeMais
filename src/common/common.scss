@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+@font-face {
+    font-family:'sb';
+    src: url('../../public/fonts/SignikaNegative-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'rr';
+    src: url('../../public/fonts/RedHatText-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'rb';
+    src: url('../../public/fonts/RedHatText-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'rrb';
+    src: url('../../public/fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'rrr';
+    src: url('../../public/fonts/Raleway-ExtraBold.ttf');
+}
+
+a,a:active, a:visited{
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: 'sm';
+    src: url('../../public/fonts/SignikaNegative-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'sr';
+    src: url('../../public/fonts/SignikaNegative-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'red';
+    src: url('../../public/fonts/RedHatText-Italic.ttf');
+}
+
+
+@font-face {
+    font-family: 'light';
+    src: url('../../public/fonts/SignikaNegative-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Nbold';
+    src: url('../../public/fonts/SignikaNegative-Regular.ttf')
+};
