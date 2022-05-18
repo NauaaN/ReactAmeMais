@@ -16,7 +16,7 @@ export default function index() {
             </div>
         <div className='container1m'>
                 <div>
-                  <h1>Cadastrar Pet para Adoção</h1>
+                  <h1>Cadastrar Pet para Adoçãoo</h1>
                   <p>Animal:</p>
                 </div>
           <div>
