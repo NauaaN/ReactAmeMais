@@ -195,7 +195,7 @@ export default function index() {
                       </div>
                      </div>
                    </div>
-                   <div className='dsAjj'>
+                   <div className='dsAjjj'>
                      <p>“ Bernarda tem alguns problemas de alimentação e é bastante tímida, mas tem muito amor para dar”</p>
                    </div>
                    <div className='bujj'>
