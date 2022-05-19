@@ -43,6 +43,7 @@
         display: flex;
         flex-direction: row;
         background-image: url('../../../public/images/Vector\ 1\ \(1\).svg') ;
+        margin-bottom: 10em;
     }
     
     .cassioS{
@@ -67,7 +68,7 @@
         font-family: 'red';
     }
     .txt3S{
-        font-size: 44px;
+        font-size: 32px;
         margin-top: 1em;
         margin-bottom: 1em;
         font-family: 'rrb';
@@ -97,7 +98,12 @@
         border-radius: 100px;        font-size: 20px;
         cursor: pointer;
         padding: 20px 30px;
+        font-family: 'rb';
 
+    }
+
+    .AI {
+        font-family: 'rb';
     }
     
     .bot2S{
@@ -108,6 +114,7 @@
         cursor: pointer;
         padding: 20px 50px;
         margin-left: 3em;
+        
     }
     .faixina2S{
         display: flex;
@@ -233,7 +240,7 @@
         margin-top: 3em;
         
     }
-    .img1{
+    .img1jc{
         mix-blend-mode:multiply;
         margin-right: 1em;
     }
@@ -285,9 +292,9 @@
     font-size: 1.3em;
     }
     
-    .principal {
+    .principaljc {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100vh;
         align-items: flex-end;
     }
@@ -301,35 +308,42 @@
         display: flex;
         flex-direction: column;
     }
+
+    .tamanhoo {
+        display: flex;
+        flex-direction: row;
+    }
     
-    .tituloj {
+    .titulojc {
         font-size: 1.9em;        text-align: center;
-        margin-left: 2.3em;
-        margin-right: 2em;
+        font-family: 'rb';
+        margin-top: 2em;
         color: #006B8C;
         width: 20em;
     }
     
-    .titulo2 {        text-align: center;
+    .titulo2jc {        text-align: center;
         margin-top: 1.3em;
-        margin-left: 1.2em;
         font-size: 1.1em;
+     
     }
+
+   
     
-    .card {
+    .cardjc {
         display: flex;
         flex-direction: column;
         margin-top: 7em;
     }
     
-    .c2 {
+    .c2jc {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
     }
     
-    .nome {        
+    .nomejc {        
         font-size: 1.6em;
         width: 14em;
         margin-top: 0.9em;
@@ -343,12 +357,12 @@
         align-items: flex-start;
     }
     
-    .ce {
+    .cejc {
         display: flex;
         flex-direction: column;
     }
     
-    .star {
+    .starjc {
         display: flex;
         flex-direction: row;
         margin-top: 0.7em;
@@ -374,12 +388,13 @@
     
     
     
-    .card > * {
+    .cardjc > * {
         margin-bottom: 1.2em;
+        margin-right: 3em;
         
     }
     
-    .juntar {
+    .juntarjc {
         border-style: solid;
         border-color: #DDD7D7;
         border-radius: 17px;
@@ -389,13 +404,13 @@
     }
     
     
-    .tutora {       
+    .tutorajc {       
          margin-left: 2.8em;
         font-size: 1.2em;
         color: #000000;
     }
     
-    .pr{        margin-top: 0.5em;
+    .prjc{        margin-top: 0.5em;
         font-size: 1.1em;
         margin-left: 2.1em;
         margin-right: 2.1em;
@@ -458,7 +473,7 @@
     }
     
     .tituloe {
-        margin-left: 18em;
+        margin-left: 15em;
         margin-top: 2em;
         font-size: 2.9em;
         color: #000000;
@@ -467,7 +482,7 @@
     }
     
     .titulo2e {
-        margin-left: 21em;
+        margin-left: 18.5em;
         margin-top: -0.1em;       
          font-size: 2.9em;
         margin-bottom: 1em;
@@ -476,13 +491,13 @@
     }
     
     .pe{
-        font-size: 1.5em ;
+        font-size: 1.3em ;
          background-color: #ffa34d71;
          display: flex;
          margin-left: 29em;
          border-radius: 3em;
          box-shadow:  -0.7em 1em  #ffd0a79e;
-         width: 34em;
+         width: 32em;
          padding-left: 4em;
          padding-right:4em;
          padding-bottom: 2em;
