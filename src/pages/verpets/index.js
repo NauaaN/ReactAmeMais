@@ -191,7 +191,7 @@ export default function index() {
                       </div>
                       <div className='psijj'>
                         <p className='pijj'>ALTURA:</p>
-                        <p className='dsjj'>9 cm</p>
+                        <p className='dsjj'>9,2 cm</p>
                       </div>
                      </div>
                    </div>
