@@ -29,7 +29,7 @@ export default function index() {
             </div>
         </section>
         <section className="faixina2S">
-            <img src='/images/gato-abandonado_1.svg'/>
+            <img className='imgcat' src='/images/gato-abandonado_1.svg'/>
             <div className="cassio1S">
                 <p className="txt5S">Quer adicionar um animal para adoção?</p>
                 <p className="txt6S">Você pode adicioná-lo ao nossa rede, 
