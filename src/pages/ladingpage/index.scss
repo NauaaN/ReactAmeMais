@@ -39,9 +39,10 @@
         height: 40vw;
         background-position: right;
         background-position-y:3em;
+
         display: flex;
         flex-direction: row;
-        background-image: url('../../../public/images/Vector_1 (1).svg') ;
+        background-image: url('../../../public/images/Vector\ 1\ \(1\).svg') ;
     }
     
     .cassioS{
@@ -54,20 +55,24 @@
     
     .txt1S{
         font-size: 38px;
+        color: #000000;
     }
     
     .txt2S{
         width: 16.4em;
         font-size: 23px;
         margin-top: 1em;
+        color: #000000;
     }
     .txt3S{
         font-size: 24px;
         margin-top: 1em;
         margin-bottom: 1em;
     }
-    .txt4S{        font-size: 38px;
+    .txt4S{       
+      font-size: 38px;
         width: 12em;
+        color: #000000;
     }
     
     .cassio2S{
