@@ -213,7 +213,7 @@
     
     
     
-    .faixa {
+    .faixan {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -315,9 +315,11 @@
         align-items: flex-start;
     }
     
-    .nome {        font-size: 1.6em;
+    .nome {        
+        font-size: 1.6em;
         width: 14em;
         margin-top: 0.9em;
+        color: #000000;
     }
     
     .a {
@@ -372,14 +374,17 @@
     }
     
     
-    .tutora {        margin-left: 2.8em;
+    .tutora {       
+         margin-left: 2.8em;
         font-size: 1.2em;
+        color: #000000;
     }
     
     .pr{        margin-top: 0.5em;
         font-size: 1.1em;
         margin-left: 2.1em;
         margin-right: 2.1em;
+        color: #000000;
     }
     
     
@@ -391,6 +396,7 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: white;
+      
     }
     
     .faixa-cimae {
@@ -440,6 +446,7 @@
         margin-left: 15em;
         margin-top: 2em;
         font-size: 2.6em;
+        color: #000000;
     
     }
     
@@ -448,7 +455,7 @@
         margin-top: -0.3em;       
          font-size: 2.6em;
         margin-bottom: 1em;
-    
+        color: #000000;
     }
     
     .pe{
@@ -465,7 +472,7 @@
          padding-top: 2em;
          text-align: center;
          margin-top: -0.3em;
-    
+         color: #000000;
     
     
     
@@ -483,6 +490,9 @@
        margin-bottom: 7em;
        background-repeat: no-repeat;
        background-size: 19em ;
+       background-image: url('../../../public/images/Vector_1\ \(1\).svg');
+       background-repeat: no-repeat;
+
     
     
     }

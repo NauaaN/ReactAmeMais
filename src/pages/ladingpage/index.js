@@ -130,7 +130,7 @@ export default function index() {
 
 
 
-        <div className="faixa">
+        <div className="faixan">
             <div className="house">
                 <div>
                     <img className="img2" src=' images/IMG-20220419-WA0074_1.svg'/>
