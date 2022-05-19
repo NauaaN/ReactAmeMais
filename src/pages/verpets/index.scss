@@ -1,22 +1,22 @@
-.principal {
+.principaljj {
     display: flex;
     flex-direction: column;
     background-color: #F0F0F0;
   
 }
 
-.simbolo {
+.simbolojj {
     display: flex;
     flex-direction:row;
     
   
 }
 
-.ll {
+.lljj {
     mix-blend-mode: lighten;
 }
 
-.login {
+.loginjj {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,27 +24,27 @@
     background-color: #006B8C;
 }
 
-.login1 {
+.login1jj {
     display: flex;
     justify-content:flex-end;
     
 }
 
-.login1 > * {
+.login1jj > * {
  margin-right: 1.2em;
 }
 
-.nome {
+.nomejj {
     color: white;
     font-family: 'rb';
      margin-top: 01.2em;
 }
 
-.nauan {
+.nauanjj {
     margin-right: 1.5em;
 }
 
-.aa {
+.aajj {
     text-decoration: none;
     background-color: white;
     font-family: 'sb';
@@ -55,95 +55,110 @@
     border-radius: 2em;
 }
 
-.filtrar{
+.filtrarjj{
     width: 2em;
     margin-top: 1em;
 }
 
-.cardp {
+.cardpjj {
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
+    margin-top: 3em;
     padding: 0em 10em;
+    margin-left: 10em;
+    
 }
 
-.cardp > * {
+.cardpjj > * {
     margin-left: 3em;
 }
 
-.card {
+.cardjj {
     display: flex;
     flex-direction: row;
 }
 
-.card1{
+.card1jj {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
+    margin-left: 20em;
 }
 
-.card11{
+.card11jj {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
     margin-top: 3em;
+    margin-left: 4em;
+   
 }
 
-.card > * {
+.card11jjj {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.7em;
+    box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
+    margin-top: 3em;
+    margin-left: -10em;
+}
+
+.cardjj > * {
     margin-right: 5em;
 }
 
-.especie {
+.especiejj {
     display: flex;
     flex-direction: row;
     margin-top: 2em;
     margin-bottom: 0.7em;
 }
 
-.e {
+.ejj {
     font-family: 'rb';
     color: #61A9BF;
     margin-left: 2em;
 }
 
-.ave {
+.avejj {
     font-family: 'rb';
     margin-left: 0.3em;
     width: 10em;
 }
 
-.avee {
+.aveejj {
     font-family: 'rb';
     margin-left: 0.3em;
     width: 16em;
 }
 
-.feminino {
+.femininojj {
     width: 19px;
     margin-left: 6em;
     margin-right: 2em;
     margin-top: -0.4em;
 }
 
-.femininoo {
+.femininoojj {
     width: 19px;
     margin-left: 5em;
     margin-right: 2em;
     margin-top: -0.4em;
 }
 
-.feminino2 {
+.feminino2jj {
     width: 19px;
     margin-left: 0.4em;
     margin-right: 2em;
     margin-top: -0.4em;
 }
 
-.MASCULINO {
+.MASCULINOjj {
     width: 30px;
     height: 30px;
     margin-left: 4.3em;
@@ -151,54 +166,54 @@
     margin-top: -0.4em;
 }
 
-.toninha {
+.toninhajj {
     margin-left: 2em;
 }
 
-.textos2 {
+.textos2jj {
     display: flex;
     flex-direction: column;
 }
 
-.ni {
+.nijj {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.idade {
+.idadejj {
   font-family: 'rb';
   margin-top: 0.7em;
 }
 
-.ps {
+.psjj {
     display: flex;
     flex-direction: column;
 }
 
-.pi {
+.pijj {
     font-family: 'rb';
     margin-left: 1.6em;
 }
 
-.curtidas {
+.curtidasjj {
     font-family: 'rb';
     margin-left: 0.5em;
     margin-top: 0.3em;
 }
-.psi {
+.psijj {
     display: flex;
     flex-direction: row;
 }
 
-.na {
+.najj {
     font-family: 'rb';
     font-size: 2em;
     margin-left: -1.4em;
     margin-bottom: 0.2em;
 }
 
-.na2 {
+.na2jj {
     font-family: 'rb';
     font-size: 2em;
     margin-left: -0.8em;
@@ -206,12 +221,12 @@
 }
 
 
-.ds{
+.dsjj{
   font-family: 'rr';
   margin-left: 0.2em;
  }
 
- .dsA{
+ .dsAjjj{
      width: 20em;
      font-size: 1.1em;
      font-family: 'rr';
@@ -220,13 +235,14 @@
      margin-bottom: 1.1em;
  }
 
- .curtir {
+
+ .curtirjj {
     display: flex;
     flex-direction: row;
     margin-left: 1.4em;
  }
 
- .curtirr {
+ .curtirrjj {
     display: flex;
     flex-direction: row;
     margin-left: 1.4em;
@@ -235,7 +251,7 @@
 
  
 
- .curtirir {
+ .curtirirjj {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -244,19 +260,79 @@
     margin-bottom: 2em;
  }
 
- .ed1 {
+ .ed1jj {
      font-family: 'rb';
      margin-top: -1.4em;
      font-size: 0.9em;
      margin-right: 6px;
  }
 
- .ed2 {
+ .ed2jj {
     font-family: 'rb';
     margin-top: -1.4em;
 }
 
-.papagaio {
+.papagaiojj {
    width: 22em;
    height: 15em;
+}
+
+.editarjj {
+   display: flex;
+   
+}
+
+.vectorjj {
+   margin-left: 13.5em;
+   width: 5em;
+   margin-top: 3em;
+   margin-bottom: 3em;
+}
+
+.meusjj {
+    margin-top: 3em;
+    font-family: 'rb';  
+    font-size: 2.1em;
+    margin-left: 0.2em;
+    color: #006B8C;
+}
+
+.bujj {
+    display: flex;
+    flex-direction: row;
+}
+
+.bujj > * {
+ margin-bottom: 0.3em;
+}
+
+.edjj {
+    font-family: 'rr';
+    margin-left: 1.2em;
+    background-color: #8CC4D6;
+    padding: 3px 16px;
+    border-radius: 1.3em;
+}
+
+.eddjj {
+    font-family: 'rr';
+    margin-left: 1.2em;
+    background-color: #D15161;
+    padding: 3px 16px;
+    border-radius: 1.3em;
+    color: white;
+}
+
+.bbjj {
+    text-decoration: none;
+    font-family: 'sb';
+    color: #006B8C;
+    background-color: white;
+    padding: 10px 26px;
+    border-radius: 1.2em;
+    box-shadow: 4px 4px 4px rgb(168, 168, 168);
+    font-size: 0.8em;
+   
+    margin-left: 16em;
+    
 }
