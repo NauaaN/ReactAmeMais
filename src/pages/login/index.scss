@@ -1,6 +1,10 @@
 .login {
     display: flex;
     flex-direction: column;
+    background-image: url('../../../public/images/image\ 13.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
 .login2 {
@@ -9,16 +13,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-body {
-    background-image: url('');
-    background-size: 100%;
-    background-repeat: no-repeat;
-   
-    
-  
-   
 }
 
 .textom{
