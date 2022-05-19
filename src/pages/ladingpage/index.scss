@@ -120,16 +120,22 @@
     .txt5S{
         font-size: 40px;
         width: 20em;
-        margin-left: 1.5em;
+        margin-left: 5em;
         margin-top: 0.5em;
+        font-family: 'rrb';
     }
     .txt6S{
         font-size: 20px;
         text-align: center;
-        width: 397px;
+        width:19em ;
         display: flex;
-        margin-left: 9em;
+        margin-left: 19em;
         margin-top: 1em;
+        font-family: 'red';
+    }
+    .imgcat{
+        width: 31em;
+        margin-left: 4em;
     }
     .bot4S{
         background-color: #A3E0F3;
@@ -140,7 +146,7 @@
         padding: 18px 50px;
         position: relative;
         top: 2.5em;
-        left: 13em;
+        left: 23em;
     }
     
     @media (max-width:360px){
