@@ -22,15 +22,15 @@
         height: 2em;
         background-color: #FEC18A;
         border: none;
-        border-radius: 50px;
+        border-radius: 4em;
         padding: 25px 50px;
-        font-family: 'sb';
+        font-family: 'rrb';
         font-size: 17px;
         cursor: pointer;
     
     }
     
-    .img1{
+    .img134{
     mix-blend-mode: lighten;
     width:10em;
     }
@@ -49,63 +49,55 @@
         color: #ffff;
         text-align: center;
         font-family: 'rrr';
-        font-size: 2em;
-        margin-top: 1.2em;
-        margin-bottom: 1.3em;
+        font-size: 2.4em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     .alinhamento{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
+
     
     }
     
     .informa{
         color: #ffff;
-        font-family: 'sb';
+        font-family: 'rrb';
         font-size: 0.9;
         margin-bottom: 0.2em;
-        font-size: 1.2em;
+        font-size: 2em;
         margin-top: 0.5em;
         margin-left: 0.4em;
     }
     
     .input1{
-        width: 30em;
-        height: 2em;
+        width: 45em;
+        height: 3.2em;
         border: none;
         background-color: #CAC5C5;
-        border-radius: 7px;
+        border-radius: 0.9em;
         padding: 1em;
         font-size: 1.1em;
+        
     }
     .parte2{
-        margin: 3em;
+        margin: em;
     }
     .butaorg{
         color: white;
-        margin-top: 1em;
-        background-color: #A3E0F3;
+        margin-top: 3.5em;
+        background-color: #82c9df;
         border: none;
         border-radius: 50px;
         padding: 15px 50px;
-        font-family: 'sb';
-        font-size: 17px;
+        font-family: 'rrb';
+        font-size: 1.5em;
         width: 12em;
         cursor: pointer;
     }
     
-    .butaorg2{
-        margin-top: 1em;
-        background-color: #A3E0F3;
-        border: none;
-        border-radius: 50px;
-        padding: 15px 50px;
-        font-family: 'sr';
-        font-size: 17px;
-        width: 12em;
-        cursor: pointer;
-    }
+   
   
     
     
