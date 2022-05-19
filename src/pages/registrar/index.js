@@ -8,7 +8,7 @@ export default function index() {
     return(
       <main className='faixa1'>
     <header className='faixa-cima'>
-        <img className='img1' src='../../'/>
+        <img className='img134' src=''/>
         <Link to='./ladingpage' className='palavra'>Voltar</Link>
     </header>
     <section className='fundo'>
