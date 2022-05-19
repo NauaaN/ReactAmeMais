@@ -17,7 +17,7 @@ export default function index() {
                     temos diversos Pets que necessitam 
                     de uma moradia em nosso site,
                     todos esperando por você.</p>
-                <h3 className="txt3S">Não os deixe eserando!!!</h3>
+                <h3 className="txt3S">Não os deixe esperando!!!</h3>
                 <img src='./images/unsplash_aPvB8KMIh5w.svg' />
             </div>
             <div className="cassio2S">
@@ -45,7 +45,7 @@ export default function index() {
             
             <div className="principal">
             
-                <div className="titulo">
+                <div className="tituloj">
                     TEM CURIOSIDADE EM SABER <br/> SOBRE O QUE ESTÃO <br/>COMENTANDO SOBRE NÓS?
                 </div>
                 <div className="titulo2">

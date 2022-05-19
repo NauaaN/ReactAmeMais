@@ -1,14 +1,18 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 import '../../common/common.scss';
+
 export default function index() {
 
     return(
-        
+      
+     
        <div className='loginm'>
             <div className='faixam'>
-              <img className='logom' src=''/>
-        
+            <img className='logom' src= '/'/>
+    
+              
+
              <div className='hateem'>
              <Link className='textom' to='./ladingpage'>Voltar</Link>
              <Link className='textom' to='./landingpage'>Finalizar</Link>
@@ -16,7 +20,7 @@ export default function index() {
             </div>
         <div className='container1m'>
                 <div>
-                  <h1>Cadastrar Pet para Adoçãoo</h1>
+                  <h1>Cadastrar Pet para Adoção</h1>
                   <p>Animal:</p>
                 </div>
           <div>
@@ -27,7 +31,7 @@ export default function index() {
                     </div> 
                  </div>
                <div>
-              <div> <input className='lolm' type='text'/></div>
+              <div> <input className='lolm Juh' type='text'/></div>
                </div>
             </div>
             
@@ -36,12 +40,12 @@ export default function index() {
                 <div><p>Comentários Sobre (Doenças/Alergias):</p></div>
               </div>
               <div>
-              <div><input className='carraram' type='text'/></div>
+              <div><input className='carraram Juh' type='text'/></div>
               </div>
             <div>
               <div><p>Adicione Uma Imagem do Pet: </p></div>
             </div>
-            <div><input className='doguinhom' type='text'/> </div>
+            <div><input className='doguinhom Juh' type='text'/> </div>
           </div>
         </div>
         
@@ -53,8 +57,8 @@ export default function index() {
               <div className='pp'><p>Gênero:</p></div> 
             </div>
               <div className='trym'>
-                <input className='lolom' type='text'/>
-                <input className='lulam'type='text'/>
+                <input className='lolom Juh' type='text'/>
+                <input className='lulam Juh'type='text'/>
               </div> 
             </div>
         
@@ -66,8 +70,8 @@ export default function index() {
               </div>  
         
           <div className='trym'>
-            <input className='lolom' type='text'/> 
-            <input className='lulam' type='text'/> 
+            <input className='lolom Juh' type='text'/> 
+            <input className='lulam Juh' type='text'/> 
                    
           </div>
             </div>
@@ -78,16 +82,16 @@ export default function index() {
                 <div><p className='ppp'>Altura:</p></div>
               </div>  
                 <div className='trym'>
-                  <input className='louisem' type='text'/>
-                  <input className='louvm' type='text'/>
+                  <input className='louisem Juh' type='text'/>
+                  <input className='louvm Juh' type='text'/>
                 </div>    
             </div>
         
           <div>
              <p>Telefone para Contato:</p>
-                <input className='enolam' type='text'/>
+                <input className='enolam Juh' type='text'/>
              <p>Endereço:</p>
-                <input className='enolam' type='text'/>
+                <input className='enolam Juh' type='text'/>
           </div>
         
           </div>

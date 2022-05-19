@@ -31,6 +31,7 @@
     mix-blend-mode: lighten;
     width:12em;
     margin-left: 2em;
+
     }
     .faixina1S{
         background-repeat: no-repeat;
@@ -40,6 +41,7 @@
         background-position-y:3em;
         display: flex;
         flex-direction: row;
+        background-image: url('../../../public/images/Vector_1 (1).svg') ;
     }
     
     .cassioS{
@@ -281,9 +283,8 @@
         flex-direction: column;
     }
     
-    .titulo {
+    .tituloj {
         font-size: 1.9em;        text-align: center;
-        margin-top: -12em;
         margin-left: 2.3em;
         margin-right: 2em;
         color: #006B8C;
