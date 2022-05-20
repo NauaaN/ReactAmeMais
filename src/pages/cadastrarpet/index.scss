@@ -32,14 +32,14 @@ margin-right: px;
    background-color: rgba(254, 193, 138, 1);
    padding: 0.8em 2.8em;
    border-radius: 20em;
-   font-family: 'sb';
+   font-family: 'rrb';
 }
 
-.container1m {
-    margin-left: 3em;
-    
-    
 
+.container1m {
+    margin-left: 2em;
+    margin-top: 3em;
+    margin-bottom: 31px;
 }
 .testeem {
     display: flex;
@@ -53,19 +53,21 @@ margin-right: px;
 }
 .lolm{
 
-    width: 50em;
-    padding: 1em 2em 1em 1em; 
-    margin-left: 0.3em;
+    width: 45em;
+    padding: 1em 1em 1em 1em; 
+    margin-left: 9em;
 }
 
 .campm {
     display: flex;
     flex-direction: column;
-    padding-left: 0em;  
+    padding-left: 0em;
+    margin-top:0em; 
 }
 .carraram {
     width: 42em;
     padding: 5em;
+    margin-bottom:2em;
 }
 .doguinhom{
     width: 42em;
@@ -83,7 +85,7 @@ margin-right: px;
 }
 .derivadam{
     display: flex;
-    margin: 0em 24em 0em 0em;
+    margin: 0em 28em 0em 0em;
 }
 .trym {
     display: flex;
@@ -91,32 +93,43 @@ margin-right: px;
     margin: -1em 0em 1em 0em;
 }
 .lolom {
-    width: 18%;
+    width: 23%;
     padding: 0em 0em 0em 0em;
 }
 
 .lulam {
-    margin-left: 3em;
+    margin-left: 2em;
+    width:16em;
 }
 .uohhm{
     margin-left: -7em;
 }
 .louisem{
-    width: 18%;
+    width: 23%;
     padding: 1em 1em 1em 1em;
 }
 .louvm {
-    margin-left: 3em;
-    width: 21%;
+    margin-left: 2em;
+    width: 16em;
 }
 .enolam {
-    width: 36%;
+    width: 38%;
     padding: 1em 5em 1em 1em;
+    margin-bottom: 2em;
 }
 h1 {
     color: #ffffff;
     font-size: 2em;
-    font-family: 'sb';
+    font-family: 'rrb';
+    margin-bottom: 0.5em;
+}
+.nova{
+    margin-bottom: 0px;
+    margin-left: 4px;
+}
+.novaa{
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .Juh {
     background-color: #8CC4D6;
@@ -124,13 +137,19 @@ h1 {
     border-radius: 6px;
 }
 p{
-    font-family: 'sb';
+    font-family: 'rrb';
     color: #ffffff;
     margin-bottom: 0.9em;
     margin-top: 0.4em;
 }
+.pp{
+    margin-left: -7.8em;
+}
 
 .ppp {
-    margin-left: -6.7em;
+    margin-left: -6em;
+}
+.temporario{
+    margin-bottom:3.3em;
 }
 
