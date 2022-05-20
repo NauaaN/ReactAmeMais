@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #8a8888;
-    height: 47em;
+    min-height: 91vh;
+    background-position: bottom;
     background-blend-mode: color-burn;
 }
 
@@ -22,9 +23,7 @@
 
 .textomk{
     color:white;
-    margin-left: -11em;
-    margin-bottom: -1em;
-
+    margin-right: 1em;
     font-size: 1em;
     background-color: rgba(254, 193, 138, 1);
     padding: 0.8em 2.8em;
@@ -36,8 +35,7 @@
 display: flex;
 justify-content:space-between;
 background-color: rgba(0, 107, 140, 1);
-margin-top: -0.1em;
-
+padding: 1.5em;
 }
 
 .espk{
@@ -62,8 +60,6 @@ margin-top: -0.1em;
 .textk{
    color:white;
    margin-right: 4em;
-   margin-bottom: 1.2em;
-   margin-top: 1.2em;
    font-size: 1.2em;
    background-color: rgba(254, 193, 138, 1);
    padding: 0.8em 2.8em;
