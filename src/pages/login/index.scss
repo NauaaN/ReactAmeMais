@@ -1,13 +1,18 @@
-.login {
+.logink {
     display: flex;
     flex-direction: column;
-    background-image: url('../../../public/images/image\ 13.svg');
-    background-size: 100%;
+    background-image: url('../../../public/images/cadelasafada.svg');
     background-repeat: no-repeat;
-
+    background-size: 100%;
+    background-color: #8a8888;
+    height: 47em;
+    background-blend-mode: color-burn;
 }
 
-.login2 {
+
+
+
+.login2k {
     margin-top: 4em;
     display: flex;
     flex-direction: column;
@@ -15,19 +20,19 @@
     justify-content: center;
 }
 
-.textom{
+.textomk{
     color:white;
     margin-left: -11em;
-    margin-bottom: 1.2em;
-    margin-top: 20em;
+    margin-bottom: -1em;
+
     font-size: 1em;
     background-color: rgba(254, 193, 138, 1);
     padding: 0.8em 2.8em;
     border-radius: 20em;
-    font-family: 'sb';
+    font-family: 'rrb';
  }
 
-.faixa {
+.faixak {
 display: flex;
 justify-content:space-between;
 background-color: rgba(0, 107, 140, 1);
@@ -35,11 +40,11 @@ margin-top: -0.1em;
 
 }
 
-.esp{
+.espk{
     margin-top: 1.2em;
 }
 
-.esp2 {
+.esp2k {
     margin-left: 2em;
 }
 
@@ -47,14 +52,14 @@ margin-top: -0.1em;
     background-color: #A3E0F3;
     color: #006B8C;
     border-radius: 100px;
-    font-family: 'sb';
+    font-family: 'rrb';
     font-size: 20px;
     cursor: pointer;
     padding: 20px 30px;
    
 }
 
-.texto{
+.textk{
    color:white;
    margin-right: 4em;
    margin-bottom: 1.2em;
@@ -76,45 +81,45 @@ input {
     margin: 0px;
 }
 
-.pa {
+.pak {
     background-color: white;
     border-radius: 2em;
     opacity: 92%;
 }
 
-.entra {
+.entrak {
    margin-top: 38px; 
-   font-family: 'sb';
+   font-family: 'rb';
    margin-bottom: 0.6em;  
     
 }
-.teste{
+.testek{
     
     font-size: 4em;
     margin-left: 0.6em;
-    margin-right: 3.8em;
+    margin-right: 3.2em;
     
 }
 
-.ca {
-    font-family: 'sb';
+.cak {
+    font-family: 'rrr';
     margin-left: 2.4em;
     font-size: 1.3em;
 }
 
-.conta {
+.contak {
     display: flex;
     flex-direction: row;
 }
 
-.c1 {
+.c1k {
     font-family: 'rr';
     margin-left: 3em;
     font-size: 1.1em;
     margin-top: 1.4em;
 }
 
-.c2 {
+.c2k {
     font-family: 'rr';
     margin-left: 0.4em;
     font-size: 1.1em;
@@ -123,30 +128,37 @@ input {
     margin-top: 1.4em;
 }
 
-.L {
+.Lk {
     display:flex;
     align-items: center;
    
-    margin-left: 9em;
+    margin-left: 9.5em;
     margin-bottom: 4em;
     
 }
-.botao{
-    font-family: 'sr' ;
+.botaok{
+    font-family: 'rb' ;
     font-size: 17px;
     width: 12em; 
     border-radius: 30px;
     background-color: #A3E0F3;
+    text-decoration: none;
     border: none;
+    color: black;
     margin: 0px;
     padding: 15px 50px;
 
 }
-.tamanho{
+.tamanhok{
     font-size: 1.3em;
     font-family: 'rr';
 }
 
 .t2 {
     margin-left: -2em;
+}
+
+.logok {
+    width: 10em;
+    mix-blend-mode: lighten;
 }

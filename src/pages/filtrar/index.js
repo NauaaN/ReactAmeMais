@@ -1,19 +1,100 @@
 import './index.scss';
-import{ Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../common/common.scss';
 
-export default function index() {
+export default function index () {
+    return (
+        <div class="filtrarxx">
+        <div class="filtrar2xx">
+            <div class="funilxx">
+                <img src="../../assets/images/Union.svg"/>
+            </div>
+            <div class="nominhoxx">
+                FILTRAR
+            </div>
+        <div class="t1">
+            - Espécie
+        </div>
+        <div class="checkxx">
+         <input class="inputt" type="checkbox"/>
+         <P class="txtxx">Aves</P>
+         </div>
 
-    return(
-       
+         <div class="checkxx">
+            <input class="inputt" type="checkbox"/>
+            <P class="txtxx">Cachorros</P>
+            </div>
+
+            <div class="checkxx">
+                <input class="inputt" type="checkbox"/>
+                <P class="txtxx ">Gatos</P>
+                </div>
+
+                <div class="checkxx">
+                    <input class="inputt" type="checkbox"/>
+                    <P class="txttxx">Roedores</P>
+                    </div>
+                    <div class="t2xx">
+                    - Gênero
+                    </div>
+     <div class="check">
+     <input class="inputt" type="checkbox"/>
+     <P class="txtxx">Feminino</P>
+     </div>
+
+     <div class="checkxx">
+        <input class="inputt" type="checkbox"/>
+        <P class="txttxx">Masculino</P>
+        </div>
+
+        <div class="t2xx">
+            - Idade
+         </div>
+
+         <div class="checkxx">
+            <input class="inputt" type="checkbox"/>
+            <P class="txtxx">Idoso</P>
+            </div>
+
+            <div class="checkxx">
+                <input class="inputt" type="checkbox"/>
+                <P class="txtxx">Adulto</P>
+                </div>
+
+                <div class="check">
+                    <input class="inputt" type="checkbox"/>
+                    <P class="txt">Jovem</P>
+                    </div>
+
+                    <div class="check">
+                        <input class="inputt" type="checkbox"/>
+                        <P class="txttt">Filhote</P>
+                        </div>
+
+     <div class="n">
+    <a class="b" href="../home/index.html">FILTRAR</a>
+    </div>
+
+    <div class="n">
+        <Link class="bb" href="../landingp/index.html">Voltar ao menu</Link>
+   </div> 
+
+   <div class="n">
+    <Link class="bbb" href="../editar/index.html">Editar &nbsp; +PETS</Link>
+</div> 
+   
+
       
-      <div className='principaljj'>
+    </div>
+    
+
+    <div className='principaljj'>
               <div className='loginjj'>
                 <div className='simbolojj'>
                 <img className='lljj' src='./images/IMG-20220418-WA0079 6 (1).svg'/>
                 
-                <Link to='./verpets'>
-                  <p className='nomejj'>FILTRAR</p>
+                <Link to='./filtrar'>
+                  <img className='filtrarjj' src='./images/menu.svg'/>
                 </Link>
                 </div>
                <div className='login1jj'>
@@ -23,7 +104,14 @@ export default function index() {
                 <img className='nauanjj' src='./images/nauanigual.svg'/>
                 </div>
              </div>
-      
+        
+             <div className='editarjj'>
+             <img className='vectorjj' src='./images/homenzinho.svg'/>
+             <p className='meusjj'>MEUS PETS:</p>
+             </div>
+            <div>
+             <Link className='bbjj' to='./ladingpage'>VOLTAR</Link>
+             </div>
         
             <div className='lucaojj'>
              <div className='cardpjj'>
@@ -57,8 +145,11 @@ export default function index() {
                    <p>“ Toninha é totalmente saudavél, enérgica e está a procura de um lar cheio de amor”</p>
                  </div>
                 <div className='bujj'>
-                    <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
+                    <p className='edjj'>EDITAR</p>
+                </div>
+        
+                <div className='bujj'>
+                    <p className='eddjj'>REMOVER</p>
                 </div>
                 
                    <div className='curtirirjj'> 
@@ -98,8 +189,11 @@ export default function index() {
                   </div>
                  
                   <div className='bujj'>
-                  <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
+                    <p className='edjj'>EDITAR</p>
+                </div>
+        
+                <div className='bujj'>
+                    <p className='eddjj'>REMOVER</p>
                 </div>
         
                     <div className='curtirirjj'> 
@@ -141,8 +235,11 @@ export default function index() {
                   </div>
                  
                   <div className='bujj'>
-                  <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
+                    <p className='edjj'>EDITAR</p>
+                </div>
+        
+                <div className='bujj'>
+                    <p className='eddjj'>REMOVER</p>
                 </div>
         
         
@@ -183,8 +280,11 @@ export default function index() {
                      <p>“ Bernarda tem alguns problemas de alimentação e é bastante tímida, mas tem muito amor para dar”</p>
                    </div>
                    <div className='bujj'>
-                   <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
+                    <p className='edjj'>EDITAR</p>
+                </div>
+        
+                <div className='bujj'>
+                    <p className='eddjj'>REMOVER</p>
                 </div>
                      <div className='curtirirjj'> 
                        <p className='ed1jj'>Brasilia, MG</p>
@@ -199,6 +299,6 @@ export default function index() {
            </div>
            </div>
 
-        
+    </div>
     )
 }

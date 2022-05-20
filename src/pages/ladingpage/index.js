@@ -23,13 +23,13 @@ export default function index() {
             <div className="cassio2S">
                 <h1 className="txt4S">Pronto para escolher o seu novo amigo?</h1>
                 <div className="cassio3S">
-                    <Link to='/Registrar'className="bot1S">REGISTRAR-SE</Link>
-                    <Link to='/Verpets' className="bot2S">VER PETS</Link>
+                    <Link to='/Registrar'className="AI bot2S">REGISTRAR-SE</Link>
+                    <Link to='/meuspets' className="AI bot2S">VER PETS</Link>
                 </div>
             </div>
         </section>
         <section className="faixina2S">
-            <img src='/images/gato-abandonado_1.svg'/>
+            <img className='imgcat' src='/images/gato-abandonado_1.svg'/>
             <div className="cassio1S">
                 <p className="txt5S">Quer adicionar um animal para adoção?</p>
                 <p className="txt6S">Você pode adicioná-lo ao nossa rede, 
@@ -39,79 +39,9 @@ export default function index() {
                 <Link to='/Cadastrarpet'className="bot4S">Cadastrar PET </Link>
             </div>
         </section>
-
-
-        <div className="tamanho">
-            
-            <div className="principal">
-            
-                <div className="tituloj">
-                    TEM CURIOSIDADE EM SABER <br/> SOBRE O QUE ESTÃO <br/>COMENTANDO SOBRE NÓS?
-                </div>
-                <div className="titulo2">
-                    Tutor que ja adotou e deseja <br/>compartilhar sua experiência, aqui <br/> esta um espaço próprio para você!
-                </div>
-              
-            </div>
+  
         
-            <div className="card">
-                <div className="juntar">
-                <div className="c2">
-                    <div>
-                        <img className="img1" src='./images/273410313_4693674064082409_4992127923868059192_n_1.svg' />
-                    </div>
-                  
-                    <div>
-                        <p className="nome">Eliza Ferreira Xavier</p>
-                        <p className="tutora">Tutora de Cookie</p>
-                    </div>
-                    </div>
-        
-                    <div className="ce">
-                        <p className="pr">“ A adoção foi  tranquila, Cookie é tranquilo, um cachorrinho muito tranquilo, não me arrependi de ter o adotado.”
-                        </p>
-                        <div>
-                            <div className="star">
-                            <img src='./images/Star_1.svg' />
-                            <img src='/images/Star_1.svg' />
-                            <img src='/images/Star_1.svg' />
-                            <img src='/images/Star_1.svg' />
-                            <img src='/images/Star_1.svg' />
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-        
-                    <div className="juntar">
-                    <div className="c2">
-                        <div>
-                            <img className="img1" src='/images/calopsitas-criancas_1.svg' />
-                        </div>
-                      
-                        <div>
-                            <p className="nome">Juliana Fatima F. Mota</p>
-                            <p className="tutora">Tutora de Chicota</p>
-                        </div>
-                        </div>
-            
-                        <div className="ce">
-                            <p className="pr">“ Amei conhecer a chicotinha, muito amorosa e carinhosa, adotei ela para fazer companhia ao tody e adorei.”
-                            </p>
-                            <div>
-                                <div className="star">
-                                <img src='./images/Star_1.svg'/>
-                                <img src='./images/Star_1.svg' />
-                                <img src='./images/Star_1.svg' />
-                                <img src='./images/Star_1.svg' />
-                                <img src='./images/Star_1.svg' />
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        <div/>    
-        </div>
-
+      
         <section className="faixae">
             
              <div>
@@ -129,8 +59,79 @@ export default function index() {
         </section>
 
 
+        <div className='tamanhoo'>
+        
+        <div className="principaljc">
+             <div  className='tecto'>
+            <div className="titulojc">
+                TEM CURIOSIDADE EM SABER <br/> SOBRE O QUE ESTÃO <br/>COMENTANDO SOBRE NÓS?
+            </div>
+            <div className="titulo2jc">
+                Tutor que ja adotou e deseja <br/>compartilhar sua experiência, aqui <br/> esta um espaço próprio para você!
+            </div>
+          </div>
+        </div>
+        
+        <div className="cardjc">
+            <div className="juntarjc">
+            <div className="c2jc">
+                <div>
+                    <img className="img1jc" src='./images/273410313_4693674064082409_4992127923868059192_n_1.svg' />
+                </div>
+              
+                <div>
+                    <p className="nomejc">Eliza Ferreira Xavier</p>
+                    <p className="tutorajc">Tutora de Cookie</p>
+                </div>
+                </div>
+    
+                <div className="cejc">
+                    <p className="prjc">“ A adoção foi  tranquila, Cookie é tranquilo, um cachorrinho muito tranquilo, não me arrependi de ter o adotado.”
+                    </p>
+                    <div>
+                        <div className="starjc">
+                        <img src='./images/Star_1.svg' />
+                        <img src='/images/Star_1.svg' />
+                        <img src='/images/Star_1.svg' />
+                        <img src='/images/Star_1.svg' />
+                        <img src='/images/Star_1.svg' />
+                        </div>
+                    </div>
+                </div>
+                </div>
+    
+                <div className="juntarjc">
+                <div className="c2jc">
+                    <div>
+                        <img className="img1jc" src='/images/calopsitas-criancas_1.svg' />
+                    </div>
+                  
+                    <div>
+                        <p className="nomejc">Juliana Fatima F. Mota</p>
+                        <p className="tutorajc">Tutora de Chicota</p>
+                    </div>
+                    </div>
+        
+                    <div className="cejc">
+                        <p className="prjc">“ Amei conhecer a chicotinha, muito amorosa e carinhosa, adotei ela para fazer companhia ao tody e adorei.”
+                        </p>
+                        <div>
+                            <div className="starjc">
+                            <img src='./images/Star_1.svg'/>
+                            <img src='./images/Star_1.svg' />
+                            <img src='./images/Star_1.svg' />
+                            <img src='./images/Star_1.svg' />
+                            <img src='./images/Star_1.svg' />
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    <div/> 
+    </div>   
+    
 
-        <div className="faixa">
+        <div className="faixan">
             <div className="house">
                 <div>
                     <img className="img2" src=' images/IMG-20220419-WA0074_1.svg'/>
