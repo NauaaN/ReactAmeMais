@@ -8,7 +8,7 @@ export default function index() {
  
     <main className ='logink'>
         <div className= 'faixak'>
-           <img className='logok' src='./images/IMG-20220419-WA0074_1.svg'/>
+           <img className='logok' src='./images/IMG-20220418-WA0079_3.svg'/>
            <div className='bot15'>
                <Link to='./Ladingpage' className="textomk">Voltar</Link>
            </div>
