@@ -148,8 +148,8 @@ export default function index() {
         <div className="content">
             <div className="home">
                 <div className="bt"><Link to='/Ladingpage' className="button" >Home</Link> </div>
-                <div className="bt"><Link to='/Verpets' className="button" >Adote um pet</Link> </div>
-                <div className="bt"><Link to='/Meuspets' className="button" >Acessar pets cadastrados</Link></div>
+                <div className="bt"><Link to='/Meuspets' className="button" >Adote um pet</Link> </div>
+                <div className="bt"><Link to='/Verpets' className="button" >Acessar pets cadastrados</Link></div>
                 </div>
         
            <div className="pretend"><button className="holdon">Entre em contato conosco</button></div>

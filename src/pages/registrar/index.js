@@ -9,7 +9,7 @@ export default function index() {
       <main className='faixa1'>
     <header className='faixa-cima'>
         <img className='img134' src=''/>
-        <Link to='./ladingpage' className='palavra'>Voltar</Link>
+        <Link to='/ladingpage' className='palavra'>Voltar</Link>
     </header>
     <section className='fundo'>
         <p className='registrar'>Informe seus dados, para te cadastrarmos em nosso site!</p>
@@ -36,7 +36,7 @@ export default function index() {
             </div>
         </div>
         <div className='alinhamento'>
-            <Link to="./Login" className='butaorg'>Registrar-se</Link>
+            <Link to="/Login" className='butaorg'>Registrar-se</Link>
         </div>
     </section>
 </main>

@@ -13,7 +13,7 @@ export default function index() {
            
 
              <div className='hateem'>
-             <Link className='textom' to='./landingpage'>Finalizar</Link>
+             <Link className='textom' to='/ladingpage'>Finalizar</Link>
              </div>
             </div>
         <div className='container1m'>

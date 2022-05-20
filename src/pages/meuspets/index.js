@@ -12,12 +12,12 @@ export default function index() {
                 <div className='simbolojj'>
                 <img className='lljj' src='./images/IMG-20220418-WA0079 6 (1).svg'/>
                 
-                <Link to='./verpets'>
+                <Link to='/verpets'>
                   <p className='nomejj'>FILTRAR</p>
                 </Link>
                 </div>
                <div className='login1jj'>
-                <Link className="aajj" to='./ladingpage'>+ &nbsp; PET</Link>
+                <Link className="aajj" to='/cadastrarpet'>+ &nbsp; PET</Link>
                 <p className='nomejj'>Nauan dos Santos
                 </p>
                 <img className='nauanjj' src='./images/nauanigual.svg'/>

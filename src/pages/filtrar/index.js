@@ -76,11 +76,11 @@ export default function index () {
     </div>
 
     <div class="n">
-        <Link class="bb" href="../landingp/index.html">Voltar ao menu</Link>
+        <Link class="bb" href="/landingpage">Voltar ao menu</Link>
    </div> 
 
    <div class="n">
-    <Link class="bbb" href="../editar/index.html">Editar &nbsp; +PETS</Link>
+    <Link class="bbb" href="/cadastrarpet">Editar &nbsp; +PETS</Link>
 </div> 
    
 
@@ -93,12 +93,12 @@ export default function index () {
                 <div className='simbolojj'>
                 <img className='lljj' src='./images/IMG-20220418-WA0079 6 (1).svg'/>
                 
-                <Link to='./filtrar'>
+                <Link to='/filtrar'>
                   <img className='filtrarjj' src='./images/menu.svg'/>
                 </Link>
                 </div>
                <div className='login1jj'>
-                <Link className="aajj" to='./ladingpage'>+ &nbsp; PET</Link>
+                <Link className="aajj" to='/ladingpage'>+ &nbsp; PET</Link>
                 <p className='nomejj'>Nauan dos Santos
                 </p>
                 <img className='nauanjj' src='./images/nauanigual.svg'/>
@@ -110,7 +110,7 @@ export default function index () {
              <p className='meusjj'>MEUS PETS:</p>
              </div>
             <div>
-             <Link className='bbjj' to='./ladingpage'>VOLTAR</Link>
+             <Link className='bbjj' to='/ladingpage'>VOLTAR</Link>
              </div>
         
             <div className='lucaojj'>
