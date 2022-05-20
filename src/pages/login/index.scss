@@ -2,10 +2,12 @@
     display: flex;
     flex-direction: column;
     background-image: url('../../../public/images/cadelasafada.svg');
+    background-repeat: no-repeat;
     background-size: 100%;
     background-color: black;
-    background-repeat: no-repeat;
+    height: 47em;
 }
+
 
 
 
@@ -20,13 +22,13 @@
 .textomk{
     color:white;
     margin-left: -11em;
-    margin-bottom: 1.2em;
+    margin-bottom: 1.5em;
 
     font-size: 1em;
     background-color: rgba(254, 193, 138, 1);
     padding: 0.8em 2.8em;
     border-radius: 20em;
-    font-family: 'sb';
+    font-family: 'rrb';
  }
 
 .faixak {
@@ -49,7 +51,7 @@ margin-top: -0.1em;
     background-color: #A3E0F3;
     color: #006B8C;
     border-radius: 100px;
-    font-family: 'sb';
+    font-family: 'rrb';
     font-size: 20px;
     cursor: pointer;
     padding: 20px 30px;
@@ -134,7 +136,7 @@ input {
     
 }
 .botaok{
-    font-family: 'sr' ;
+    font-family: 'rb' ;
     font-size: 17px;
     width: 12em; 
     border-radius: 30px;
