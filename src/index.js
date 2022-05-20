@@ -16,6 +16,7 @@ root.render(
   <React.StrictMode>
      <BrowserRouter>
   <Routes>
+  <Route path='/' element={<App/>} /> 
   <Route path='/registrar' element={<Registrar/>} /> 
   <Route path='/ladingpage' element={<Ladingpage/>} />
   <Route path='/cadastrarpet' element={<Cadastrarpet/>} />
@@ -24,7 +25,6 @@ root.render(
   <Route path='/verpets' element={<Verpets/>} />
   </Routes>
   </BrowserRouter>
-    <App />
   </React.StrictMode>
 );
 
