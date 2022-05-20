@@ -9,7 +9,7 @@ export default function index() {
      
        <div className='loginm'>
             <div className='faixam'>
-            <img className='logom' src= '/'/>
+            <img className='logom' src='./images/IMG-20220418-WA0079_3.svg'/>
            
 
              <div className='hateem'>

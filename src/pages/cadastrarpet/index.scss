@@ -5,23 +5,23 @@
     background-repeat: no-repeat;
     background-image: url('../../../public/images/image\ 15.svg');
     background-color: black;
-    
-  
+    background-position-y: bottom;
 }
 
 .logom {
 mix-blend-mode: lighten;
+height: 6em;
 }
 .hateem {
     display: flex;
     justify-content: flex-end;
-    margin-top: -8em;
+    margin-top: -6em;
+
 }
 .faixam {
 background-color: rgba(0, 107, 140, 1);
-margin-top: -12em;
-margin-left: em;
-margin-right: px;
+align-items: center;
+height: 9em;
 }
 .textom{
    color:white;
@@ -37,6 +37,7 @@ margin-right: px;
 
 
 .container1m {
+    color: white;
     margin-left: 2em;
     margin-top: 3em;
     margin-bottom: 31px;
@@ -49,10 +50,10 @@ margin-right: px;
 .duchym {
     display: flex;
     flex-direction: column;
-    margin-left: -20em;
+    margin-left: -12em;
 }
 .lolm{
-
+    
     width: 45em;
     padding: 1em 1em 1em 1em; 
     margin-left: 9em;
@@ -124,10 +125,12 @@ h1 {
     margin-bottom: 0.5em;
 }
 .nova{
+    color: white;
     margin-bottom: 0px;
     margin-left: 4px;
 }
 .novaa{
+    color: white;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -143,6 +146,7 @@ p{
     margin-top: 0.4em;
 }
 .pp{
+    
     margin-left: -7.8em;
 }
 
