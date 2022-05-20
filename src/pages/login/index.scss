@@ -4,8 +4,9 @@
     background-image: url('../../../public/images/cadelasafada.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: black;
+    background-color: #827f7f;
     height: 47em;
+    background-blend-mode: color-burn;
 }
 
 
@@ -22,7 +23,7 @@
 .textomk{
     color:white;
     margin-left: -11em;
-    margin-bottom: 1.5em;
+    margin-top: 1em;
 
     font-size: 1em;
     background-color: rgba(254, 193, 138, 1);
