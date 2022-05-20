@@ -127,7 +127,7 @@
     .txt5S{
         font-size: 40px;
         width: 20em;
-        margin-left: 5em;
+        margin-left: -0.2em;
         margin-top: 0.5em;
         font-family: 'rrb';
     }
@@ -136,7 +136,7 @@
         text-align: center;
         width:19em ;
         display: flex;
-        margin-left: 19em;
+        margin-left: 10em;
         margin-top: 1em;
         font-family: 'red';
     }
@@ -153,7 +153,7 @@
         padding: 18px 50px;
         position: relative;
         top: 2.5em;
-        left: 23em;
+        left: 13em;
     }
     
     @media (max-width:360px){
@@ -207,7 +207,7 @@
             text-align: center;
             width: 9em;
             font-size: 30px;
-            margin-left: 1em;
+            margin-left: -5em;
             justify-content: center;
         }
         .txt6S{
@@ -298,16 +298,27 @@
     font-size: 1.3em;
     }
     
+    
+
     .principaljc {
         display: flex;
         flex-direction: column;
         width: 100vh;
         align-items: flex-end;
     }
+
+    .principaljc > * {
+        margin-right: 10em;
+    }
     
     .p2 {
         display: flex;
         flex-direction: column;
+    }
+
+    .tituloss {
+        text-align: center;
+        margin-left: 0em
     }
     
     .totem{
@@ -318,6 +329,7 @@
     .tamanhoo {
         display: flex;
         flex-direction: row;
+        background-image: url('../../../public/images/laranjinhafofo.png');
     }
     
     .titulojc {
@@ -326,6 +338,7 @@
         margin-top: 2em;
         color: #006B8C;
         width: 20em;
+       
     }
     
     .titulo2jc {        text-align: center;
@@ -354,6 +367,8 @@
         width: 14em;
         margin-top: 0.9em;
         color: #000000;
+        font-family: 'rb';
+        margin-right: -5em;
     }
     
     .a {
@@ -377,14 +392,14 @@
         margin-bottom: 1.5em;
     }
     
-    .img1 {
+    .img1jc {
         margin-bottom: 0.2em;
         margin-right: 1.3em;
         margin-left: 1.2em;
         margin-top: 2em;
     }
     
-    .img2 {
+    .img2jc {
         margin-bottom: 0.2em;
         margin-right: 1.3em;
         margin-left: 1.2em;
@@ -411,9 +426,11 @@
     
     
     .tutorajc {       
-         margin-left: 2.8em;
+        margin-left: em;
         font-size: 1.2em;
         color: #000000;
+        font-family: 'rrr';
+        margin-top: -1em;
     }
     
     .prjc{        margin-top: 0.5em;
@@ -421,6 +438,7 @@
         margin-left: 2.1em;
         margin-right: 2.1em;
         color: #000000;
+        font-family: 'red';
     }
     
     

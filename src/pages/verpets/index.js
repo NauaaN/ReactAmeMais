@@ -20,12 +20,12 @@ export default function index() {
                 <Link className="aajj" to='./ladingpage'>+ &nbsp; PET</Link>
                 <p className='nomejj'>Nauan dos Santos
                 </p>
-                <img className='nauanjj' src='./images/homem-e-cao-2 4.svg'/>
+                <img className='nauanjj' src='./images/nauanigual.svg'/>
                 </div>
              </div>
         
              <div className='editarjj'>
-             <img className='vectorjj' src='./images/Vector.svg'/>
+             <img className='vectorjj' src='./images/homenzinho.svg'/>
              <p className='meusjj'>MEUS PETS:</p>
              </div>
             <div>
@@ -39,10 +39,10 @@ export default function index() {
                  <div className='especiejj'>
                     <p className='ejj'>ESPÉCIE:</p>
                     <p className='avejj'>AVE, CALOPSITA</p>
-                    <img className='femininojj' src='./images/transferir.png' />
+                    <img className='femininojj' src='./images/mulhe.png' />
                  </div>
                  <div className='toninhajj'>
-                     <img src='./images/cb2c7d2c-9562-4f4a-a4bf-f28de4ed1fe6 8.svg' />
+                     <img src='./images/toninhaa.svg' />
                  </div>
                  <div className='textos2jj'>
                    <div className='nijj'>
@@ -60,7 +60,7 @@ export default function index() {
                     </div>
                    </div>
                  </div>
-                 <div className='dsAjj'>
+                 <div className='dsAjjj'>
                    <p>“ Toninha é totalmente saudavél, enérgica e está a procura de um lar cheio de amor”</p>
                  </div>
                 <div className='bujj'>
@@ -82,10 +82,10 @@ export default function index() {
                   <div className='especiejj'>
                      <p className='ejj'>ESPÉCIE:</p>
                      <p className='avejj'>AVE, PAPAGAIO </p>
-                     <img className='MASCULINOjj' src='./images/c5a58b83a85c6bf12fe6efe72cf06e67-simbolo-masculino.png' />
+                     <img className='MASCULINOjj' src='./images/homi.png' />
                   </div>
                   <div className='toninhajj'>
-                      <img className='papagaiojj'src='./images/papagaio1 4.svg' />
+                      <img className='papagaiojj'src='./images/joaop.svg' />
                   </div>
                   <div className='textos2jj'>
                     <div className="nijj">
@@ -103,7 +103,7 @@ export default function index() {
                      </div>
                     </div>
                   </div>
-                  <div className='dsAjj'>
+                  <div className='dsAjjj'>
                     <p>“ João Paulo tem alguns problemas de alimentação e é bastante tímido, mas tem muito amor para dar”</p>
                   </div>
                  
@@ -128,10 +128,10 @@ export default function index() {
                   <div className='especiejj'>
                      <p className='ejj'>ESPÉCIE:</p>
                      <p className='aveejj'>AVE, PERIGUITO AUSTRALIANO</p>
-                     <img className='feminino2jj' src="./images/transferir.png" />
+                     <img className='femininoojjjx' src="./images/mulhe.png" />
                   </div>
                   <div className='toninhajj'>
-                      <img src='./images/295EBA8218365E46334C355E463303 2.svg'/>
+                      <img src='./images/ninotaa.svg'/>
                   </div>
                   <div className='textos2jj'>
                     <div className='nijj'>
@@ -174,10 +174,10 @@ export default function index() {
                    <div className='especiejj'>
                       <p className='ejj'>ESPÉCIE:</p>
                       <p className='avejj'>AVE, POMBO </p>
-                      <img className='femininoojj' src='./images/transferir.png' />
+                      <img className='femininoojjj' src='./images/mulhe.png' />
                    </div>
                    <div className='toninhajj'>
-                       <img className='papagaiojj' src='./images/thumbnail-for-569174_1582401607 2.svg' />
+                       <img className='papagaiojj' src='./images/pomba.svg' />
                    </div>
                    <div className='textos2jj'>
                      <div className='nijj'>

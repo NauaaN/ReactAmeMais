@@ -39,7 +39,7 @@
         flex-direction: column;
         background-color: #221D1D;
         background-image: url('../../../public/images/image\ 10.svg') ;
-        height: 90vh;
+        height: 110vh;
         background-repeat: no-repeat;
         background-size: 100vw;
         background-attachment: fixed;
@@ -66,13 +66,13 @@
         font-family: 'rrb';
         font-size: 0.9;
         margin-bottom: 0.2em;
-        font-size: 2em;
+        font-size: 1.2em;
         margin-top: 0.5em;
         margin-left: 0.4em;
     }
     
     .input1{
-        width: 40em;
+        width: 36em;
         height: 3.2em;
         border: none;
         background-color: #CAC5C5;
@@ -95,6 +95,7 @@
         font-size: 1.5em;
         width: 12em;
         cursor: pointer;
+        text-align: center;
     }
     
    

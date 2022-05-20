@@ -1,12 +1,119 @@
+.filtrarxx {
+    display: flex;
+    flex-direction: row;
+}
+
+.filtrar2xx {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEC18A;
+    box-shadow: 4px 4px 4px rgb(163, 163, 163);
+    position: absolute;
+    margin-top: -2em;
+}
+
+.funilxx {
+   padding: 3em;
+}
+
+.nominhoxx {
+    font-family: 'rr';
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -1.1em;
+    margin-bottom: 0.8em;
+}
+
+.t1xx {
+    background-color: white;
+    color: #FEC18A;
+    margin-bottom: 0.4em;
+    font-family: 'rrb';
+}
+
+.t2xx {
+    background-color: #6CBFD9;
+    margin-bottom: 0.4em;
+    font-family: 'rrb';
+}
+
+.inputtxx {
+   margin-left: 1em;
+}
+
+.checkxx {
+ display: flex;
+ flex-direction: row;
+}
+
+.checkxx > * {
+    margin-bottom: 0.3em;
+}
+
+.txtxx {
+    font-family: 'rrr';
+    font-size: 0.9em;
+}
+
+.txttxx {
+    font-family: 'rrr';
+    font-size: 0.9em;
+    margin-bottom: 1.4em;
+}
+
+.txtttxx {
+    font-family: 'rrr';
+    font-size: 0.9em;
+    margin-bottom: 4.4em;
+}
+
+.bxx {
+    text-decoration: none;
+    font-family: 'sb';
+    color: #006B8C;
+    background-color: white;
+    padding: 12px 36px;
+    border-radius: 1.2em;
+    box-shadow: 4px 4px 4px rgb(168, 168, 168);
+    
+}
+
+.bbxx {
+    text-decoration: none;
+    font-family: 'sb';
+    color: #006B8C;
+    background-color: white;
+    padding: 10px 26px;
+    border-radius: 1.2em;
+    box-shadow: 4px 4px 4px rgb(168, 168, 168);
+    font-size: 0.8em;
+    
+}
+
+
+.bbbxx {
+    text-decoration: none;
+    font-family: 'sb';
+    color: white;
+    background-color:#19a2cc;
+    padding: 10px 26px;
+    border-radius: 1.2em;
+    box-shadow: 4px 4px 4px rgb(139, 139, 139);
+    font-size: 0.8em;
+    
+}
+
+.nxx {
+    text-align: center;
+    margin-bottom: 3em; 
+}
+
 .principaljj {
     display: flex;
     flex-direction: column;
     background-color: #F0F0F0;
   
-}
-
-.curtir{
-margin-left: 1.2em;
 }
 
 .simbolojj {
@@ -262,7 +369,7 @@ p {
  .dsAjjj{
      width: 20em;
      font-size: 1.1em;
-     font-family: 'red';
+     font-family: 'rrr';
      margin-left: 1.4em;
      margin-top: 1.1em;
      margin-bottom: 1.1em;

@@ -47,7 +47,7 @@
 .aajj {
     text-decoration: none;
     background-color: white;
-    font-family: 'sb';
+    font-family: 'rb';
     margin-top: 1.2em;
     margin-bottom: 1.2em;
     color: #006B8C;
@@ -78,13 +78,22 @@
     flex-direction: row;
 }
 
-.card1jj {
+.card1jjj {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
-    margin-left: 20em;
+    margin-left: -10em;
+}
+
+.card1jjjj {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.7em;
+    box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
+    margin-left: 4em;
 }
 
 .card11jj {
@@ -107,6 +116,8 @@
     margin-top: 3em;
     margin-left: -10em;
 }
+
+
 
 .cardjj > * {
     margin-right: 5em;
@@ -142,15 +153,25 @@ p {
     color: black;
 }
 .femininojj {
-    width: 19px;
+    width: 20px;
+    height: 30px;
     margin-left: 6em;
     margin-right: 2em;
     margin-top: -0.4em;
 }
 
-.femininoojj {
+.femininoojjj {
     width: 19px;
+    height: 30px;
     margin-left: 5em;
+    margin-right: 2em;
+    margin-top: -0.4em;
+}
+
+.femininoojjjx {
+    width: 19px;
+    height: 30px;
+    margin-left: 0.6em;
     margin-right: 2em;
     margin-top: -0.4em;
 }
@@ -237,7 +258,7 @@ p {
  .dsAjjj{
      width: 20em;
      font-size: 1.1em;
-     font-family: 'rr';
+     font-family: 'rrr';
      margin-left: 1.4em;
      margin-top: 1.1em;
      margin-bottom: 1.1em;
@@ -294,7 +315,7 @@ p {
    margin-left: 13.5em;
    width: 5em;
    margin-top: 3em;
-   margin-bottom: 3em;
+   margin-bottom: 1.2em;
 }
 
 .meusjj {
@@ -333,7 +354,7 @@ p {
 
 .bbjj {
     text-decoration: none;
-    font-family: 'sb';
+    font-family: 'rb';
     color: #006B8C;
     background-color: white;
     padding: 10px 26px;
