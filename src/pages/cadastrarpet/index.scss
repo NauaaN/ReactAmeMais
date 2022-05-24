@@ -1,158 +1,118 @@
-.loginm {
-    display: flex;
-    flex-direction: column;
-    background-size: 104%;
-    background-repeat: no-repeat;
-    background-image: url('../../../public/images/image\ 15.svg');
-    background-color: black;
-    background-position: bottom;
-}
-
-.logom {
-mix-blend-mode: lighten;
-height: 6em;
-}
-.hateem {
+.faixa {
     display: flex;
     justify-content: flex-end;
-    margin-top: -6em;
-
-}
-.faixam {
-background-color: rgba(0, 107, 140, 1);
-align-items: center;
-height: 9em;
-}
-.textom{
-   color:white;
-   margin-right: 4em;
-   margin-bottom: 1.2em;
-   margin-top: 2.2em;
-   font-size: 1.2em;
-   background-color: rgba(254, 193, 138, 1);
-   padding: 0.8em 2.8em;
-   border-radius: 20em;
-   font-family: 'rrb';
+    background-color: rgba(0, 107, 140, 1);
+    padding: 2em 0em 2em 0em;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -1em;
+    padding-bottom: 2em;
 }
 
-
-.container1m {
-    color: white;
-    margin-left: 2em;
-    margin-top: 3em;
-    margin-bottom: 31px;
+button {
+    background-color: rgba(254, 193, 138, 1);
+    padding: 1.2em 3em;
+    border: none;
+    border-radius: 20px;
 }
-.testeem {
+
+.descricao {
+    margin-left: 1em;
+}
+.container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;  
-}
-.duchym {
-    display: flex;
-    flex-direction: column;
-    margin-left: -12em;
-}
-.lolm{
-
-    width: 45em;
-    padding: 1em 1em 1em 1em; 
-    margin-left: 9em;
+    justify-content: flex-start;
+    margin-left: 1em;
 }
 
-.campm {
+.especie {
     display: flex;
-    flex-direction: column;
-    padding-left: 0em;
-    margin-top:0em; 
+    flex-direction: row;
 }
-.carraram {
-    width: 42em;
-    padding: 5em;
-    margin-bottom:2em;
+
+.NOME {
+    display: flex;
+    flex-direction: row;
 }
-.doguinhom{
-    width: 42em;
-    height: 16em;
+
+.PESO {
+    display: flex;
+    flex-direction: row;
+}
+
+.primeiro {
+    width: 38em;
     padding: 1em;
-       
-}
-.nom { 
-    margin-top: -22em ;
-}
-.testem{
-    display: flex;
-    flex-direction: row;
-    
-}
-.derivadam{
-    display: flex;
-    margin: 0em 28em 0em 0em;
-}
-.trym {
-    display: flex;
-    flex-direction: row;
-    margin: -1em 0em 1em 0em;
-}
-.lolom {
-    width: 23%;
-    padding: 0em 0em 0em 0em;
+    background-color: #8CC4D6;
 }
 
-.lulam {
-    margin-left: 2em;
-    width:16em;
-}
-.uohhm{
-    margin-left: -7em;
-}
-.louisem{
-    width: 23%;
-    padding: 1em 1em 1em 1em;
-}
-.louvm {
-    margin-left: 2em;
-    width: 16em;
-}
-.enolam {
-    width: 38%;
-    padding: 1em 5em 1em 1em;
-    margin-bottom: 2em;
-}
-h1 {
-    color: #ffffff;
-    font-size: 2em;
-    font-family: 'rrb';
-    margin-bottom: 0.5em;
-}
-.nova{
-    color: white;
-    margin-bottom: 0px;
-    margin-left: 4px;
-}
-.novaa{
-    color: white;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-.Juh {
+.segundo {
+    width: 20em;
+    padding: 1em;
     background-color: #8CC4D6;
+}
+
+.terceiro {
+    background-color: #8CC4D6;
+    padding: 1em;
+}
+
+.teste {
+    margin-left: 2.5em;
+}
+
+.quarto {
+    width: 20em;
+    padding: 1em;
+    background-color: #8CC4D6;
+}
+
+.quinto {
+    padding: 1em;
+    background-color: #8CC4D6;
+}
+
+.sexto {
+    width: 20em;
+    padding: 1em;
+    background-color: #8CC4D6;
+}
+
+.setimo {
+    padding: 1em;
+    background-color: #8CC4D6;
+}
+
+.oitavo {
+    width: 38em;
+    padding: 1em;
+    background-color: #8CC4D6;
+}
+
+.nono {
+    width: 38em;
+    padding: 1em;
+    background-color: #8CC4D6;
+}
+
+.bloco2 {
+    margin-left: 20em;
+}
+
+.decimo {
+    width: 20em;
+    padding: 5em;
+    background-color: #8CC4D6;
+}
+
+.onze {
+    width: 32em;
+    padding: 6em;
+    background-color: #8CC4D6;
+}
+
+input {
     border: none;
     border-radius: 6px;
 }
-p{
-    font-family: 'rrb';
-    color: #ffffff;
-    margin-bottom: 0.9em;
-    margin-top: 0.4em;
-}
-.pp{
-    margin-left: -7.8em;
-}
-
-.ppp {
-    margin-left: -6em;
-}
-.temporario{
-    margin-bottom:3.3em;
-}
-
