@@ -6,9 +6,9 @@ export default function index() {
 
     return(
       
-     <div>
+     <div className='fundo'>
 <header className='faixa'>
-        <img className='logo' />
+        <img className='logo' src='./images/IMG-20220418-WA0079_3.svg' />
         <div><button>Finalizar</button></div>
     </header>
 
