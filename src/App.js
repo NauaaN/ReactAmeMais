@@ -7,6 +7,7 @@ function App() {
       <h1>nauan</h1>
     </div>
   );
+  
 }
 
 export default App;
