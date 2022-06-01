@@ -10,10 +10,10 @@ export default function index() {
       <div className='principaljj'>
               <div className='loginjj'>
                 <div className='simbolojj'>
-                <img className='lljj' src='./images/IMG-20220418-WA0079 6 (1).svg'/>
+                <img className='lljj' src= '../images/IMG-20220418-WA0079_3.svg'/>
                 
                 <Link to='/filtrar'>
-                  <p className='nomejj'>FILTRAR</p>
+                  <img className='filtrarongc' src= '../images/Component 1.svg'/>
                 </Link>
                 </div>
                <div className='login1jj'>

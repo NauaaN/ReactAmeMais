@@ -2,7 +2,7 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import '../../common/common.scss';
 
-export default function index () {
+export default function Index () {
     return (
         <div class="filtrarxx">
         <div class="filtrar2xx">

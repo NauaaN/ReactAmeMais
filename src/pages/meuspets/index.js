@@ -10,7 +10,7 @@ export default function index() {
       <div className='principaljj'>
               <div className='loginjj'>
                 <div className='simbolojj'>
-                <img className='lljj' src='./images/IMG-20220418-WA0079_1.svg'/>
+                <img className='lljj' src= '../images/IMG-20220418-WA0079_3.svg'/>
                 </div>
                <div className='login1jj'>
                 <Link className="aajj" to='/cadastrarpet'>+ PET</Link>
