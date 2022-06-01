@@ -13,7 +13,7 @@ export default function index() {
                 <img className='lljj' src='./images/IMG-20220418-WA0079 6 (1).svg'/>
                 
                 <Link to='/filtrar'>
-                  <img className='filtrarjj' src='./images/menu.svg'/>
+                  <p className='nomejj'>FILTRAR</p>
                 </Link>
                 </div>
                <div className='login1jj'>
@@ -23,14 +23,7 @@ export default function index() {
                 <img className='nauanjj' src='./images/nauanigual.svg'/>
                 </div>
              </div>
-        
-             <div className='editarjj'>
-             <img className='vectorjj' src='./images/homenzinho.svg'/>
-             <p className='meusjj'>MEUS PETS:</p>
-             </div>
-            <div>
-             <Link className='bbjj' to='/ladingpage'>VOLTAR</Link>
-             </div>
+      
         
             <div className='lucaojj'>
              <div className='cardpjj'>
@@ -64,11 +57,8 @@ export default function index() {
                    <p>“ Toninha é totalmente saudavél, enérgica e está a procura de um lar cheio de amor”</p>
                  </div>
                 <div className='bujj'>
-                    <p className='edjj'>EDITAR</p>
-                </div>
-        
-                <div className='bujj'>
-                    <p className='eddjj'>REMOVER</p>
+                    <img className='curtir' alt='' src='./images/Like.svg'/>
+                    <p className='idadejj'>30</p>
                 </div>
                 
                    <div className='curtirirjj'> 
@@ -108,11 +98,8 @@ export default function index() {
                   </div>
                  
                   <div className='bujj'>
-                    <p className='edjj'>EDITAR</p>
-                </div>
-        
-                <div className='bujj'>
-                    <p className='eddjj'>REMOVER</p>
+                  <img className='curtir' alt='' src='./images/Like.svg'/>
+                    <p className='idadejj'>30</p>
                 </div>
         
                     <div className='curtirirjj'> 
@@ -154,11 +141,8 @@ export default function index() {
                   </div>
                  
                   <div className='bujj'>
-                    <p className='edjj'>EDITAR</p>
-                </div>
-        
-                <div className='bujj'>
-                    <p className='eddjj'>REMOVER</p>
+                  <img className='curtir' alt='' src='./images/Like.svg'/>
+                    <p className='idadejj'>30</p>
                 </div>
         
         
@@ -199,11 +183,8 @@ export default function index() {
                      <p>“ Bernarda tem alguns problemas de alimentação e é bastante tímida, mas tem muito amor para dar”</p>
                    </div>
                    <div className='bujj'>
-                    <p className='edjj'>EDITAR</p>
-                </div>
-        
-                <div className='bujj'>
-                    <p className='eddjj'>REMOVER</p>
+                   <img className='curtir' alt='' src='./images/Like.svg'/>
+                    <p className='idadejj'>30</p>
                 </div>
                      <div className='curtirirjj'> 
                        <p className='ed1jj'>Brasilia, MG</p>
