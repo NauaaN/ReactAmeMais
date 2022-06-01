@@ -1,158 +1,152 @@
-.loginm {
+.fundo{
     display: flex;
-    flex-direction: column;
-    background-size: 104%;
     background-repeat: no-repeat;
     background-image: url('../../../public/images/image\ 15.svg');
     background-color: black;
     background-position: bottom;
-}
-
-.logom {
-mix-blend-mode: lighten;
-height: 6em;
-}
-.hateem {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -6em;
-
-}
-.faixam {
-background-color: rgba(0, 107, 140, 1);
-align-items: center;
-height: 9em;
-}
-.textom{
-   color:white;
-   margin-right: 4em;
-   margin-bottom: 1.2em;
-   margin-top: 2.2em;
-   font-size: 1.2em;
-   background-color: rgba(254, 193, 138, 1);
-   padding: 0.8em 2.8em;
-   border-radius: 20em;
-   font-family: 'rrb';
-}
-
-
-.container1m {
-    color: white;
-    margin-left: 2em;
-    margin-top: 3em;
-    margin-bottom: 31px;
-}
-.testeem {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;  
-}
-.duchym {
-    display: flex;
-    flex-direction: column;
-    margin-left: -12em;
-}
-.lolm{
-
-    width: 45em;
-    padding: 1em 1em 1em 1em; 
-    margin-left: 9em;
-}
-
-.campm {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0em;
-    margin-top:0em; 
-}
-.carraram {
-    width: 42em;
-    padding: 5em;
-    margin-bottom:2em;
-}
-.doguinhom{
-    width: 42em;
-    height: 16em;
-    padding: 1em;
-       
-}
-.nom { 
-    margin-top: -22em ;
-}
-.testem{
-    display: flex;
-    flex-direction: row;
     
 }
-.derivadam{
+
+.faixav {
     display: flex;
-    margin: 0em 28em 0em 0em;
-}
-.trym {
-    display: flex;
-    flex-direction: row;
-    margin: -1em 0em 1em 0em;
-}
-.lolom {
-    width: 23%;
-    padding: 0em 0em 0em 0em;
+    justify-content: flex-end;
+    background-color: rgba(0, 107, 140, 1);
+    padding: 2em 0em 2em 0em;
+    margin-left: -8px;
+    margin-right: -7px;
+    margin-top: -3em;
+    padding-bottom: 2em;
 }
 
-.lulam {
-    margin-left: 2em;
-    width:16em;
+.logov{
+    mix-blend-mode: lighten;
+    margin-right: 75em;
+    margin-top: 1em;
 }
-.uohhm{
-    margin-left: -7em;
-}
-.louisem{
-    width: 23%;
-    padding: 1em 1em 1em 1em;
-}
-.louvm {
-    margin-left: 2em;
-    width: 16em;
-}
-.enolam {
-    width: 38%;
-    padding: 1em 5em 1em 1em;
-    margin-bottom: 2em;
-}
-h1 {
+
+button {
+    background-color: rgba(254, 193, 138, 1);
+    padding: 1.2em 3em;
+    border: none;
+    border-radius: 20px;
     color: #ffffff;
-    font-size: 2em;
     font-family: 'rrb';
-    margin-bottom: 0.5em;
+    margin-top: 2em;
+    margin-right: 1.5em ;
+
 }
-.nova{
-    color: white;
-    margin-bottom: 0px;
-    margin-left: 4px;
+
+.descricaov {
+    margin-left: 1em;
+    color: #ffffff;
 }
-.novaa{
-    color: white;
-    margin-bottom: 0px;
-    margin-top: 0px;
+.containerv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 1em;
 }
-.Juh {
+
+.especiev {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+}
+
+.NOMEv {
+    display: flex;
+    flex-direction: row;
+    color:#ffffff;
+}
+
+.PESOv {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+}
+
+.primeirov {
+    width: 38em;
+    padding: 1em;
     background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.segundov {
+    width: 20em;
+    padding: 1em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.terceirov {
+    background-color: #8CC4D6;
+    padding: 1em;
+}
+
+.testev {
+    margin-left: 2.5em;
+}
+
+.quartov {
+    width: 20em;
+    padding: 1em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.quintov {
+    padding: 1em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.sextov {
+    width: 20em;
+    padding: 1em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.setimov {
+    padding: 1em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.oitavov {
+    width: 38em;
+    padding: 1em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.nonov {
+    width: 38em;
+    padding: 1em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.bloco2v {
+    margin-left: 20em;
+}
+
+.decimov {
+    width: 20em;
+    padding: 5em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+.onzev {
+    width: 32em;
+    padding: 6em;
+    background-color: #8CC4D6;
+    color: #ffffff;
+}
+
+input {
     border: none;
     border-radius: 6px;
 }
-p{
-    font-family: 'rrb';
-    color: #ffffff;
-    margin-bottom: 0.9em;
-    margin-top: 0.4em;
-}
-.pp{
-    margin-left: -7.8em;
-}
-
-.ppp {
-    margin-left: -6em;
-}
-.temporario{
-    margin-bottom:3.3em;
-}
-

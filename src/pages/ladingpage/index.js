@@ -24,7 +24,7 @@ export default function index() {
                 <h1 className="txt4S">Pronto para escolher o seu novo amigo?</h1>
                 <div className="cassio3S">
                     <Link to='/Registrar'className="AI bot2S">REGISTRAR-SE</Link>
-                    <Link to='/meuspets' className="AI bot2S">VER PETS</Link>
+                    <Link to='/verpets' className="AI bot2S">VER PETS</Link>
                 </div>
             </div>
         </section>
@@ -148,8 +148,8 @@ export default function index() {
         <div className="content">
             <div className="home">
                 <div className="bt"><Link to='/Ladingpage' className="button" >Home</Link> </div>
-                <div className="bt"><Link to='/Verpets' className="button" >Adote um pet</Link> </div>
-                <div className="bt"><Link to='/Meuspets' className="button" >Acessar pets cadastrados</Link></div>
+                <div className="bt"><Link to='/verpets' className="button" >Adote um pet</Link> </div>
+                <div className="bt"><Link to='/meuspets' className="button" >Acessar pets cadastrados</Link></div>
                 </div>
         
            <div className="pretend"><button className="holdon">Entre em contato conosco</button></div>

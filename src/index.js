@@ -5,9 +5,10 @@ import App from './App';
 import Ladingpage from './pages/ladingpage';
 import Cadastrarpet from './pages/cadastrarpet';
 import Login from './pages/login';
-import Meuspets from './pages/meuspets';
 import Verpets from './pages/verpets';
+import Meuspets from './pages/meuspets';
 import Registrar from './pages/registrar';
+import Filtrar from './pages/filtrar';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
@@ -16,15 +17,16 @@ root.render(
   <React.StrictMode>
      <BrowserRouter>
   <Routes>
+  <Route path='/' element={<App/>} /> 
   <Route path='/registrar' element={<Registrar/>} /> 
   <Route path='/ladingpage' element={<Ladingpage/>} />
   <Route path='/cadastrarpet' element={<Cadastrarpet/>} />
   <Route path='/login' element={<Login/>} />
-  <Route path='/meuspets' element={<Meuspets/>} />
   <Route path='/verpets' element={<Verpets/>} />
+  <Route path='/meuspets' element={<Meuspets/>} />
+  <Route path='/filtrar' element={<Filtrar/>} />
   </Routes>
   </BrowserRouter>
-    <App />
   </React.StrictMode>
 );
 

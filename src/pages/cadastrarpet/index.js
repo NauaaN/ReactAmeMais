@@ -6,96 +6,82 @@ export default function index() {
 
     return(
       
-     
-       <div className='loginm'>
-            <div className='faixam'>
-            <img className='logom' src='./images/IMG-20220418-WA0079_3.svg'/>
-           
+     <div className='fundo'>
+<header className='faixav'>
+        <img className='logov' src='./images/IMG-20220418-WA0079_3.svg' />
+        <div><button>Finalizar</button></div>
+    </header>
 
-             <div className='hateem'>
-             <Link className='textom' to='./landingpage'>Finalizar</Link>
+    <div className='descricaov'><h1>Cadastrar Pet para Adoção</h1></div>
+    <div>
+      
+    </div>
+
+    <main className='containerv'>
+        <section className='bloco1v'>
+            <div className='animalzinhov'>
+                <p>Animal</p>
+                <input className='primeirov'/>
+            </div>
+            <div className='especiev'>
+             <div>
+                 <p>Espécie:</p>
+                 <input className='segundov'/>
+             </div>
+             <div className='testev'>
+                 <p>Gênero:</p>
+                 <input className='terceirov'/>
              </div>
             </div>
-        <div className='container1m'>
+
+            <div className='NOMEv'>
                 <div>
-                  <h1>Cadastrar Pet para Adoção</h1>
-                  <p className='nova'>Animal:</p>
+                    <p>Nome:</p>
+                    <input className='quartov'/>
                 </div>
-          <div>
-        <div className='testeem'>
-              <div className='duchym' >
-                 <div>
-                   <div>
-                    </div> 
-                 </div>
-               <div>
-              <div> <input className='lolm Juh' type='text'/></div>
+                <div className='testev'>
+                    <p>Idade:</p>
+                    <input className='quintov'/>
+                </div>
                </div>
+
+               <div className='PESOv'>
+                <div>
+                    <p>Peso:</p>
+                    <input className='sextov'/>
+                </div>
+                <div className='testev'>
+                    <p>Altura:</p>
+                    <input className='setimov'/>
+                </div>
+               </div>
+
+               <div className='PhoneNumberv'>
+                <p>Telefone para Contato:</p>
+                <input className='oitavov'/>
             </div>
-            
-          <div className='campm'>
-              <div>
-                <div><p className='novaa'>Comentários Sobre (Doenças/Alergias):</p></div>
-              </div>
-              <div>
-              <div><input className='carraram Juh' type='text'/></div>
-              </div>
-            <div>
-              <div><p className='novaa'>Adicione Uma Imagem do Pet: </p></div>
+
+            <div className='CEPv'>
+                <p>Endereço:</p>
+                <input className='nonov'/>
+            </div>   
+        </section>
+
+        <section className='bloco2v'>
+            <div className='Cometariosv'>
+                <p>Coméntarios Sobre (Doenças/alergias):</p>
+                <input className='decimov'/>
             </div>
-            <div><input className='doguinhom Juh' type='text'/> </div>
-          </div>
-        </div>
-        
-                    
-                   
-          <div  className='nom'>
-            <div className='testem'>
-              <div className='derivadam'><p>Espécie:</p></div> 
-              <div className='pp'><p>Gênero:</p></div> 
+
+            <div className='ImagemPetv'>
+                <p>Adicione Uma Imagem do Pet:</p>
+                <input className='onzev'/>
             </div>
-              <div className='trym'>
-                <input className='lolom Juh' type='text'/>
-                <input className='lulam Juh'type='text'/>
-              </div> 
-            </div>
-        
-          
-            
-              <div className='testem'>
-                <div className='derivadam'><p>Nome:</p></div>
-                <div className='uohhm'><p>Idade:</p></div>
-              </div>  
-        
-          <div className='trym'>
-            <input className='lolom Juh' type='text'/> 
-            <input className='lulam Juh' type='text'/> 
-                   
-          </div>
-            
-        
-            
-              <div className='testem'>
-                <div className='derivadam'><p>Peso:</p></div>
-                <div><p className='ppp'>Altura:</p></div>
-              </div>  
-                <div className='trym'>
-                  <input className='louisem Juh' type='text'/>
-                  <input className='louvm Juh' type='text'/>
-                </div>    
-            
-        
-          <div>
-             <p className='novaa'>Telefone para Contato:</p>
-                <input className='enolam Juh' type='text'/>
-             <p className='novaa'>Endereço:</p>
-                <input className='enolam Juh temporario' type='text'/>
-          </div>
-        
-          
-          </div>
-        </div>       
-        </div>
-        
+        </section>
+
+    </main>
+
+     </div>
+      
     )
 }
