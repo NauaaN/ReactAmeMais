@@ -7,75 +7,75 @@ export default function index() {
     return(
       
      <div className='fundo'>
-<header className='faixa'>
-        <img className='logo' src='./images/IMG-20220418-WA0079_3.svg' />
+<header className='faixav'>
+        <img className='logov' src='./images/IMG-20220418-WA0079_3.svg' />
         <div><button>Finalizar</button></div>
     </header>
 
-    <div className='descricao'><h1>Cadastrar Pet para Adoção</h1></div>
+    <div className='descricaov'><h1>Cadastrar Pet para Adoção</h1></div>
     <div>
       
     </div>
 
-    <main className='container'>
-        <section className='bloco1'>
-            <div className='animalzinho'>
+    <main className='containerv'>
+        <section className='bloco1v'>
+            <div className='animalzinhov'>
                 <p>Animal</p>
-                <input className='primeiro'/>
+                <input className='primeirov'/>
             </div>
-            <div className='especie'>
+            <div className='especiev'>
              <div>
                  <p>Espécie:</p>
-                 <input className='segundo'/>
+                 <input className='segundov'/>
              </div>
-             <div className='teste'>
+             <div className='testev'>
                  <p>Gênero:</p>
-                 <input className='terceiro'/>
+                 <input className='terceirov'/>
              </div>
             </div>
 
-            <div className='NOME'>
+            <div className='NOMEv'>
                 <div>
                     <p>Nome:</p>
-                    <input className='quarto'/>
+                    <input className='quartov'/>
                 </div>
-                <div className='teste'>
+                <div className='testev'>
                     <p>Idade:</p>
-                    <input className='quinto'/>
+                    <input className='quintov'/>
                 </div>
                </div>
 
-               <div className='PESO'>
+               <div className='PESOv'>
                 <div>
                     <p>Peso:</p>
-                    <input className='sexto'/>
+                    <input className='sextov'/>
                 </div>
-                <div className='teste'>
+                <div className='testev'>
                     <p>Altura:</p>
-                    <input className='setimo'/>
+                    <input className='setimov'/>
                 </div>
                </div>
 
-               <div className='PhoneNumber'>
+               <div className='PhoneNumberv'>
                 <p>Telefone para Contato:</p>
-                <input className='oitavo'/>
+                <input className='oitavov'/>
             </div>
 
-            <div className='CEP'>
+            <div className='CEPv'>
                 <p>Endereço:</p>
-                <input className='nono'/>
+                <input className='nonov'/>
             </div>   
         </section>
 
-        <section className='bloco2'>
-            <div className='Cometarios'>
+        <section className='bloco2v'>
+            <div className='Cometariosv'>
                 <p>Coméntarios Sobre (Doenças/alergias):</p>
-                <input className='decimo'/>
+                <input className='decimov'/>
             </div>
 
-            <div className='ImagemPet'>
+            <div className='ImagemPetv'>
                 <p>Adicione Uma Imagem do Pet:</p>
-                <input className='onze'/>
+                <input className='onzev'/>
             </div>
         </section>
 
