@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <h1>nauan</h1>
+      <h1>Ame Mais</h1>
       <Link to= '/ladingpage'>Lading page</Link>
       <Link to= '/login'>Login</Link>
       <Link to= '/registar'>registar</Link>
