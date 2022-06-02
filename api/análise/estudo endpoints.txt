@@ -73,9 +73,6 @@ response(204)
 
 (5)
 /PUT              /curtida/:id
-request{
-    curtida: 1
-}
 response (204)
 
 //////////////////////////////////////////////////
