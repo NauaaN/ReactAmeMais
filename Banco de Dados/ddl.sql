@@ -22,10 +22,10 @@ NR_IDADE                      INT,
 VL_PESO                       DECIMAL(15,2),
 VL_ALTURA                     DECIMAL(15,2),
 DS_COMENTARIO                 VARCHAR(200),
-IMG_PET                       BLOB,
+IMG_PET                       VARCHAR(800),
 DS_ENDERECO                   VARCHAR(200),
 NR_CURTIDAS                   INT,
-DS_TELEFONE                   VARCHAR(15),
+DS_TELEFONE                   VARCHAR(20),
 ID_USUARIO                    int,
  FOREIGN KEY (ID_USUARIO) REFERENCES TB_USUARIO (ID_USUARIO)
 );

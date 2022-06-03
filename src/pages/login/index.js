@@ -5,6 +5,7 @@ export default function index() {
 
     return(
  
+        
     <main className ='logink'>
         <div className= 'faixak'>
            <img className='logok' src='./images/IMG-20220418-WA0079_3.svg'/>

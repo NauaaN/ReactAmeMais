@@ -1,0 +1,119 @@
+(1)/POST          /usuario
+request{
+    "nome":"",
+    "CPF":"",
+    "email":"",
+    "senha":"",
+    "sexo":"",
+    "endereco":"",
+    "telefone":""
+}
+
+response 204()
+
+///////////////////////////////////////////////////
+
+(2)
+/POST            /usuario/login
+
+request{
+    "email":"", 
+    "senha":"",
+}
+
+response{
+    "id":0,
+    "email":"", 
+    "senha":""
+}
+
+//////////////////////////////////////////////////
+
+(3)
+/POST               /PET 
+request{
+    "usuario":1,
+    "nome":"",
+    "animal":"",
+    "especie":"",
+    "genero":"",
+    "idade":2,
+    "peso":0.6,
+    "altura":1.0,
+    "comentarios":"",
+    "endereco":"",
+    "telefone":""
+}
+response{
+    "id PET": 1,
+    "usuario":1,
+    "nome":"",
+    "animal":"",
+    "especie":"",
+    "genero":"",
+    "idade":2,
+    "peso":0.6,
+    "altura":1.0,
+    "comentarios":"",
+    "endereco":"",
+    "telefone":""
+}
+
+//////////////////////////////////////////////////
+
+(4)
+/PUT              /PET/:id/imagem
+request body form
+{
+    "imagem do pet":
+}
+response(204)
+
+//////////////////////////////////////////////////
+
+(5)
+/PUT              /curtida/:id
+response (204)
+
+//////////////////////////////////////////////////
+
+(6)
+/DELETE               /PET/:id
+response 204
+
+//////////////////////////////////////////////////
+
+/PUT                  /PET/:id
+
+request{
+    "usuario":1,
+    "nome":"",
+    "animal":"",
+    "especie":"",
+    "genero":"",
+    "idade":2,
+    "peso":0.6,
+    "altura":1.0,
+    "comentarios":"",
+    "endereco":"",
+    "telefone":""
+}
+response (204)
+
+/////////////////////////////////////////////////
+
+(8)
+/GET            /PET
+
+response{
+    "nome":"",
+    "animal":"",
+    "especie":"",
+    "genero":"",
+    "idade":2,
+    "peso":0.6,
+    "altura":1.0,
+    "comentarios":"",
+    "endereco":"",
+    "telefone":""
+}
