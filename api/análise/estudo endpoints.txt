@@ -40,7 +40,7 @@ request{
     "idade":2,
     "peso":0.6,
     "altura":1.0,
-    "comentarios":"",
+    "comentario":"",
     "endereco":"",
     "telefone":""
 }
@@ -54,7 +54,7 @@ response{
     "idade":2,
     "peso":0.6,
     "altura":1.0,
-    "comentarios":"",
+    "comentario":"",
     "endereco":"",
     "telefone":""
 }
@@ -86,7 +86,6 @@ response 204
 /PUT                  /PET/:id
 
 request{
-    "usuario":1,
     "nome":"",
     "animal":"",
     "especie":"",
@@ -94,7 +93,7 @@ request{
     "idade":2,
     "peso":0.6,
     "altura":1.0,
-    "comentarios":"",
+    "comentario":"",
     "endereco":"",
     "telefone":""
 }
@@ -113,7 +112,7 @@ response{
     "idade":2,
     "peso":0.6,
     "altura":1.0,
-    "comentarios":"",
+    "comentario":"",
     "endereco":"",
     "telefone":""
 }

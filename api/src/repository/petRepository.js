@@ -26,36 +26,8 @@ export async function removerPet(id){
      DELETE from TB_PET
     WHERE ID_PET = ? `;
 
-}
-
-export async function inserirPet(pet) {
-
-const comando =
-
-`
-
-INSERT INTO TB_PET (id_pet, id_usuario, nm_pet, ds_animal, ds_especie, ds_genero, nr_idade, vl_peso, vl_altura, ds_comentario, ds_endereco, ds_telefone) 
-
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
-
-`
-
-const [resposta] = await con.query(comando, [pet.id, pet.nome, pet.animal, pet.especie, pet.genero, pet.idade, pet.peso, pet.altura, pet.comentario, pet.endereco, pet.telefone]);
-
-pet.id = resposta.insertId;
-
-return pet;
-
-}
-
-export async function alterarImagem(imagem, id) {
-    const comando  = 
-    `UPDATE TB_PET
-        SET IMG_PET    = ?
-    WHERE ID_PET       = ? `
-
-    const [resposta] = await con.query(comando[imagem, id]);
-    return resposta.affectedRows;
+const [resposta] = await con.query (comando, [id]);
+return resposta.affectedRows;
 }
 
 export async function filtrarPet(genero,animal){
@@ -76,4 +48,35 @@ WHERE (? = 'todos' || DS_GENERO = ?)
 
 const [linhas]= await con.query(comando,[genero,genero,animal,animal]);
 return linhas;
+
+}
+
+export async function alterarImagem(imagem,id){
+    const comando= `
+    UPDATE TB_PET 
+    SET IMG_PET = ?
+    WHERE ID_PET = ?`;
+
+    const [resposta]= await con.query(comando, [imagem,id]);
+    return resposta.affectedRows; 
+}
+
+export async function alterarPET(pet,id){
+    const comando=
+    `
+    UPDATE TB_PET 
+	SET NM_PET= ?,
+		DS_ANIMAL= ?,
+        DS_ESPECIE= ?,
+        DS_GENERO= ?,
+        NR_IDADE= ?,
+        VL_PESO= ?,
+        VL_ALTURA=?,
+        DS_COMENTARIO= ?,
+        DS_ENDERECO=?,
+        DS_TELEFONE=?
+    WHERE ID_PET =?`;
+
+    const [resposta]= await con.query(comando, [ pet.nome, pet.animal, pet.especie, pet.genero, pet.idade, pet.peso, pet.altura, pet.comentario, pet.endereco, pet.telefone, id]);
+    return resposta.affectedRows;
 }

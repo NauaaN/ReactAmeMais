@@ -1,6 +1,6 @@
 import multer from "multer";
 import { Router } from "express";
-import { curtirPub, filtrarPet, inserirPet, removerPet, alterarImagem } from "../repository/petRepository.js";
+import { curtirPub, filtrarPet, inserirPet, removerPet, alterarImagem, alterarPET } from "../repository/petRepository.js";
 
 
 const server= Router();
@@ -69,6 +69,23 @@ server.put('/pet/:id/imagem', upload.single('imagem'), async (req, resp) => {
     }
 })
 
+
+server.put('/pet/:id', async (req, resp)=>{
+    try{
+       const {id}= req.params;
+       const pet= req.body;
+       const resposta= await alterarPET(pet,id);
+          if (resposta != 1) throw new Error('A alteração não pode ser salva.');
+       resp.status(204).send()
+   }catch(err){
+       resp.status(400).send({
+           erro: err.message
+       });
+   }
+   })
+
+
+
 server.get('/pet', async (req,resp)=>{
    try{
     const {genero}= req.query;
@@ -98,6 +115,8 @@ server.delete ('/pet:id', async (req, resp) => {
       })
     }
 })
+
+
 
 export default server;
 
