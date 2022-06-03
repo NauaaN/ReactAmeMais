@@ -36,3 +36,13 @@ pet.id = resposta.insertId;
 return pet;
 
 }
+
+export async function alterarImagem(imagem, id) {
+    const comando  = 
+    `UPDATE TB_PET
+        SET IMG_PET    = ?
+    WHERE ID_PET       = ? `
+
+    const [resposta] = await con.query(comando[imagem, id]);
+    return resposta.affectedRows;
+}

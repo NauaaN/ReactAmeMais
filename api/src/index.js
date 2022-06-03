@@ -8,6 +8,10 @@ import cors from 'cors'
 const server = express();
 server.use(cors());
 server.use(express.json());
+
+server.use('/storage/fotosPets', express.static('storage/fotosPets'));
+
+
 server.use(usuarioController);
 server.use(petController);
 
