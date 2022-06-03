@@ -1,9 +1,9 @@
 import multer from "multer";
 import { Router } from "express";
-import { curtirPub } from "../repository/petRepository.js";
-import { inserirPet } from '../repository/petRepository.js';
-import { alterarImagem } from '../repository/petRepository.js';
 
+
+
+import { curtirPub, inserirPet, removerPet, alterarImagem } from "../repository/petRepository.js";
 
 const server= Router();
 const upload= multer({dest: 'storage/fotosPets'});
@@ -31,7 +31,7 @@ server.put('/curtida/:id', async (req,resp)=>{
 
 
 
-server.post ('/adicionarpet', async (req, resp) => {
+server.post ('/pet', async (req, resp) => {
 
 try{
 
@@ -72,4 +72,6 @@ server.put('/foto/:id/pic', upload.single('pic'), async (req, resp) => {
 })
 
 export default server;
+
+
 
