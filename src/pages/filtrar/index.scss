@@ -59,17 +59,23 @@
 
 .checkxx > * {
     margin-bottom: 0.3em;
+    margin-left: 1em;
+    margin-right: 3em;
+    width: 2em;
 }
 
 .txtxx {
     font-family: 'rrr';
     font-size: 0.9em;
+    margin-left: -1.2em;
+    margin-right: 6em;
 }
 
 .txttxx {
     font-family: 'rrr';
     font-size: 0.9em;
     margin-bottom: 1.4em;
+    margin-left: -1.2em;
 }
 
 .txtttxx {
@@ -86,6 +92,7 @@
     padding: 12px 36px;
     border-radius: 1.2em;
     box-shadow: 4px 4px 4px rgb(168, 168, 168);
+    
     
 }
 

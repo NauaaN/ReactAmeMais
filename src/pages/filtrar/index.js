@@ -37,7 +37,7 @@ export default function Index () {
                     <div className='t2xx'>
                     - Gênero
                     </div>
-     <div className='check'>
+     <div className='checkxx'>
      <input className='inputt' type='checkbox'/>
      <p className='txtxx'>Feminino</p>
      </div>
@@ -61,26 +61,26 @@ export default function Index () {
                 <p className='txtxx'>Adulto</p>
                 </div>
 
-                <div className='check'>
+                <div className='checkxx'>
                     <input className='inputt' type='checkbox'/>
-                    <p className='txt'>Jovem</p>
+                    <p className='txtxx'>Jovem</p>
                     </div>
 
-                    <div className='check'>
+                    <div className='checkxx'>
                         <input className='inputt' type='checkbox'/>
-                        <p className='txttt'>Filhote</p>
+                        <p className='txtxx'>Filhote</p>
                         </div>
 
-     <div className='n'>
-    <Link className='b' to=''>FILTRAR</Link>
+     <div className='nxx'>
+    <Link className='bxx' to=''>FILTRAR</Link>
     </div>
 
-    <div className='n'>
-        <Link className='bb' to='/landingpage'>Voltar ao menu</Link>
+    <div className='nxx'>
+        <Link className='bbxx' to='/landingpage'>Voltar ao menu</Link>
    </div> 
 
-   <div className='n'>
-    <Link className='bbb' to='/cadastrarpet'>Editar &nbsp; +PETS</Link>
+   <div className='nxx'>
+    <Link className='bbbxx' to='/cadastrarpet'>Editar &nbsp; +PETS</Link>
 </div> 
    
 
