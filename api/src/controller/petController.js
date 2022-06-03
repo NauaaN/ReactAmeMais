@@ -1,6 +1,6 @@
 import multer from "multer";
 import { Router } from "express";
-import { curtirPub, inserirPet, removerPet } from "../repository/petRepository.js";
+import { curtirPub, filtrarPet, inserirPet, removerPet } from "../repository/petRepository.js";
 
 const server= Router();
 const upload= multer({dest: 'storage/fotosPets'});
@@ -70,6 +70,19 @@ server.delete ('/pet/:id', async (req, resp) => {
       })
     }
 })
+
+server.get('/pet', async (req,resp)=>{
+   try{
+    const {genero}= req.query;
+    const {animal}= req.query;
+
+    const resposta= await filtrarPet(genero,animal);
+    resp.send(resposta);
+}catch(err){
+   console.log(err)
+}
+})
+
 export default server;
 
 

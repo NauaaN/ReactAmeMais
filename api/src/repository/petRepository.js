@@ -29,3 +29,23 @@ export async function removerPet(id){
 const [resposta] = await con.query (comando, [id]);
 return resposta.affectedRows;
 }
+
+export async function filtrarPet(genero,animal){
+    const comando=`SELECT NM_PET     		nome,
+    DS_ANIMAL   	animal,
+    DS_ESPECIE		especie,
+    DS_GENERO		genero,
+    NR_IDADE 		idade,
+    VL_PESO 		peso,
+    VL_ALTURA		altura,
+    DS_COMENTARIO 	comentarios,
+    DS_ENDERECO		endereco,
+    DS_TELEFONE		telefone
+FROM TB_PET		
+WHERE (? = 'todos' || DS_GENERO = ?)
+ AND (? = 'todos' || DS_ANIMAL = ?)
+`;
+
+const [linhas]= await con.query(comando,[genero,genero,animal,animal]);
+return linhas;
+}
