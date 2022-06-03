@@ -1,7 +1,6 @@
 import multer from "multer";
 import { Router } from "express";
-import { curtirPub } from "../repository/petRepository.js";
-import { inserirPet } from '../repository/petRepository.js';
+import { curtirPub, inserirPet, removerPet } from "../repository/petRepository.js";
 
 const server= Router();
 const upload= multer({dest: 'storage/fotosPets'});
@@ -53,5 +52,25 @@ erro : err.message
 
 })
 
+
+server.delete ('/pet/:id', async (req, resp) => {
+    try{
+    const { id } = req.params;
+
+    const resposta = await removerPet(id);
+    if( resposta != 1)
+    throw new Error ('pet não foi removido!');
+
+    resp.status(204).send();
+    }
+    catch(err){
+
+      resp.status(400).send({
+          erro : err.message
+      })
+    }
+})
 export default server;
+
+
 

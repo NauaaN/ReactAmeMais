@@ -20,3 +20,12 @@ export async function curtirPub(id){
     const [resposta]= await con.query(comando, [id]);
     return resposta.affectedRows;
 }
+
+export async function removerPet(id){
+    const comando =`
+     DELETE from TB_PET
+    WHERE ID_PET = ? `;
+
+const [resposta] = await con.query (comando, [id]);
+return resposta.affectedRows;
+}
