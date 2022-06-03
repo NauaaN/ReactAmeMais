@@ -1,86 +1,86 @@
-import './index.scss';
-import { Link } from 'react-router-dom';
-import '../../common/common.scss';
+import './index.scss'
+import { Link } from 'react-router-dom'
+import '../../common/common.scss'
 
 export default function Index () {
     return (
-        <div class="filtrarxx">
-        <div class="filtrar2xx">
-            <div class="funilxx">
-                <img src="../../assets/images/Union.svg"/>
+        <div className='filtrarxx'>
+        <div className='filtrar2xx'>
+            <div className='funilxx'>
+                <img src='../../assets/images/Union.svg' />
             </div>
-            <div class="nominhoxx">
+            <div className='nominhoxx'>
                 FILTRAR
             </div>
-        <div class="t1">
+        <div className='t1'>
             - Espécie
         </div>
-        <div class="checkxx">
-         <input class="inputt" type="checkbox"/>
-         <p class="txtxx">Aves</p>
+        <div className='checkxx'>
+         <input className='inputt' type='checkbox'/>
+         <p className='txtxx'>Aves</p>
          </div>
 
-         <div class="checkxx">
-            <input class="inputt" type="checkbox"/>
-            <p class="txtxx">Cachorros</p>
+         <div className='checkxx'>
+            <input className='inputt' type='checkbox'/>
+            <p className='txtxx'>cachorros</p>
             </div>
 
-            <div class="checkxx">
-                <input class="inputt" type="checkbox"/>
-                <p class="txtxx ">Gatos</p>
+            <div className='checkxx'>
+                <input className='inputt' type='checkbox'/>
+                <p className='txtxx '>Gatos</p>
                 </div>
 
-                <div class="checkxx">
-                    <input class="inputt" type="checkbox"/>
-                    <p class="txttxx">Roedores</p>
+                <div className='checkxx'>
+                    <input className='inputt' type='checkbox'/>
+                    <p className='txttxx'>Roedores</p>
                     </div>
-                    <div class="t2xx">
+                    <div className='t2xx'>
                     - Gênero
                     </div>
-     <div class="check">
-     <input class="inputt" type="checkbox"/>
-     <p class="txtxx">Feminino</p>
+     <div className='check'>
+     <input className='inputt' type='checkbox'/>
+     <p className='txtxx'>Feminino</p>
      </div>
 
-     <div class="checkxx">
-        <input class="inputt" type="checkbox"/>
-        <p class="txttxx">Masculino</p>
+     <div className='checkxx'>
+        <input className='inputt' type='checkbox'/>
+        <p className='txttxx'>Masculino</p>
         </div>
 
-        <div class="t2xx">
+        <div className='t2xx'>
             - Idade
          </div>
 
-         <div class="checkxx">
-            <input class="inputt" type="checkbox"/>
-            <p class="txtxx">Idoso</p>
+         <div className='checkxx'>
+            <input className='inputt' type='checkbox'/>
+            <p className='txtxx'>Idoso</p>
             </div>
 
-            <div class="checkxx">
-                <input class="inputt" type="checkbox"/>
-                <p class="txtxx">Adulto</p>
+            <div className='checkxx'>
+                <input className='inputt' type='checkbox'/>
+                <p className='txtxx'>Adulto</p>
                 </div>
 
-                <div class="check">
-                    <input class="inputt" type="checkbox"/>
-                    <p class="txt">Jovem</p>
+                <div className='check'>
+                    <input className='inputt' type='checkbox'/>
+                    <p className='txt'>Jovem</p>
                     </div>
 
-                    <div class="check">
-                        <input class="inputt" type="checkbox"/>
-                        <p class="txttt">Filhote</p>
+                    <div className='check'>
+                        <input className='inputt' type='checkbox'/>
+                        <p className='txttt'>Filhote</p>
                         </div>
 
-     <div class="n">
-    <a class="b" href="../home/index.html">FILTRAR</a>
+     <div className='n'>
+    <Link className='b' to=''>FILTRAR</Link>
     </div>
 
-    <div class="n">
-        <Link class="bb" href="/landingpage">Voltar ao menu</Link>
+    <div className='n'>
+        <Link className='bb' to='/landingpage'>Voltar ao menu</Link>
    </div> 
 
-   <div class="n">
-    <Link class="bbb" href="/cadastrarpet">Editar &nbsp; +pETS</Link>
+   <div className='n'>
+    <Link className='bbb' to='/cadastrarpet'>Editar &nbsp; +PETS</Link>
 </div> 
    
 
@@ -91,23 +91,23 @@ export default function Index () {
     <div className='principaljj'>
               <div className='loginjj'>
                 <div className='simbolojj'>
-                <img className='lljj' src='./images/IMG-20220418-WA0079 6 (1).svg'/>
+                <img className='lljj' src='./images/IMG-20220418-WA0079 6 (1).svg' alt=''/>
                 
                 <Link to='/filtrar'>
-                  <img className='filtrarjj' src='./images/menu.svg'/>
+                  <img className='filtrarjj' src='./images/menu.svg' alt=''/>
                 </Link>
                 </div>
                <div className='login1jj'>
-                <Link className="aajj" to='/ladingpage'>+ &nbsp; pET</Link>
+                <Link className='aajj' to='/ladingpage'>+ &nbsp; PET</Link>
                 <p className='nomejj'>Nauan dos Santos
                 </p>
-                <img className='nauanjj' src='./images/nauanigual.svg'/>
+                <img className='nauanjj' src='./images/nauanigual.svg' alt=''/>
                 </div>
              </div>
         
              <div className='editarjj'>
-             <img className='vectorjj' src='./images/homenzinho.svg'/>
-             <p className='meusjj'>MEUS pETS:</p>
+             <img className='vectorjj' src='./images/homenzinho.svg' alt=''/>
+             <p className='meusjj'>MEUS PETS:</p>
              </div>
             <div>
              <Link className='bbjj' to='/ladingpage'>VOLTAR</Link>
@@ -118,12 +118,12 @@ export default function Index () {
                <div className='cardjj'>
                <div className='card1jjj'>
                  <div className='especiejj'>
-                    <p className='ejj'>ESpÉCIE:</p>
-                    <p className='avejj'>AVE, CALOpSITA</p>
-                    <img className='femininojj' src='./images/mulhe.png' />
+                    <p className='ejj'>ESPECIE:</p>
+                    <p className='avejj'>AVE, cALOPSITA</p>
+                    <img className='femininojj' src='./images/mulhe.png' alt=''/>
                  </div>
                  <div className='toninhajj'>
-                     <img src='./images/toninhaa.svg' />
+                     <img src='./images/toninhaa.svg' alt=''/>
                  </div>
                  <div className='textos2jj'>
                    <div className='nijj'>
@@ -132,7 +132,7 @@ export default function Index () {
                    </div>
                    <div className='psjj'>
                     <div className='psijj'>
-                      <p className='pijj'>pESO:</p>
+                      <p className='pijj'>PESO:</p>
                       <p className='dsjj'>80 g</p>
                     </div>
                     <div className='psijj'>
@@ -161,15 +161,15 @@ export default function Index () {
                  </div>
                  <div className='card1jjjj'>
                   <div className='especiejj'>
-                     <p className='ejj'>ESpÉCIE:</p>
+                     <p className='ejj'>ESPÉCIE:</p>
                      <p className='avejj'>AVE, pApAGAIO </p>
-                     <img className='MASCULINOjj' src='./images/homi.png' />
+                     <img className='MAScULINOjj' src='./images/homi.png' alt=''/>
                   </div>
                   <div className='toninhajj'>
-                      <img className='papagaiojj'src='./images/joaop.svg' />
+                      <img className='papagaiojj'src='./images/joaop.svg' alt=''/>
                   </div>
                   <div className='textos2jj'>
-                    <div className="nijj">
+                    <div className='nijj'>
                      <p className='na2jj'>João paulo</p>
                      <p className='idadejj'>IDADE: 7</p>
                     </div>
@@ -207,12 +207,12 @@ export default function Index () {
               <div className='cardjj'>
                 <div className='card11jjj'>
                   <div className='especiejj'>
-                     <p className='ejj'>ESpÉCIE:</p>
+                     <p className='ejj'>ESpÉcIE:</p>
                      <p className='aveejj'>AVE, pERIGUITO AUSTRALIANO</p>
-                     <img className='femininoojjjx' src="./images/mulhe.png" />
+                     <img className='femininoojjjx' src='./images/mulhe.png' alt=''/>
                   </div>
                   <div className='toninhajj'>
-                      <img src='./images/ninotaa.svg'/>
+                      <img src='./images/ninotaa.svg' alt=''/>
                   </div>
                   <div className='textos2jj'>
                     <div className='nijj'>
@@ -221,7 +221,7 @@ export default function Index () {
                     </div>
                     <div className='psjj'>
                      <div className='psijj'>
-                       <p className='pijj'>pESO:</p>
+                       <p className='pijj'>PESO:</p>
                        <p className='dsjj'>40 g</p>
                      </div>
                      <div className='psijj'>
@@ -253,12 +253,12 @@ export default function Index () {
         
                   <div className='card11jj'>
                    <div className='especiejj'>
-                      <p className='ejj'>ESpÉCIE:</p>
+                      <p className='ejj'>ESpÉcIE:</p>
                       <p className='avejj'>AVE, pOMBO </p>
-                      <img className='femininoojjj' src='./images/mulhe.png' />
+                      <img className='femininoojjj' src='./images/mulhe.png' alt=''/>
                    </div>
                    <div className='toninhajj'>
-                       <img className='papagaiojj' src='./images/pomba.svg' />
+                       <img className='papagaiojj' src='./images/pomba.svg' alt=''/>
                    </div>
                    <div className='textos2jj'>
                      <div className='nijj'>
@@ -267,8 +267,8 @@ export default function Index () {
                      </div>
                      <div className='psjj'>
                       <div className='psijj'>
-                        <p className="pijj">pESO:</p>
-                        <p className="dsjj">80 g</p>
+                        <p className='pijj'>pESO:</p>
+                        <p className='dsjj'>80 g</p>
                       </div>
                       <div className='psijj'>
                         <p className='pijj'>ALTURA:</p>
