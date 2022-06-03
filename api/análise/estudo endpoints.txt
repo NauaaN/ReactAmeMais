@@ -1,7 +1,7 @@
 (1)/POST          /usuario
 request{
     "nome":"",
-    "CPF":"",
+    "cpf":"",
     "email":"",
     "senha":"",
     "sexo":"",
