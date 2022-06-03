@@ -30,7 +30,7 @@ response{
 //////////////////////////////////////////////////
 
 (3)
-/POST               /PET 
+/POST               /pet 
 request{
     "usuario":1,
     "nome":"",
@@ -45,7 +45,7 @@ request{
     "telefone":""
 }
 response{
-    "id PET": 1,
+    "id pet": 1,
     "usuario":1,
     "nome":"",
     "animal":"",
@@ -62,7 +62,7 @@ response{
 //////////////////////////////////////////////////
 
 (4)
-/PUT              /PET/:id/imagem
+/PUT              /pet/:id/imagem
 request body form
 {
     "imagem do pet":
@@ -78,12 +78,12 @@ response (204)
 //////////////////////////////////////////////////
 
 (6)
-/DELETE               /PET/:id
+/DELETE               /pet/:id
 response 204
 
 //////////////////////////////////////////////////
 
-/PUT                  /PET/:id
+/PUT                  /pet/:id
 
 request{
     "nome":"",
@@ -102,7 +102,7 @@ response (204)
 /////////////////////////////////////////////////
 
 (8)
-/GET            /PET
+/GET            /pet?genero=""&animal=""
 
 response{
     "nome":"",
