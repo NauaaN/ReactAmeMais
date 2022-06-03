@@ -26,8 +26,36 @@ export async function removerPet(id){
      DELETE from TB_PET
     WHERE ID_PET = ? `;
 
-const [resposta] = await con.query (comando, [id]);
-return resposta.affectedRows;
+}
+
+export async function inserirPet(pet) {
+
+const comando =
+
+`
+
+INSERT INTO TB_PET (id_pet, id_usuario, nm_pet, ds_animal, ds_especie, ds_genero, nr_idade, vl_peso, vl_altura, ds_comentario, ds_endereco, ds_telefone) 
+
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+
+`
+
+const [resposta] = await con.query(comando, [pet.id, pet.nome, pet.animal, pet.especie, pet.genero, pet.idade, pet.peso, pet.altura, pet.comentario, pet.endereco, pet.telefone]);
+
+pet.id = resposta.insertId;
+
+return pet;
+
+}
+
+export async function alterarImagem(imagem, id) {
+    const comando  = 
+    `UPDATE TB_PET
+        SET IMG_PET    = ?
+    WHERE ID_PET       = ? `
+
+    const [resposta] = await con.query(comando[imagem, id]);
+    return resposta.affectedRows;
 }
 
 export async function filtrarPet(genero,animal){

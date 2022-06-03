@@ -1,6 +1,7 @@
 import multer from "multer";
 import { Router } from "express";
-import { curtirPub, filtrarPet, inserirPet, removerPet } from "../repository/petRepository.js";
+import { curtirPub, filtrarPet, inserirPet, removerPet, alterarImagem } from "../repository/petRepository.js";
+
 
 const server= Router();
 const upload= multer({dest: 'storage/fotosPets'});
@@ -52,8 +53,35 @@ erro : err.message
 
 })
 
+server.put('/pet/:id/imagem', upload.single('imagem'), async (req, resp) => {
+    try {
+        const { id } = req.params;
+        const imagem = req.file.path;
 
-server.delete ('/pet/:id', async (req, resp) => {
+        const resposta = await alterarImagem(imagem, id);
+        if (resposta != 1) throw new Error('A imagem não pode ser salva.');
+
+        resp.status(204).send();
+    }catch (err) {
+        resp.status(400).send({
+            erro:err.message
+        })
+    }
+})
+
+server.get('/pet', async (req,resp)=>{
+   try{
+    const {genero}= req.query;
+    const {animal}= req.query;
+
+    const resposta= await filtrarPet(genero,animal);
+    resp.send(resposta);
+}catch(err){
+   console.log(err)
+}
+})
+
+server.delete ('/pet:id', async (req, resp) => {
     try{
     const { id } = req.params;
 
@@ -69,18 +97,6 @@ server.delete ('/pet/:id', async (req, resp) => {
           erro : err.message
       })
     }
-})
-
-server.get('/pet', async (req,resp)=>{
-   try{
-    const {genero}= req.query;
-    const {animal}= req.query;
-
-    const resposta= await filtrarPet(genero,animal);
-    resp.send(resposta);
-}catch(err){
-   console.log(err)
-}
 })
 
 export default server;
