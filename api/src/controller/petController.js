@@ -29,7 +29,7 @@ server.put('/curtida/:id', async (req,resp)=>{
 
 
 
-server.post ('/adicionarpet', async (req, resp) => {
+server.post ('/pet', async (req, resp) => {
 
 try{
 
