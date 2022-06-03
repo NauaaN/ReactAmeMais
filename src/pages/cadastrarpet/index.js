@@ -8,7 +8,8 @@ export default function index() {
      <div className='fundox'>
 <header className='faixav'>
         <img className='logov' src='./images/IMG-20220418-WA0079_3.svg' />
-        <div><button>Finalizar</button></div>
+         <Link to='/ladingpage'className="botoesv">Voltar</Link>
+        <Link to='/verpets'className="botoesu">Finalizar</Link>
     </header>
 
     <div className='descricaov'><h1>Cadastrar Pet para Adoção</h1></div>
