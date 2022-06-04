@@ -18,9 +18,9 @@ export default function index() {
             <div className='testek'> <p className='entrak'>Entrar</p></div>
                
                 <p className='cak'>EMAIL:</p>
-                <input className='esp2k' type="textk"/>
+                <input className='esp2k' type="textk" placeholder='Insira seu Email'/>
                 <p className='cak'>SENHA:</p>
-                <input className ='esp2k' type="textk"/>
+                <input className ='esp2k' type="password" placeholder='Insira sua Senha'/>
                 <div className='contak'>
                     <p className='c1k'>Ainda não tem uma conta? </p>
                     <Link to='/Registrar' className='c2k'>Registre-se</Link>
