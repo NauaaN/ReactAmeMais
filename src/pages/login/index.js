@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 import './index.scss';
 
@@ -13,6 +13,7 @@ export default function Index() {
     const [erro, setErro] = useState('');
 
     const navigate = useNavigate();
+    const ref= useRef();
 
 
     async function entrarClick() {
@@ -22,10 +23,10 @@ export default function Index() {
                 senha: senha
             });
 
-        navigate('/verpets');
+        navigate('/Verpets');
 
         } catch (err) {
-            
+
             if (err.response.status === 401) {
                 setErro(err.response.data);
             }
