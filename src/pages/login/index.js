@@ -28,9 +28,10 @@ export default function Index() {
         } catch (err) {
 
             if (err.response.status === 401) {
-                setErro(err.response.data);
+                setErro(err.response.data.erro);
             }
         }
+    
     }
 
     return (
