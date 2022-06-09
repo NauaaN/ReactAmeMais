@@ -58,7 +58,7 @@ export default function Index() {
                 <div className='Lk'>
                     <button className='botaok t2' onClick={entrarClick}>Login</button>  
                 </div>
-                <div className='form-entrar invalido'>{erro}</div>
+                <div className='form-entrar'>{erro}</div>
                 </div>
                 </div>
         </main>
