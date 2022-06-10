@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: row;
 }
+.funilxx{
+    width: 30vh;
+    margin-left: 3.5em;
+}
 
 .filtrar2xx {
     display: flex;
@@ -10,6 +14,8 @@
     box-shadow: 4px 4px 4px rgb(163, 163, 163);
     position: absolute;
     margin-top: -2em;
+    width: 16em;
+   height: 80em;
     
 }
 .bb{
@@ -24,10 +30,13 @@
 }
 .funilxx {
    padding: 3em;
+    width: 30vh;
+    margin-left: 2em;
 }
 
+
 .nominhoxx {
-    font-family: 'rr';
+    font-family: 'rrb';
     color: white;
     font-size: 2em;
     text-align: center;
@@ -35,9 +44,8 @@
     margin-bottom: 0.8em;
 }
 
-.t1xx {
-    background-color: white;
-    color: #FEC18A;
+.t1 {
+    background-color: #6CBFD9;
     margin-bottom: 0.4em;
     font-family: 'rrb';
 }
@@ -50,6 +58,7 @@
 
 .inputtxx {
    margin-left: 1em;
+
 }
 
 .checkxx {
@@ -62,8 +71,8 @@
     margin-left: 1em;
     margin-right: 3em;
     width: 2em;
-}
 
+}
 .txtxx {
     font-family: 'rrr';
     font-size: 0.9em;
@@ -86,41 +95,45 @@
 
 .bxx {
     text-decoration: none;
-    font-family: 'sb';
     color: #006B8C;
     background-color: white;
     padding: 12px 36px;
     border-radius: 1.2em;
     box-shadow: 4px 4px 4px rgb(168, 168, 168);
-    
-    
+    font-family: 'rrb';
+    font-size: 1.2em;
+    margin-bottom: 1.1em;
 }
 
 .bbxx {
     text-decoration: none;
-    font-family: 'sb';
     color: #006B8C;
     background-color: white;
     padding: 10px 26px;
     border-radius: 1.2em;
     box-shadow: 4px 4px 4px rgb(168, 168, 168);
     font-size: 0.8em;
-    
+    font-family: 'rrb';
+    font-size: 1.2em;
 }
 
 
 .bbbxx {
     text-decoration: none;
-    font-family: 'sb';
     color: white;
     background-color:#19a2cc;
     padding: 10px 26px;
     border-radius: 1.2em;
     box-shadow: 4px 4px 4px rgb(139, 139, 139);
     font-size: 0.8em;
-    
+    font-family: 'rrb';
+    font-size: 1.2em;
 }
-
+.filtrarongcaa{
+    margin-top: 1em;
+    width: 3em;
+    margin-right: 12em;
+}
 .nxx {
     text-align: center;
     margin-bottom: 3em; 
