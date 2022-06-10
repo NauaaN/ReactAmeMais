@@ -2,8 +2,29 @@
 import './index.scss';
 import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
+import { cadastrarUsuario } from '../../api/registroApi';
+import { useState } from 'react';
 
-export default function index() {
+export default function Index() {
+
+    const [nome, setNome]= useState('');
+    const [cpf, setCpf]= useState('');
+    const [endereco, setEndereco]= useState('');
+    const [senha, setSenha]= useState('');
+    const [telefone, setTelefone]= useState('');
+    const [sexo, setSexo]= useState('');
+    const [email, setEmail]= useState('');
+
+    async function salvarClick (){
+        try{
+         const r= await cadastrarUsuario(nome, cpf, endereco, senha, telefone, sexo, email);
+   
+         alert('Usuario cadastrado com sucesso!');
+        }
+        catch(err){
+         alert(err.message);
+        }
+       }
 
     return(
       <main className='faixa1'>
@@ -15,28 +36,28 @@ export default function index() {
         <p className='registrar'>Informe seus dados, para te cadastrarmos em nosso site!</p>
         <div className='alinhamento'>
             <div lass='parte2'>
-                <p className='informa'>Nome:</p>
-                <input className='input1' type='text'/>
+            <p className='informa'>Nome:</p>
+                <input className='input1' type='text'  value={nome} onChange={ e => setNome(e.target.value)}/>
                 <p className='informa'>CPF:</p>
-                <input className='input1' type="text"/>
+                <input className='input1' type="text"  value={cpf} onChange={ e => setCpf(e.target.value)}/>
                 <p className='informa'>Endereço:</p>
-                <input className='input1' type="text"/>
+                <input className='input1' type="text"  value={endereco} onChange={ e => setEndereco(e.target.value)}/>
                 <p className='informa'>Senha:</p>
-                <input className='input1' type="password"/>
+                <input className='input1' type="password"  value={senha} onChange={ e => setSenha(e.target.value)}/>
             </div>
             <div className='parte2'>
-                <p className='informa'>Telefone:</p>
-                <input className='input1' type='text'/>
+            <p className='informa'>Telefone:</p>
+                <input className='input1' type='text'  value={telefone} onChange={ e => setTelefone(e.target.value)}/>
                 <p className='informa'> Sexo:</p>
-                <input className='input1' type='text'/>
+                <input className='input1' type='text'  value={sexo} onChange={ e => setSexo(e.target.value)}/>
                 <p className='informa'>Email:</p>
-                <input className='input1' type='text'/>
+                <input className='input1' type='text'  value={email} onChange={ e => setEmail(e.target.value)}/>
                 <p className='informa'>Confirme sua senha:</p>
-                <input className='input1' type='password'/>
+                <input className='input1' type='password'  value={senha} onChange={ e => setSenha(e.target.value)}/>
             </div>
         </div>
         <div className='alinhamento'>
-            <Link to="/Login" className='butaorg'>Registrar-se</Link>
+            <Link to="/Login" className='butaorg' onClick={salvarClick}>Registrar-se</Link>
         </div>
     </section>
 </main>
