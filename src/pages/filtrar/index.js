@@ -76,7 +76,7 @@ export default function Index () {
                   <img className='filtrarjj' src='./images/menu.svg' alt=''/>
                 </Link>
                 </div>
-                <Link to='/filtrar'>
+                <Link to='/verpets'>
                   <img className='filtrarongcaa' src= '../images/Component 1.svg'/>
                 </Link>
                <div className='login1jj'>
@@ -126,7 +126,8 @@ export default function Index () {
                    <p>“ Toninha é totalmente saudavél, enérgica e está a procura de um lar cheio de amor”</p>
                  </div>
                 <div className='bujj'>
-                    
+                    <img className='curtir' alt='' src='./images/Like.svg'/>
+                    <p className='idadejj'>30</p>
                 </div>
         
                 <div className='bujj'>
@@ -170,7 +171,8 @@ export default function Index () {
                   </div>
                  
                   <div className='bujj'>
-                    
+                  <img className='curtir' alt='' src='./images/Like.svg'/>
+                    <p className='idadejj'>30</p>
                 </div>
         
                 <div className='bujj'>
@@ -216,7 +218,8 @@ export default function Index () {
                   </div>
                  
                   <div className='bujj'>
-              
+                  <img className='curtir' alt='' src='./images/Like.svg'/>
+                    <p className='idadejj'>30</p>
                 </div>
         
                 <div className='bujj'>
@@ -261,7 +264,8 @@ export default function Index () {
                      <p>“ Bernarda tem alguns problemas de alimentação e é bastante tímida, mas tem muito amor para dar”</p>
                    </div>
                    <div className='bujj'>
-                    
+                   <img className='curtir' alt='' src='./images/Like.svg'/>
+                    <p className='idadejj'>30</p>
                 </div>
         
                 <div className='bujj'>

@@ -1,7 +1,7 @@
 .filtrarxx {
     display: flex;
     flex-direction: row;
-}
+
 .funilxx{
     width: 30vh;
     margin-left: 3.5em;
@@ -15,7 +15,8 @@
     position: absolute;
     margin-top: -2em;
     width: 16em;
-   height: 80em;
+    background-attachment: fixed;
+    
     
 }
 .bb{
@@ -28,6 +29,7 @@
     padding: 0.2em 1.7em 2px;
     border-radius: 2em
 }
+
 .funilxx {
    padding: 3em;
     width: 30vh;
@@ -56,11 +58,11 @@
     font-family: 'rrb';
 }
 
-.inputtxx {
-   margin-left: 1em;
 
+.inputt:checked{
+    background-color: darkred;
+    border-radius: 4em;
 }
-
 .checkxx {
  display: flex;
  flex-direction: row;
@@ -71,8 +73,8 @@
     margin-left: 1em;
     margin-right: 3em;
     width: 2em;
-
 }
+
 .txtxx {
     font-family: 'rrr';
     font-size: 0.9em;
@@ -131,19 +133,21 @@
 }
 .filtrarongcaa{
     margin-top: 1em;
-    width: 3em;
-    margin-right: 12em;
+    width: 3.2em;
+    margin-right: 45vh;
+    
 }
+
 .nxx {
     text-align: center;
     margin-bottom: 3em; 
 }
-
+}
 .principaljj {
     display: flex;
     flex-direction: column;
     background-color: #F0F0F0;
-  
+    
 }
 
 .simbolojj {
