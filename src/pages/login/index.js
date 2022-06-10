@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState, useRef, useEffect } from 'react';
 
 import './index.scss';
-
+import LoadingBar from 'react-top-loading-bar';
 import{ Link, useNavigate } from 'react-router-dom';
 import '../../common/common.scss';
 
@@ -11,22 +11,29 @@ export default function Index() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [erro, setErro] = useState('');
+    const [carregando, setCarregando] = useState(false);
 
     const navigate = useNavigate();
     const ref= useRef();
 
 
     async function entrarClick() {
+        ref.current.continuousStart()
+        setCarregando(true);
         try {
+            
             const asnwer = await axios.post('http://localhost:5000/usuario/login', {
                 email: email,
                 senha: senha
             });
 
-        navigate('/Verpets');
+            setTimeout(() =>{
+                navigate('/Verpets');
+            }, 3000);
+       
 
         } catch (err) {
-
+            ref.current.complete();
             if (err.response.status === 401) {
                 setErro(err.response.data.erro);
             }
@@ -37,6 +44,8 @@ export default function Index() {
     return (
     
     <main className ='logink'>
+
+        <LoadingBar color='rgba(254, 193, 138, 1)' ref={ref} />
         <div className= 'faixak'>
            <img className='logok' src='./images/IMG-20220418-WA0079_3.svg'/>
            <div className='bot15'>
@@ -56,7 +65,7 @@ export default function Index() {
                     <Link to='/Registrar' className='c2k'>Registre-se</Link>
                 </div>
                 <div className='Lk'>
-                    <button className='botaok t2' onClick={entrarClick}>Login</button>  
+                    <button className='botaok t2' onClick={entrarClick} disabled={carregando}>Login</button>  
                 </div>
                 <div className='form-entrar'>{erro}</div>
                 </div>
