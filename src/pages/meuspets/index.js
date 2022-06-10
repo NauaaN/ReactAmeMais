@@ -25,7 +25,7 @@ export default function index() {
              <p className='meusjj'>MEUS PETS:</p>
              </div>
             <div>
-             <Link className='bbjj' to='/ladingpage'>VOLTAR</Link>
+             <Link className='bbjj' to='/'>VOLTAR</Link>
              </div>
         
             <div className='lucaojj'>

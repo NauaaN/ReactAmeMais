@@ -40,7 +40,7 @@ export default function Index() {
         <div className= 'faixak'>
            <img className='logok' src='./images/IMG-20220418-WA0079_3.svg'/>
            <div className='bot15'>
-               <Link to='/ladingpage' className="textomk">Voltar</Link>
+               <Link to='/' className="textomk">Voltar</Link>
            </div>
            </div>
             <div className='login2k'>
