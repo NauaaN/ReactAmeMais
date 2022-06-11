@@ -39,9 +39,8 @@
         flex-direction: column;
         background-color: #221D1D;
         background-image: url('../../../public/images/image\ 10.svg') ;
-        height: 110vh;
         background-repeat: no-repeat;
-        background-size: 100vw;
+        background-size: cover;
         background-attachment: fixed;
         background-position: center;
     }
@@ -96,6 +95,7 @@
         width: 12em;
         cursor: pointer;
         text-align: center;
+        margin-bottom: 2em;
     }
     
    
