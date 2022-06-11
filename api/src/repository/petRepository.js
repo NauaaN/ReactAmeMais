@@ -8,7 +8,7 @@ export async function inserirPet(pet){
     const [resposta] = await con.query(comando, [pet.usuario, pet.nome, pet.animal, pet.especie, pet.genero, pet.idade, pet.peso, pet.altura, pet.comentario, pet.endereco, pet.telefone]);
     pet.id = resposta.insertId;
 
-    return resposta;
+    return pet;
 }
 
 export async function curtirPub(id){

@@ -10,14 +10,14 @@ server.put('/curtida/:id', async (req,resp)=>{
     try{
     const {id}= req.params;
         
-    if(!id)
-    throw new Error('pulbicação inexistente');
+        if(!id)
+            throw new Error('pulbicação inexistente');
 
     const resposta= await curtirPub(id);
-    if(resposta === 1)
-    resp.status(204).send();
+        if(resposta === 1)
+    resp    .status(204).send();
     else
-    throw new Error('Falha em curtir');
+        throw new Error('Falha em curtir');
 }catch(err){
     resp.status(404).send(
         {
@@ -30,23 +30,34 @@ server.put('/curtida/:id', async (req,resp)=>{
 
 
 server.post ('/pet', async (req, resp) => {
-
 try{
+    const PetParaInserir = req.body;
+        if(!PetParaInserir.usuario)
+            throw new Error('usuario é obrigatorio');
+        if(!PetParaInserir.nome)
+            throw new Error('nome é obrigatorio');
+        if(!PetParaInserir.animal)
+            throw new Error('informar o animal é obrigatorio');
+        if(!PetParaInserir.especie)
+            throw new Error('informar a especie é obrigatorio');
+        if(!PetParaInserir.genero)
+            throw new Error('informar o genero é obrigatorio');
+        if(!PetParaInserir.idade)
+            throw new Error(' informar a idade é obrigatorio');
+        if(!PetParaInserir.peso)
+            throw new Error('informar o peso é obrigatorio');
+        if(!PetParaInserir.altura)
+            throw new Error('usuario é obrigatorio');
+        if(!PetParaInserir.endereco)
+            throw new Error('informar o endereco é obrigatorio');
+        if(!PetParaInserir.telefone)
+            throw new Error('telefone é obrigatorio');
 
-const PetParaInserir = req.body;
-
-const pet = await inserirPet(PetParaInserir);
-
-resp.send (pet);
-
-}
-
-catch(err){
-
-resp.status(400).send({
-
-erro : err.message
-
+    const pet = await inserirPet(PetParaInserir);
+    resp.send (pet);
+}catch(err){
+    resp.status(400).send({
+        erro : err.message
 })
 
 }
@@ -59,7 +70,7 @@ server.put('/pet/:id/imagem', upload.single('imagem'), async (req, resp) => {
         const imagem = req.file.path;
 
         const resposta = await alterarImagem(imagem, id);
-        if (resposta != 1) throw new Error('A imagem não pode ser salva.');
+            if (resposta != 1)  throw new Error('A imagem não pode ser salva.');
 
         resp.status(204).send();
     }catch (err) {
@@ -75,8 +86,8 @@ server.put('/pet/:id', async (req, resp)=>{
        const {id}= req.params;
        const pet= req.body;
        const resposta= await alterarPET(pet,id);
-          if (resposta != 1) throw new Error('A alteração não pode ser salva.');
-       resp.status(204).send()
+            if (resposta != 1)    throw new Error('A alteração não pode ser salva.');
+       resp.    status(204).send()
    }catch(err){
        resp.status(400).send({
            erro: err.message
@@ -103,8 +114,8 @@ server.delete ('/pet:id', async (req, resp) => {
     const { id } = req.params;
 
     const resposta = await removerPet(id);
-    if( resposta != 1)
-    throw new Error ('pet não foi removido!');
+        if( resposta != 1)
+            throw new Error ('pet não foi removido!');
 
     resp.status(204).send();
     }

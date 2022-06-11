@@ -1,16 +1,55 @@
-import './index.scss';
-import{ Link } from 'react-router-dom';
-import '../../common/common.scss';
-export default function index() {
+import axios from 'axios';
+import { useState, useRef, useEffect } from 'react';
 
-    return(
- 
-        
+import './index.scss';
+import LoadingBar from 'react-top-loading-bar';
+import{ Link, useNavigate } from 'react-router-dom';
+import '../../common/common.scss';
+
+
+export default function Index() {
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [erro, setErro] = useState('');
+    const [carregando, setCarregando] = useState(false);
+
+    const navigate = useNavigate();
+    const ref= useRef();
+
+
+    async function entrarClick() {
+        ref.current.continuousStart()
+        setCarregando(true);
+        try {
+            
+            const asnwer = await axios.post('http://localhost:5000/usuario/login', {
+                email: email,
+                senha: senha
+            });
+
+            setTimeout(() =>{
+                navigate('/Verpets');
+            }, 3000);
+       
+
+        } catch (err) {
+            ref.current.complete();
+            if (err.response.status === 401) {
+                setErro(err.response.data.erro);
+            }
+        }
+    
+    }
+
+    return (
+    
     <main className ='logink'>
+
+        <LoadingBar color='rgba(254, 193, 138, 1)' ref={ref} />
         <div className= 'faixak'>
            <img className='logok' src='./images/IMG-20220418-WA0079_3.svg'/>
            <div className='bot15'>
-               <Link to='/ladingpage' className="textomk">Voltar</Link>
+               <Link to='/' className="textomk">Voltar</Link>
            </div>
            </div>
             <div className='login2k'>
@@ -18,18 +57,17 @@ export default function index() {
             <div className='testek'> <p className='entrak'>Entrar</p></div>
                
                 <p className='cak'>EMAIL:</p>
-                <input className='esp2k' type="textk"/>
+                <input className='esp2k' type="textk" placeholder='Insira seu Email' value={email} onChange={e => setEmail(e.target.value)}/>
                 <p className='cak'>SENHA:</p>
-                <input className ='esp2k' type="textk"/>
+                <input className ='esp2k' type="password" placeholder='Insira sua Senha'value={senha} onChange={e => setSenha(e.target.value)}/>
                 <div className='contak'>
                     <p className='c1k'>Ainda não tem uma conta? </p>
                     <Link to='/Registrar' className='c2k'>Registre-se</Link>
                 </div>
                 <div className='Lk'>
-                    <button className='botaok t2'>
-                     <Link to='/ladingpage' className='tamanhok'>Login</Link>
-                    </button>  
+                    <button className='botaok t2' onClick={entrarClick} disabled={carregando}>Login</button>  
                 </div>
+                <div className='form-entrar'>{erro}</div>
                 </div>
                 </div>
         </main>

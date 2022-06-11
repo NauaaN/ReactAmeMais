@@ -145,7 +145,14 @@ input {
     margin: 0px;
     padding: 15px 50px;
 
+
 }
+
+.botaok:hover{
+ cursor: pointer;
+ background: #2897ff;
+}
+
 .tamanhok{
     font-size: 1.3em;
     font-family: 'rr';
@@ -159,4 +166,11 @@ input {
     width: 10em;
     mix-blend-mode: lighten;
     
+}
+
+.form-entrar {
+    color: rgba(38, 109, 215, 1);
+    margin-bottom: 1em;
+    margin-left: 9em;
+    font-family: 'rrb';
 }
