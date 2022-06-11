@@ -1,6 +1,7 @@
 .filtrarxx {
     display: flex;
     flex-direction: row;
+    
 
 .funilxx{
     width: 30vh;
@@ -14,9 +15,8 @@
     box-shadow: 4px 4px 4px rgb(163, 163, 163);
     position: absolute;
     margin-top: -2em;
-    width: 16em;
-    background-attachment: fixed;
-    
+    width: 20em;
+    position: relative;
     
 }
 .bb{
@@ -47,7 +47,7 @@
 }
 
 .t1 {
-    background-color: #6CBFD9;
+    background-color: #ffffff;
     margin-bottom: 0.4em;
     font-family: 'rrb';
 }
@@ -59,13 +59,11 @@
 }
 
 
-.inputt:checked{
-    background-color: darkred;
-    border-radius: 4em;
-}
+
 .checkxx {
  display: flex;
  flex-direction: row;
+ 
 }
 
 .checkxx > * {
@@ -104,7 +102,7 @@
     box-shadow: 4px 4px 4px rgb(168, 168, 168);
     font-family: 'rrb';
     font-size: 1.2em;
-    margin-bottom: 1.1em;
+    
 }
 
 .bbxx {
@@ -116,7 +114,7 @@
     box-shadow: 4px 4px 4px rgb(168, 168, 168);
     font-size: 0.8em;
     font-family: 'rrb';
-    font-size: 1.2em;
+    font-size: 1.2em;;
 }
 
 
@@ -131,37 +129,37 @@
     font-family: 'rrb';
     font-size: 1.2em;
 }
-.filtrarongcaa{
-    margin-top: 1em;
-    width: 3.2em;
-    margin-right: 45vh;
-    
-}
+.simbolojj {
+    display: flex;
+    flex-direction:row;
 
+    .filtrarongcaa { 
+        margin-top: 1em;
+        width: 3em;
+      margin-left: 1em;
+    }
+
+}
 .nxx {
     text-align: center;
-    margin-bottom: 3em; 
+    margin-bottom: 4em; 
 }
 }
 .principaljj {
     display: flex;
     flex-direction: column;
     background-color: #F0F0F0;
+   
     
 }
 
-.simbolojj {
-    display: flex;
-    flex-direction:row;
-    
-  
-}
+
 
 .lljj {
     mix-blend-mode: lighten;
 }
 
-.loginjj {
+.loginjjj {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -175,8 +173,8 @@
     
 }
 
-.login1jj > * {
- margin-right: 1.2em;
+.login1jjj > * {
+ margin-right: 2em;
 }
 
 .nomejj {
@@ -186,7 +184,7 @@
 }
 
 .nauanjj {
-    margin-right: 1.5em;
+    margin-right: 10em;
 }
 .bbb{
     text-decoration: none;
@@ -246,7 +244,7 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 0.7em;
+    border-radius: 1em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
     margin-left: -10em;
 }
@@ -268,7 +266,6 @@
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
     margin-top: 3em;
     margin-left: 4em;
-   
 }
 
 .card11jjj {

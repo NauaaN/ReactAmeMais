@@ -25,7 +25,7 @@ export default function index() {
              </div>
       
         
-            <div className='lucaojj'>
+            <div className='lucaojjn'>
              <div className='cardpjj'>
                <div className='cardjj'>
                <div className='card1jjj'>
