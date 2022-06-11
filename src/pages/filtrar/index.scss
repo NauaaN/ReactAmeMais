@@ -169,8 +169,7 @@
 
 .login1jj {
     display: flex;
-    justify-content:flex-end;
-    
+    width:  max-content;
 }
 
 .login1jjj > * {
@@ -183,9 +182,6 @@
      margin-top: 01.2em;
 }
 
-.nauanjj {
-    margin-right: 10em;
-}
 .bbb{
     text-decoration: none;
     background-color: white;
@@ -226,9 +222,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 3em;
-    padding: 0em 10em;
-    margin-left: 10em;
-    
+    padding: 1em;
 }
 
 .cardpjj > * {
@@ -247,6 +241,12 @@
     border-radius: 1em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
     margin-left: -10em;
+}
+
+.lucaojjn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card1jjjj {
