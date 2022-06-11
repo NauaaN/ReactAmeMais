@@ -116,3 +116,19 @@ response{
     "endereco":"",
     "telefone":""
 }
+
+(9)
+/GET               /pet/:idusu
+
+response{
+    "nome":"",
+    "animal":"",
+    "especie":"",
+    "genero":"",
+    "idade":2,
+    "peso":0.6,
+    "altura":1.0,
+    "comentario":"",
+    "endereco":"",
+    "telefone":""
+}

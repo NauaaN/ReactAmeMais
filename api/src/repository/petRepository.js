@@ -80,3 +80,23 @@ export async function alterarPET(pet,id){
     const [resposta]= await con.query(comando, [ pet.nome, pet.animal, pet.especie, pet.genero, pet.idade, pet.peso, pet.altura, pet.comentario, pet.endereco, pet.telefone, id]);
     return resposta.affectedRows;
 }
+
+export async function petsCadsastrados(id){
+    const comando=
+    `
+    SELECT NM_PET     		nome,
+            DS_ANIMAL   	animal,
+            DS_ESPECIE		especie,
+            DS_GENERO		genero,
+            NR_IDADE 		idade,
+            VL_PESO 		peso,
+            VL_ALTURA		altura,
+            DS_COMENTARIO 	comentarios,
+            DS_ENDERECO		endereco,
+            DS_TELEFONE		telefone
+          FROM TB_PET
+          WHERE(ID_USUARIO = ?)
+    `;
+    const [linhas]= await con.query(comando,[id]);
+    return linhas;
+}

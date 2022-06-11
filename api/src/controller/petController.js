@@ -1,6 +1,6 @@
 import multer from "multer";
 import { Router } from "express";
-import { curtirPub, filtrarPet, inserirPet, removerPet, alterarImagem, alterarPET } from "../repository/petRepository.js";
+import { curtirPub, filtrarPet, inserirPet, removerPet, alterarImagem, alterarPET, petsCadsastrados } from "../repository/petRepository.js";
 
 
 const server= Router();
@@ -109,7 +109,7 @@ server.get('/pet', async (req,resp)=>{
 }
 })
 
-server.delete ('/pet:id', async (req, resp) => {
+server.delete ('/pet/:id', async (req, resp) => {
     try{
     const { id } = req.params;
 
@@ -127,6 +127,19 @@ server.delete ('/pet:id', async (req, resp) => {
     }
 })
 
+server.get('/pet/:idusu', async(req,resp)=>{
+    try{
+        const id= req.params.idusu; 
+        const final= await petsCadsastrados(id);
+
+        resp.send(final)
+    }catch(err){
+
+        resp.status(400).send({
+            erro : err.message
+        })
+    }
+})
 
 
 export default server;
