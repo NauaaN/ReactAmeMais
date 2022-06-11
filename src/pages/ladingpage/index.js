@@ -23,8 +23,8 @@ export default function index() {
             <div className="cassio2S">
                 <h1 className="txt4S">Pronto para escolher o seu novo amigo?</h1>
                 <div className="cassio3S">
-                    <Link to='/Registrar'className="AI bot2S">REGISTRAR-SE</Link>
-                    <Link to='/verpets' className="AI bot2S">VER PETS</Link>
+                    <Link to='/Registrar'className="bot2S">REGISTRAR-SE</Link>
+                    <Link to='/verpets' className="bot2S">VER PETS</Link>
                 </div>
             </div>
         </section>
@@ -59,14 +59,14 @@ export default function index() {
         </section>
 
 
-        <div className='tamanhoo'>
+ <section className='tamanhoo'>
         
         <div className="principaljc">
              <div  className='tecto'>
-            <div className="titulojc">
+                <div className="titulojc">
                 TEM CURIOSIDADE EM SABER <br/> SOBRE O QUE ESTÃO <br/>COMENTANDO SOBRE NÓS?
-            </div>
-            <div className="titulo2jc">
+                </div>
+             <div className="titulo2jc">
                 Tutor que ja adotou e deseja <br/>compartilhar sua experiência, aqui <br/> esta um espaço próprio para você!
             </div>
           </div>
@@ -127,11 +127,11 @@ export default function index() {
                     </div>
             </div>
         </div>
-    <div/> 
-    </div>   
+        <div/> 
+    </section>   
     
 
-        <div className="faixan">
+        <section className="faixan">
             <div className="house">
                 <div>
                     <img className="img2" src=' images/IMG-20220419-WA0074_1.svg'/>
@@ -160,7 +160,7 @@ export default function index() {
                 <div className="bt"><Link to='/Ladingpage' className="button">Conheça nosso projeto</Link></div>
              </div>
         </div>
-    </div>
+    </section>
     
     </main>
     )
