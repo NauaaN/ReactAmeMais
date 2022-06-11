@@ -13,9 +13,9 @@ export default function index() {
         <section className="faixina1S">
             <div className="cassioS">
                 <h1 className="txt1S">Quer adotar um Pet?</h1>
-                <p className="txt2S">Bom então veio ao lugar  certo,
-                    temos diversos Pets que necessitam 
-                    de uma moradia em nosso site,
+                <p className="txt2S">Bom então veio ao lugar  certo,<br/>
+                    temos diversos Pets que necessitam <br/>
+                    de uma moradia em nosso site,<br/>
                     todos esperando por você.</p>
                 <h3 className="txt3S">Não os deixe esperando!!!</h3>
                 <img src='./images/unsplash_aPvB8KMIh5w.svg' />
