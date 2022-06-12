@@ -18,6 +18,7 @@ export default function Index() {
     const [endereco, setEndereco] = useState('');
     const [comentario, setComentario] = useState('');
     const [imagem, setImagem] = useState('');
+    const [erro, setErro] = useState('');
 
 
     
@@ -32,6 +33,9 @@ export default function Index() {
             
         } catch (err){
             alert(err.message);
+            if (genero != 'feminino') {
+                setErro(err.response.data.erro);
+            }
         }
     }
     
@@ -62,6 +66,7 @@ export default function Index() {
              <div className='testev'>
                  <p className='letras'>Gênero:</p>
                  <input className='terceirov' value={genero} onChange= {e => setGenero(e.target.value)}/>
+                
              </div>
             </div>
 

@@ -404,6 +404,11 @@ p {
     transform: translate(-50%, -50%);
 }
 
+.content.heart-active{
+    border-color: #f9b9c4;
+    background: #fbd0d8;
+}
+
 .heart:hover {
     background-position: right;
     animation: animate .8s steps(28) 1;
