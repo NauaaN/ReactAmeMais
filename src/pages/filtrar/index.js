@@ -26,6 +26,8 @@ export default function Index () {
   <label for="fruit3">Gatos</label>
   <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry"/>
   <label for="fruit4">Roedores</label>
+  <input type="checkbox" id="fruittt3" name="fruit-3" value="Cherry"  />
+  <label for="fruittt3">Todos</label>
 </form>
          
          </div>
