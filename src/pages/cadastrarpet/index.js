@@ -8,19 +8,18 @@ export default function index() {
      <div className='fundox'>
 <header className='faixav'>
         <img className='logov' src='./images/IMG-20220418-WA0079_3.svg' />
-         <Link to='/'className="botoesv">Voltar</Link>
-        <Link to='/verpets'className="botoesu">Finalizar</Link>
+        <div>
+            <Link to='/'className="botoesv">Voltar</Link>
+            <Link to='/verpets'className="botoesu">Finalizar</Link>
+        </div>
     </header>
 
     <div className='descricaov'><h1>Cadastrar Pet para Adoção</h1></div>
-    <div>
-      
-    </div>
 
     <main className='containerv'>
         <section className='bloco1v'>
             <div className='animalzinhov'>
-                <p className='letras'>Animal</p>
+                <p className='letras'>Animal:</p>
                 <input className='primeirov'/>
             </div>
             <div className='especiev'>
@@ -75,7 +74,7 @@ export default function index() {
 
             <div className='ImagemPetv'>
                 <p className='letras'>Adicione Uma Imagem do Pet:</p>
-                <input className='onzev'/>
+                <input type="file" className='onzev'/>
             </div>
         </section>
 

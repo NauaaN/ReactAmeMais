@@ -2,70 +2,67 @@
     display: flex;
     background-repeat: no-repeat;
     background-image: url('../../../public/images/image\ 15.svg');
-    background-size: 100%;
-    background-color: black;
-    height: 47em;
-    background-position: bottom;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background-position: center;
     flex-direction: column;
+    opacity: 90%;
 }
 
 .letras{
     color: white;
-    margin-top: 1em;
-    margin-left: 0.5em;
+    margin-left: 1em;
+    font-family: 'rb';
 }
 
 .faixav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: rgba(0, 107, 140, 1);
-    padding: 2em 0em 2em 0em;
-    margin-left: -2em;
-    margin-top: -5em;
-    padding-bottom: 2em;
+    padding: 1em ;
+    align-items: center;
 }
 
 .logov{
     mix-blend-mode: lighten;
-    margin-right: 62em;
-    margin-top: 2em;
 }
 
 .botoesv {
     background-color: rgba(254, 193, 138, 1);
     padding: 1em 3em 1em ;
     border: none;
-    border-radius: 20px;
+    border-radius: 100px;
     color: #ffffff;
     font-family: 'rrb';
     margin-top: 4em;
-    margin-right: 1.5em ;
     font-size: 1em;
-
 }
 
 .botoesu {
     background-color: rgba(254, 193, 138, 1);
     padding: 1em 3em 1em;
     border: none;
-    border-radius: 20px;
+    border-radius: 100px;
     color: #ffffff;
     font-family: 'rrb';
     margin-top: 4em;
-    margin-right: 1.5em ;
     font-size: 1em;
-
+    margin-left: 2em;
 }
 
 .descricaov {
-    margin-left: 1em;
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
     color: #ffffff;
+
 }
 .containerv {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .especiev {
@@ -91,6 +88,8 @@
     padding: 1em;
     background-color: #8CC4D6;
     color: #ffffff;
+    
+    border-radius: 20px;
 }
 
 .segundov {
@@ -98,16 +97,16 @@
     padding: 1em;
     background-color: #8CC4D6;
     color: #ffffff;
+    
+    border-radius: 20px;
 }
 
 .terceirov {
+    
+    border-radius: 20px;
     background-color: #8CC4D6;
     padding: 1em;
     width: 15em;
-}
-
-.testev {
-    margin-left: 2.5em;
 }
 
 .quartov {
@@ -115,6 +114,8 @@
     padding: 1em;
     background-color: #8CC4D6;
     color: #ffffff;
+    
+    border-radius: 20px;
 }
 
 .quintov {
@@ -122,6 +123,8 @@
     background-color: #8CC4D6;
     color: #ffffff;
     width: 15em;
+    
+    border-radius: 20px;
 }
 
 .sextov {
@@ -129,6 +132,8 @@
     padding: 1em;
     background-color: #8CC4D6;
     color: #ffffff;
+    
+    border-radius: 20px;
 }
 
 .setimov {
@@ -136,6 +141,8 @@
     width: 15em;
     background-color: #8CC4D6;
     color: #ffffff;
+    
+    border-radius: 20px;
 }
 
 .oitavov {
@@ -143,6 +150,8 @@
     padding: 1em;
     background-color: #8CC4D6;
     color: #ffffff;
+    
+    border-radius: 20px;
 }
 
 .nonov {
@@ -150,30 +159,30 @@
     padding: 1em;
     background-color: #8CC4D6;
     color: #ffffff;
+    
+    border-radius: 20px;
 }
 
 .bloco2v {
-    margin-left: 12em;
+    margin-left: 7em;
 }
 
 .decimov {
-    width: 40em;
+    width: 42em;
     padding: 5em;
+    
+    height: 15em;
     
     background-color: #8CC4D6;
     color: #ffffff;
+    
+    border-radius: 20px;
 }
 
 .onzev {
-    width: 40em;
+    width: 42em;
     height: 25em;
-    padding: 6em;
     background-color: #8CC4D6;
     color: #ffffff;
-    
-}
-
-input {
-    border: none;
-    border-radius: 6px;
+    border-radius: 20px;
 }
