@@ -30,4 +30,7 @@ export async function enviarImagemPet(id, imagem) {
     });
     return resposta.status;
 }
-
+export async function listarTodosPets(){
+    const resposta = await api.get('/pet/:idusu');
+    return resposta.data;
+}
