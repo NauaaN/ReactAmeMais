@@ -4,6 +4,8 @@ import '../../common/common.scss';
 import { useState } from 'react';
 import { cadastrarPet, enviarImagemPet} from '../../api/petAPi'
 import storage from 'local-storage'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
  
 export default function Index() {
@@ -27,14 +29,22 @@ export default function Index() {
             const r = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario );
            
 
-            alert('Pet cadastrado com sucesso!');
+            toast('Pet cadastrado com sucesso!');
            
             
         } catch (err){
-            alert(err.message);
+            toast.error(err.response.data.erro);
         }
     }
     
+        function escolherImagem(){
+            document.getElementById('imagemCapa').click();
+        }
+
+        function mostrarImagem() {
+            return URL.createObjectURL(imagem);
+        }
+
     return(
      <div className='fundox'>
          
@@ -43,6 +53,7 @@ export default function Index() {
         <div>
             <Link to='/'className="botoesv">Voltar</Link>
             <button onClick={salvarClick} className="botoesu">Finalizar</button>
+            <ToastContainer />
         </div>
     </header>
 
@@ -104,9 +115,16 @@ export default function Index() {
                 <input className='decimov'  value={comentario} onChange= {e => setComentario(e.target.value)}/>
             </div>
 
-            <div className='ImagemPetv'>
+            <div className='ImagemPetv' onClick={escolherImagem}>
                 <p className='letras'>Adicione Uma Imagem do Pet:</p>
-                <input type="file" className='onzev'  />
+                
+                
+                
+
+               
+                 
+                
+                <input type="file" id='imagemCapa' onChange={e => setImagem(e.target.files[0])}className='onzev'  />
             </div>
         </section>
 
