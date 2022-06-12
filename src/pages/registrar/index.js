@@ -3,6 +3,7 @@ import './index.scss';
 import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
 import { cadastrarUsuario } from '../../api/registroApi';
+import storage from 'local-storage'
 import { useState } from 'react';
 
 export default function Index() {
@@ -14,10 +15,13 @@ export default function Index() {
     const [telefone, setTelefone]= useState('');
     const [sexo, setSexo]= useState('');
     const [email, setEmail]= useState('');
+    const [senha2, setSenha2]= useState('');
+
 
     async function salvarClick (){
         try{
-         const r= await cadastrarUsuario(nome, cpf, endereco, senha, telefone, sexo, email);
+        const usuario = storage('usuario-logado').id;
+         const asnwer = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email, senha2);
    
          alert('Usuario cadastrado com sucesso!');
         }
@@ -53,11 +57,11 @@ export default function Index() {
                 <p className='informa'>Email:</p>
                 <input className='input1' type='text'  value={email} onChange={ e => setEmail(e.target.value)}/>
                 <p className='informa'>Confirme sua senha:</p>
-                <input className='input1' type='password'  value={senha} onChange={ e => setSenha(e.target.value)}/>
+                <input className='input1' type='password'  value={senha2} onChange={ e => setSenha2(e.target.value)}/>
             </div>
         </div>
         <div className='alinhamento'>
-            <Link to="/Login" className='butaorg' onClick={salvarClick}>Registrar-se</Link>
+            <button className='butaorg' onClick={salvarClick}>Registrar-se</button>
         </div>
     </section>
 </main>
