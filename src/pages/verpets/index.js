@@ -97,9 +97,15 @@ export default function index() {
                     <p>“ João Paulo tem alguns problemas de alimentação e é bastante tímido, mas tem muito amor para dar”</p>
                   </div>
                  
-                  <div className='bujj'>
-                  <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
+                <div className='bujj'>
+                  <div className='heart-btn'>
+                    <div className='content'>
+                     <span className='heart'></span>
+                     <span className='like'>Like</span>
+                     <span className='numb'></span>
+                    </div>
+                  </div>
+
                 </div>
         
                     <div className='curtirirjj'> 
