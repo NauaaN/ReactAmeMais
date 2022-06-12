@@ -14,18 +14,22 @@
     color: white;
     margin-left: 1em;
     font-family: 'rb';
+
 }
 
 .faixav {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     background-color: rgba(0, 107, 140, 1);
-    padding: 1em ;
-    align-items: center;
-}
+    padding: 1.5em;
+    padding-bottom: 0.1em;
+    };
+
+
 
 .logov{
     mix-blend-mode: lighten;
+    margin-bottom: 1.5em;
 }
 
 .botoesv {
@@ -35,8 +39,8 @@
     border-radius: 100px;
     color: #ffffff;
     font-family: 'rrb';
-    margin-top: 4em;
     font-size: 1em;
+
 }
 
 .botoesu {
@@ -46,16 +50,18 @@
     border-radius: 100px;
     color: #ffffff;
     font-family: 'rrb';
-    margin-top: 4em;
+
     font-size: 1em;
     margin-left: 2em;
+    cursor:pointer;
 }
 
 .descricaov {
     margin-left: 2em;
-    margin-top: 2em;
+    margin-top: 0.6em;
     margin-bottom: 1em;
     color: #ffffff;
+    font-size: 1.1em;
 
 }
 .containerv {
@@ -68,27 +74,27 @@
 .especiev {
     display: flex;
     flex-direction: row;
-    color: #ffffff;
+    color: #000000;
 }
 
 .NOMEv {
     display: flex;
     flex-direction: row;
-    color:#ffffff;
+    color:#000000;
 }
 
 .PESOv {
     display: flex;
     flex-direction: row;
-    color: #ffffff;
+    color: #000000;
 }
 
 .primeirov {
     width: 38em;
     padding: 1em;
     background-color: #8CC4D6;
-    color: #ffffff;
-    
+    color: #000000;
+    font-family: 'rrb';
     border-radius: 20px;
 }
 
@@ -96,8 +102,8 @@
     width: 20em;
     padding: 1em;
     background-color: #8CC4D6;
-    color: #ffffff;
-    
+    color: #000000;
+    font-family: 'rrb';
     border-radius: 20px;
 }
 
@@ -113,17 +119,17 @@
     width: 20em;
     padding: 1em;
     background-color: #8CC4D6;
-    color: #ffffff;
-    
+    color: #000000;
+    font-family: 'rrb';
     border-radius: 20px;
 }
 
 .quintov {
     padding: 1em;
     background-color: #8CC4D6;
-    color: #ffffff;
+    color: #000000;
     width: 15em;
-    
+    font-family: 'rrb';
     border-radius: 20px;
 }
 
@@ -131,8 +137,8 @@
     width: 20em;
     padding: 1em;
     background-color: #8CC4D6;
-    color: #ffffff;
-    
+    color: #000000;
+    font-family: 'rrb';
     border-radius: 20px;
 }
 
@@ -140,8 +146,8 @@
     padding: 1em;
     width: 15em;
     background-color: #8CC4D6;
-    color: #ffffff;
-    
+    color: #000000;
+    font-family: 'rrb';
     border-radius: 20px;
 }
 
@@ -149,8 +155,8 @@
     width: 38em;
     padding: 1em;
     background-color: #8CC4D6;
-    color: #ffffff;
-    
+    color: #000000;
+    font-family: 'rrb';
     border-radius: 20px;
 }
 
@@ -158,8 +164,8 @@
     width: 38em;
     padding: 1em;
     background-color: #8CC4D6;
-    color: #ffffff;
-    
+    color: #000000;
+    font-family: 'rrb';
     border-radius: 20px;
 }
 
@@ -168,21 +174,20 @@
 }
 
 .decimov {
-    width: 42em;
-    padding: 5em;
-    
-    height: 15em;
-    
+    padding-bottom: 9em;
+    font-size: 1.5em;
     background-color: #8CC4D6;
-    color: #ffffff;
-    
+    color: #000000;
+    width: 35em;
     border-radius: 20px;
+    font-family: 'rrb';
 }
 
 .onzev {
-    width: 42em;
-    height: 25em;
+    width: 63em;
+    height: 20em;
     background-color: #8CC4D6;
-    color: #ffffff;
+    color: #000000;
     border-radius: 20px;
+    padding-bottom: 12em;
 }
