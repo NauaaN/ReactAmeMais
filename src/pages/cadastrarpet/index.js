@@ -4,7 +4,7 @@ import '../../common/common.scss';
 import { useState } from 'react';
 import { cadastrarPet, enviarImagemPet} from '../../api/petAPi'
 import storage from 'local-storage'
-import { ToastContainer, toast } from 'react-toastify';
+
  
 export default function Index() {
     const [animal, setAnimal] = useState('');
@@ -25,18 +25,19 @@ export default function Index() {
         try{
             const usuario = storage('usuario-logado').id;
             const r = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario );
-  
-            toast.error('Pet cadastrado com sucesso!');
+           
+
+            alert('Pet cadastrado com sucesso!');
            
             
         } catch (err){
-            toast.error(err.message);
+            alert(err.message);
         }
     }
     
     return(
      <div className='fundox'>
-          <ToastContainer />
+         
      <header className='faixav'>
         <img className='logov' src='./images/IMG-20220418-WA0079_3.svg' />
         <div>
