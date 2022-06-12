@@ -1,9 +1,9 @@
-import axios from 'axios';
+import { login } from '../../api/loginApi'
 import { useState, useRef, useEffect } from 'react';
-
 import './index.scss';
 import LoadingBar from 'react-top-loading-bar';
 import{ Link, useNavigate } from 'react-router-dom';
+import storage from 'local-storage'
 import '../../common/common.scss';
 
 
@@ -20,12 +20,11 @@ export default function Index() {
     async function entrarClick() {
         ref.current.continuousStart()
         setCarregando(true);
+
         try {
             
-            const asnwer = await axios.post('http://localhost:5000/usuario/login', {
-                email: email,
-                senha: senha
-            });
+            const asnwer = await login(email, senha);
+            storage('usuario-logado', asnwer);
 
             setTimeout(() =>{
                 navigate('/Verpets');
