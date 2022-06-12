@@ -20,7 +20,6 @@ export default function Index() {
     const [endereco, setEndereco] = useState('');
     const [comentario, setComentario] = useState('');
     const [imagem, setImagem] = useState('');
-    const [erro, setErro] = useState('');
 
 
     
@@ -34,12 +33,9 @@ export default function Index() {
            
             
         } catch (err){
-            alert(err.message);
-          
-                setErro(err.response.data.erro);
-            }
+            toast.error(err.response.data.erro);
         }
-    
+    }
     
         function escolherImagem(){
             document.getElementById('imagemCapa').click();
@@ -77,7 +73,6 @@ export default function Index() {
              <div className='testev'>
                  <p className='letras'>Gênero:</p>
                  <input className='terceirov' value={genero} onChange= {e => setGenero(e.target.value)}/>
-                
              </div>
             </div>
 
@@ -124,7 +119,7 @@ export default function Index() {
                 <p className='letras'>Adicione Uma Imagem do Pet:</p>
                 
                 
-                
+                <img src='./public/images/' /> 
 
                
                  
