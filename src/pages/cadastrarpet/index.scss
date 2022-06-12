@@ -192,3 +192,26 @@
     padding-bottom: 12em;
 }
 
+.upload-capa{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    height: 250px;
+    width: 200px;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3));
+    cursor: pointer;
+} 
+
+.imagem-pet{
+    border-radius: 3px;
+    width: 10em;
+    height: 10em;
+}
+
+#imagemCapa{
+   visibility: hidden;
+   position: absolute;
+}
