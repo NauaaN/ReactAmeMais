@@ -386,7 +386,6 @@ p {
 }
 
 .content {
-    border : 2px solid  #eae2e1;
     padding: 7px 16px;
     border-radius: 5px;
     display: flex;
@@ -403,6 +402,22 @@ p {
     top: 80%;
     left: 21%;
     transform: translate(-50%, -50%);
+}
+
+.heart:hover {
+    background-position: right;
+    animation: animate .8s steps(28) 1;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left;
+
+    }
+    100% {
+        background-position: right;
+
+    }
 }
 
 .like {
