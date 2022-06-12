@@ -5,8 +5,7 @@ import { useState } from 'react';
 import { cadastrarPet, enviarImagemPet} from '../../api/petAPi'
 import storage from 'local-storage'
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
-
+ 
 export default function Index() {
     const [animal, setAnimal] = useState('');
     const [especie, setEspecie] = useState('');
@@ -28,6 +27,7 @@ export default function Index() {
             const r = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario );
   
             toast.error('Pet cadastrado com sucesso!');
+           
             
         } catch (err){
             toast.error(err.message);
