@@ -66,6 +66,9 @@ try{
 
 server.put('/pet/:id/imagem', upload.single('imagem'), async (req, resp) => {
     try {
+        if (!req.file)
+            throw new Error('Escolha a imagem do pet.');
+
         const { id } = req.params;
         const imagem = req.file.path;
 

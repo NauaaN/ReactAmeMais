@@ -19,28 +19,31 @@ export default function Index() {
     const [telefone, setTelefone ] = useState('');
     const [endereco, setEndereco] = useState('');
     const [comentario, setComentario] = useState('');
-    const [imagem, setImagem] = useState('');
+    const [imagem, setImagem] = useState( );
 
 
     
-   async function salvarClick(){
-        try{
-            const usuario = storage('usuario-logado').id;
-            const r = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario );
-           
+async function salvarClick(){
+    try{
+        if (!imagem) throw new Error('Escolha a imagem do pet.');
 
-            toast('Pet cadastrado com sucesso!');
-           
-            
+
+        const usuario = storage('usuario-logado').id;
+        const novoPet = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario );
+            const r = await enviarImagemPet(novoPet.id, imagem);
+
+            toast('Pet cadastrado com sucesso!');   
         } catch (err){
-            toast.error(err.response.data.erro);
+            if (err.response)
+                toast.error(err.response.data.erro);
+
+            else 
+                toast.error(err.message)
         }
     }
-    
         function escolherImagem(){
             document.getElementById('imagemCapa').click();
         }
-
         function mostrarImagem() {
             return URL.createObjectURL(imagem);
         }
@@ -118,13 +121,17 @@ export default function Index() {
             <div className='ImagemPetv' onClick={escolherImagem}>
                 <p className='letras'>Adicione Uma Imagem do Pet:</p>
                 
-                
-                <img src='./public/images/' /> 
+                {!imagem && 
+                <img src="/public/images/upload-upload-icon-73240.png" /> 
+                }
 
+                {imagem &&
+                <img className='imagem-pet' src= {mostrarImagem()} alt=''/>
+                }
                
                  
                 
-                <input type="file" id='imagemCapa' onChange={e => setImagem(e.target.files[0])}className='onzev'  />
+                <input type="file" id='imagemCapa' onChange={e => setImagem(e.target.files[0])} className='onzev' />
             </div>
         </section>
 
