@@ -15,13 +15,12 @@ export default function Index() {
     const [telefone, setTelefone]= useState('');
     const [sexo, setSexo]= useState('');
     const [email, setEmail]= useState('');
-    const [senha2, setSenha2]= useState('');
 
 
-    async function salvarClick (){
+    async function salvarClick () {
         try{
         const usuario = storage('usuario-logado').id;
-         const asnwer = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
+         const resposta = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
    
          alert('Usuario cadastrado com sucesso!');
         }
