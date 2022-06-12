@@ -17,41 +17,31 @@ export default function Index () {
 &#709; Espécie
         </div>
         <div className='checkxx'>
-         <input className='inputt' type='checkbox'/>
-         <p className='txtxx'>Aves</p>
+        <form>
+  <input type="checkbox" id="fruit1" name="fruit-1" value="Apple"/>
+  <label for="fruit1">Aves</label>
+  <input type="checkbox" id="fruit2" name="fruit-2" value="Banana" />
+  <label for="fruit2">Cachorros</label>
+  <input type="checkbox" id="fruit3" name="fruit-3" value="Cherry" />
+  <label for="fruit3">Gatos</label>
+  <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry"/>
+  <label for="fruit4">Roedores</label>
+</form>
+         
          </div>
-
-         <div className='checkxx'>
-            <input className='inputt' type='checkbox'/>
-            <p className='txtxx'>cachorros</p>
-            </div>
-
-            <div className='checkxx'>
-                <input className='inputt' type='checkbox'/>
-                <p className='txtxx '>Gatos</p>
-                </div>
-
-                <div className='checkxx'>
-                    <input className='inputt' type='checkbox'/>
-                    <p className='txttxx'>Roedores</p>
-                    </div>
-                    <div className='t2xx'>
-                    	
+                    <div className='t2xx'>                  	
 &#709; Gênero
                     </div>
      <div className='checkxx'>
-     <input className='inputt' type='checkbox'/>
-     <p className='txtxx'>Feminino</p>
-     </div>
-
-     <div className='checkxx'>
-        <input className='inputt' type='checkbox'/>
-        <p className='txttxx'>Masculino</p>
-        </div>
-
-        <div className='checkxx'>
-        <input className='inputt' type='checkbox'/>
-        <p className='txttxx'>Todos</p>
+     <form>
+  <input type="checkbox" id="fruitt1" name="fruit-1" value="Apple" />
+  <label for="fruitt1">Masculino</label>
+  <input type="checkbox" id="fruitt2" name="fruit-2" value="Banana" />
+  <label for="fruitt2">Feminino</label>
+  <input type="checkbox" id="fruitt3" name="fruit-3" value="Cherry"  />
+  <label for="fruitt3">Todos</label>
+ 
+</form>
         </div>
 
     
