@@ -21,7 +21,7 @@ export default function Index() {
     async function salvarClick (){
         try{
         const usuario = storage('usuario-logado').id;
-         const asnwer = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email, senha2);
+         const asnwer = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
    
          alert('Usuario cadastrado com sucesso!');
         }
@@ -57,7 +57,7 @@ export default function Index() {
                 <p className='informa'>Email:</p>
                 <input className='input1' type='text'  value={email} onChange={ e => setEmail(e.target.value)}/>
                 <p className='informa'>Confirme sua senha:</p>
-                <input className='input1' type='password'  value={senha2} onChange={ e => setSenha2(e.target.value)}/>
+                <input className='input1' type='password'  value={senha} onChange={ e => setSenha(e.target.value)}/>
             </div>
         </div>
         <div className='alinhamento'>

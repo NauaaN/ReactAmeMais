@@ -2,7 +2,7 @@ import './index.scss';
 import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
 
-export default function index() {
+export default function Index() {
 
     return(
        
@@ -96,7 +96,6 @@ export default function index() {
                   <div className='dsAjjj'>
                     <p>“ João Paulo tem alguns problemas de alimentação e é bastante tímido, mas tem muito amor para dar”</p>
                   </div>
-                 
                   <div className='bujj'>
                   <img className='curtir' alt='' src='./images/Like.svg'/>
                     <p className='idadejj'>30</p>
@@ -197,7 +196,9 @@ export default function index() {
               </div>
              </div>
            </div>
+
            </div>
+             
 
         
     )
