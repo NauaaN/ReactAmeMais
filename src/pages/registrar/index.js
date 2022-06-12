@@ -14,6 +14,7 @@ export default function Index() {
     const [telefone, setTelefone]= useState('');
     const [sexo, setSexo]= useState('');
     const [email, setEmail]= useState('');
+    const [senha2, setSenha2]= useState('');
 
     async function salvarClick (){
         try{
@@ -53,7 +54,7 @@ export default function Index() {
                 <p className='informa'>Email:</p>
                 <input className='input1' type='text'  value={email} onChange={ e => setEmail(e.target.value)}/>
                 <p className='informa'>Confirme sua senha:</p>
-                <input className='input1' type='password'  value={senha} onChange={ e => setSenha(e.target.value)}/>
+                <input className='input1' type='password'  value={senha2} onChange={ e => setSenha2(e.target.value)}/>
             </div>
         </div>
         <div className='alinhamento'>

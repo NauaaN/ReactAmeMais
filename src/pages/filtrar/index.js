@@ -51,7 +51,7 @@ export default function Index () {
       
 
      <div className='nxx'>
-    <Link className='bxx' to=''>FILTRAR</Link>
+    <Link className='bxx' to='/verpets'>FILTRAR</Link>
     </div>
 
     <div className='nxx'>
@@ -59,7 +59,7 @@ export default function Index () {
    </div> 
 
    <div className='nxx'>
-    <Link className='bbbxx' to='/cadastrarpet'>Editar &nbsp; +PETS</Link>
+    <Link className='bbbxx' to='/meuspets'>Editar &nbsp; +PETS</Link>
 </div> 
    
 
