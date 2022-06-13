@@ -12,6 +12,7 @@ export default function Index() {
     const [cpf, setCpf]= useState('');
     const [endereco, setEndereco]= useState('');
     const [senha, setSenha]= useState('');
+    const [senha2, setSenha2]= useState('');
     const [telefone, setTelefone]= useState('');
     const [sexo, setSexo]= useState('');
     const [email, setEmail]= useState('');
