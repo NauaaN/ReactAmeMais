@@ -1,39 +1,38 @@
 import './index.scss';
 import{ Link } from 'react-router-dom';
+
+import {confirmAlert } from 'react-confirm-alert'
+
 import '../../common/common.scss';
 import { useEffect, useState } from 'react';
-import 'react-confirm-alert/src/react-confirm-alert.css';
-import { listarTodosPets, removerPet } from '../../api/petAPi';
-import { confirmAlert } from 'react-confirm-alert'; 
-import { toast } from 'react-toastify'
 
+import { listarTodosPets, deletarPet } from '../../api/petAPi';
+import { toast } from 'react-toastify';
 
 export default function Index() {
 
   const [pets, setPets] = useState([]);
 
+  async function deletarPetClick(id, nome) {
 
-  async function removerPetClick (id, nome){
-
-    confirmAlert ({
-      title: 'Remover Pet',
-      message: 'Deseja remover o pet ${nome}?',
-      buttons: [
+    confirmAlert({
+      title: 'Remove Pet',
+      message:`Deseja remover Pet ${nome}?`,
+      button:[
         {
           label: 'Sim',
           onClick: async () => {
-            const resposta = await removerPet(id, nome);
-            if (filtro === '')
-            carregarPets();
-            else
-             filtrar();
-       
-           toast.dark('Pet Removido!');
+                const resposta = await deletarPet(id, nome);
+                  
+            toast('Pet removido!');
+
           }
         },
         {
-          label: 'Não'
+          label:'Não'
         }
+
+
       ]
     })
   }
@@ -116,7 +115,8 @@ useEffect(() => {
                 </div>
         
                 <div className='bujj'>
-                    <button className='eddjj' onClick={() => removerPetClick(item.id, item.nome)}>REMOVER</button>
+                    <p className='eddjj' onClick={() => deletarPetClick(item.id, item.nome)}>REMOVER</p>
+
                 </div>
               
               

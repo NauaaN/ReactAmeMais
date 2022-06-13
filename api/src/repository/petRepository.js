@@ -93,7 +93,8 @@ export async function petsCadsastrados(id){
             VL_ALTURA		altura,
             DS_COMENTARIO	comentario,
             DS_ENDERECO		endereco,
-            DS_TELEFONE		telefone
+            DS_TELEFONE		telefone,
+            IMG_PET         imagem
           FROM TB_PET
           WHERE (ID_USUARIO = ?)
 

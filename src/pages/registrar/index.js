@@ -26,6 +26,7 @@ export default function Index() {
          alert('Usuario cadastrado com sucesso!');
         }
         catch(err){
+            console.log(err);
             alert(err.message);
         }
        }

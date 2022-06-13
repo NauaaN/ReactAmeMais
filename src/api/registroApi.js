@@ -4,7 +4,7 @@ const api = axios.create({
 })
 
 export async function cadastrarUsuario(usuario, nome, cpf, email, senha, sexo, endereco, telefone){
-    const resposta= await api.post ('/registro', {
+    const resposta= await api.post ('/usuario', {
         usuario : usuario,
         nome: nome,
         cpf: cpf,
