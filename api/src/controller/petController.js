@@ -130,7 +130,7 @@ server.delete ('/pet/:id', async (req, resp) => {
     }
 })
 
-server.get('/peta', async(req,resp)=>{
+server.get('/petusu/:idusu', async(req,resp)=>{
     try{
         const id= req.params.idusu; 
         const final= await petsCadsastrados(id);

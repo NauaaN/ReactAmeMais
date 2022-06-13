@@ -81,7 +81,7 @@ export async function alterarPET(pet,id){
     return resposta.affectedRows;
 }
 
-export async function petsCadsastrados(){
+export async function petsCadsastrados(id){
     const comando=
     `
     SELECT NM_PET     		nome,
@@ -95,8 +95,9 @@ export async function petsCadsastrados(){
             DS_ENDERECO		endereco,
             DS_TELEFONE		telefone
           FROM TB_PET
+          WHERE (ID_USUARIO = ?)
 
     `;
-    const [linhas] = await con.query(comando,[ ]);
+    const [linhas] = await con.query(comando,[ id ]);
     return linhas;
 }
