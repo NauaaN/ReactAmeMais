@@ -122,15 +122,13 @@ async function salvarClick(){
                 <p className='letras'>Adicione Uma Imagem do Pet:</p>
                 
                 {!imagem && 
-                <img src="/public/images/OIP.jpg" /> 
+                <img  className='ImagemPet' src="/public/images/OIP.jpg" /> 
                 }
 
                 {imagem &&
                 <img className='imagem-pet' src= {mostrarImagem()} alt=''/>
                 }
-               
-                 
-                
+            
                 <input type="file" id='imagemCapa' onChange={e => setImagem(e.target.files[0])} className='onzev' />
             </div>
         </section>

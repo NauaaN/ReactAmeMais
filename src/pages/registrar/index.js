@@ -27,7 +27,7 @@ export default function Index() {
          alert('Usuario cadastrado com sucesso!');
         }
         catch(err){
-            alert(err.response.data.erro);
+            alert(err.message);
         }
        }
 
@@ -58,7 +58,7 @@ export default function Index() {
                 <p className='informa'>Email:</p>
                 <input className='input1' type='text'  value={email} onChange={ e => setEmail(e.target.value)}/>
                 <p className='informa'>Confirme sua senha:</p>
-                <input className='input1' type='password'  value={senha} onChange={ e => setSenha(e.target.value)}/>
+                <input className='input1' type='password'  value={senha2} onChange={ e => setSenha2(e.target.value)}/>
             </div>
         </div>
         <div className='alinhamento'>
