@@ -6,6 +6,7 @@ import { cadastrarUsuario } from '../../api/registroApi';
 import storage from 'local-storage'
 import { useState } from 'react';
 
+
 export default function Index() {
 
     const [nome, setNome]= useState('');
@@ -25,7 +26,7 @@ export default function Index() {
          alert('Usuario cadastrado com sucesso!');
         }
         catch(err){
-         alert(err.message);
+            alert(err.response.data.erro);
         }
        }
 
@@ -60,7 +61,9 @@ export default function Index() {
             </div>
         </div>
         <div className='alinhamento'>
+        
             <button className='butaorg' onClick={salvarClick}>Registrar-se</button>
+            
         </div>
     </section>
 </main>

@@ -122,7 +122,7 @@ async function salvarClick(){
                 <p className='letras'>Adicione Uma Imagem do Pet:</p>
                 
                 {!imagem && 
-                <img src="/public/images/upload-upload-icon-73240.png" /> 
+                <img src="/public/images/OIP.jpg" /> 
                 }
 
                 {imagem &&
