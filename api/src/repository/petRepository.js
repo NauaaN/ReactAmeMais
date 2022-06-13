@@ -38,7 +38,7 @@ export async function filtrarPet(genero,animal){
     NR_IDADE 		idade,
     VL_PESO 		peso,
     VL_ALTURA		altura,
-    DS_COMENTARIO 	comentarios,
+    DS_COMENTARIO 	comentario,
     DS_ENDERECO		endereco,
     DS_TELEFONE		telefone
 FROM TB_PET		
@@ -81,7 +81,7 @@ export async function alterarPET(pet,id){
     return resposta.affectedRows;
 }
 
-export async function petsCadsastrados(id){
+export async function petsCadsastrados(){
     const comando=
     `
     SELECT NM_PET     		nome,
@@ -91,12 +91,12 @@ export async function petsCadsastrados(id){
             NR_IDADE 		idade,
             VL_PESO 		peso,
             VL_ALTURA		altura,
-            DS_COMENTARIO 	comentarios,
+            DS_COMENTARIO	comentario,
             DS_ENDERECO		endereco,
             DS_TELEFONE		telefone
           FROM TB_PET
-          WHERE(ID_USUARIO = ?)
+
     `;
-    const [linhas]= await con.query(comando,[id]);
+    const [linhas] = await con.query(comando,[ ]);
     return linhas;
 }

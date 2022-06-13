@@ -23,6 +23,7 @@ export async function cadastrarPet (animal, especie, nome, genero, idade, peso, 
 export async function enviarImagemPet(id, imagem) {
     const formData = new formData();
     formData.append('imagem' , imagem);
+
     const resposta = await api.put(`/pet/${id}/imagem ` , formData, {
         headers: {
             "Content-Type" : "multipart/form-data"
@@ -32,13 +33,15 @@ export async function enviarImagemPet(id, imagem) {
 }
 
 export async function listarTodosPets(){
-    const resposta = await api.get('/pet/:idusu');
+    const resposta = await api.get('/peta');
     return resposta.data;
 }
+
 
 
 export async function deletarPet(id) {
     const resposta = await api.delete(`/pet${id}`);
     return resposta.status;
 }
+
 

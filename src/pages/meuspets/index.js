@@ -5,9 +5,12 @@ import {confirmAlert } from 'react-confirm-alert'
 
 import '../../common/common.scss';
 import { useEffect, useState } from 'react';
+
 import { listarTodosPets, deletarPet } from '../../api/petAPi';
 import { toast } from 'react-toastify';
+
 export default function Index() {
+
   const [pets, setPets] = useState([]);
 
   async function deletarPetClick(id, nome) {
@@ -30,6 +33,7 @@ export default function Index() {
           label:'Não'
         }
 
+
       ]
     })
   }
@@ -39,6 +43,8 @@ async function carregarPets(){
       console.log(resp);
       setPets(resp);
 }
+
+
 
 
 
@@ -111,6 +117,7 @@ useEffect(() => {
         
                 <div className='bujj'>
                     <p className='eddjj' onClick={() => deletarPetClick(item.id, item.nome)}>REMOVER</p>
+
                 </div>
               
               

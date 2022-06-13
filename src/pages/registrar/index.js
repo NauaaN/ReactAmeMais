@@ -6,28 +6,27 @@ import { cadastrarUsuario } from '../../api/registroApi';
 import storage from 'local-storage'
 import { useState } from 'react';
 
-
 export default function Index() {
 
     const [nome, setNome]= useState('');
     const [cpf, setCpf]= useState('');
     const [endereco, setEndereco]= useState('');
     const [senha, setSenha]= useState('');
+    const [senha2, setSenha2]= useState('');
     const [telefone, setTelefone]= useState('');
     const [sexo, setSexo]= useState('');
     const [email, setEmail]= useState('');
-    const [senha2, setSenha2]= useState('');
 
 
-    async function salvarClick (){
+    async function salvarClick () {
         try{
         const usuario = storage('usuario-logado').id;
-         const asnwer = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
+         const resposta = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
    
          alert('Usuario cadastrado com sucesso!');
         }
         catch(err){
-            alert(err.response.data.erro);
+            alert(err.message);
         }
        }
 
@@ -58,13 +57,11 @@ export default function Index() {
                 <p className='informa'>Email:</p>
                 <input className='input1' type='text'  value={email} onChange={ e => setEmail(e.target.value)}/>
                 <p className='informa'>Confirme sua senha:</p>
-                <input className='input1' type='password'  value={senha} onChange={ e => setSenha(e.target.value)}/>
+                <input className='input1' type='password'  value={senha2} onChange={ e => setSenha2(e.target.value)}/>
             </div>
         </div>
         <div className='alinhamento'>
-        
             <button className='butaorg' onClick={salvarClick}>Registrar-se</button>
-            
         </div>
     </section>
 </main>
