@@ -36,4 +36,7 @@ export async function listarTodosPets(){
     return resposta.data;
 }
 
-
+export async function removerPet(id){
+    const resposta = await api.delete(`/pet/${id}`);
+    return resposta.status;
+}

@@ -2,15 +2,48 @@ import './index.scss';
 import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
 import { useEffect, useState } from 'react';
-import { listarTodosPets } from '../../api/petAPi';
+import 'react-confirm-alert/src/react-confirm-alert.css';
+import { listarTodosPets, removerPet } from '../../api/petAPi';
+import { confirmAlert } from 'react-confirm-alert'; 
+
+
 export default function Index() {
+
   const [pets, setPets] = useState([]);
+
+
+  async function removerPetClick (id, nome){
+
+    confirmAlert ({
+      title: 'Remover Pet',
+      message: 'Deseja remover o pet ${nome}?',
+      buttons: [
+        {
+          label: 'Sim',
+          onClick: async () => {
+            const resposta = await removerPet(id, nome);
+            if (filtro === '')
+            carregarPets();
+            else
+             filtrar();
+       
+           alert('Pet Removido!');
+          }
+        },
+        {
+          label: 'Não'
+        }
+      ]
+    })
+  }
 
 async function carregarPets(){
       const resp = await listarTodosPets();
       console.log(resp);
       setPets(resp);
 }
+
+
 
 
 
@@ -82,7 +115,7 @@ useEffect(() => {
                 </div>
         
                 <div className='bujj'>
-                    <p className='eddjj'>REMOVER</p>
+                    <button className='eddjj' onClick={() => removerPetClick(item.id, item.nome)}>REMOVER</button>
                 </div>
               
               
