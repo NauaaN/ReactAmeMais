@@ -2,6 +2,7 @@ import './index.scss';
 import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
 import { useEffect, useState } from 'react';
+import PetsCards from '../components/petsCard'
 import { listarTodosPets } from '../../api/petAPi';
 export default function Index() {
   const [pets, setPets] = useState([]);
@@ -42,53 +43,7 @@ useEffect(() => {
           <div className='lucaojjn'>
 
           {pets.map(item =>
-           <div className='cardpjj'>
-             <div className='cardjj'>
-             <div className='card1jjj'>
-             
-                    <div className='especiejj'>
-                  <p className='ejj'>ESPÉCIE:</p>
-                  <p className='avejj'>{item.animal}</p>
-                  <div className='femininojj' >{item.genero} </div>
-               </div>
-               <div className='toninhajj'>
-                   <img src='./images/toninhaa.svg' />
-               </div>
-               <div className='textos2jj'>
-                 <div className='nijj'>
-                  <p className='najj'>{item.nome}</p>
-                  <p className='idadejj'>IDADE: {item.idade}</p>
-                 </div>
-                 <div className='psjj'>
-                  <div className='psijj'>
-                    <p className='pijj'>PESO:</p>
-                    <p className='dsjj'>{item.peso}</p>
-                  </div>
-                  <div className='psijj'>
-                    <p className='pijj'>ALTURA:</p>
-                    <p className='dsjj'>{item.altura}</p>
-                  </div>
-                 </div>
-               </div>
-               <div className='dsAjjj'>
-                 <p>{item.comentario}</p>
-               </div>
-              <div className='bujj'>
-                  <img className='curtir' alt='' src='./images/Like.svg'/>
-                  <p className='idadejj'>30</p>
-              </div>
-              
-                 <div className='curtirirjj'> 
-                   <p className='ed1jj'>{item.enderco}</p>
-                   <p className='ed2jj'>{item.telefone}</p>
-                 </div>
-                 </div>
-             
-             </div>
-           
-    
-           </div>
-        
+           <PetsCards item={item} />
                 )}
             </div>    
          
