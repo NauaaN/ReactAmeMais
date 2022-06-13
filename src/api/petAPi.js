@@ -32,7 +32,7 @@ export async function enviarImagemPet(id, imagem) {
 }
 
 export async function listarTodosPets(){
-    const resposta = await api.get('/pet/:idusu');
+    const resposta = await api.get('/peta');
     return resposta.data;
 }
 
