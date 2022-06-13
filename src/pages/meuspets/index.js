@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import { listarTodosPets, removerPet } from '../../api/petAPi';
 import { confirmAlert } from 'react-confirm-alert'; 
+import { toast } from 'react-toastify'
 
 
 export default function Index() {
@@ -27,7 +28,7 @@ export default function Index() {
             else
              filtrar();
        
-           alert('Pet Removido!');
+           toast.dark('Pet Removido!');
           }
         },
         {
