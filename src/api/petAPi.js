@@ -37,3 +37,8 @@ export async function listarTodosPets(){
 }
 
 
+export async function deletarPet(id) {
+    const resposta = await api.delete(`/pet${id}`);
+    return resposta.status;
+}
+

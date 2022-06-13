@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import './index.css';
+
+import 'react-confirm-alert/src/react-confirm-alert.css';
+
 import App from './App';
 import Ladingpage from './pages/ladingpage';
 import Cadastrarpet from './pages/cadastrarpet';
