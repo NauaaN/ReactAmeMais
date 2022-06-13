@@ -39,6 +39,11 @@ export async function listarTodosPets(){
     return resposta.data;
 }
 
+export async function filtrarPets(genero,animal){
+    const resposta = await api.get(`/pet?genero=${genero}&animal=${animal}`);
+    return resposta.data;
+} 
+
 
 
 export async function deletarPet(id) {
