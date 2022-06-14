@@ -4,16 +4,22 @@ import '../../common/common.scss';
 import { useEffect, useState } from 'react';
 import PetsCards from '../components/petsCard'
 import { listarTodosPets } from '../../api/petAPi';
+import { useNavigate } from 'react-router-dom';
+import storage from 'local-storage'
 export default function Index() {
   const [pets, setPets] = useState([]);
-
+  const navigate = useNavigate();
 async function carregarPets(){
       const resp = await listarTodosPets();
       console.log(resp);
       setPets(resp);
 }
 
-
+useEffect(() => {
+  if(!storage('usuario-logado')) {
+      navigate('/');
+  }
+}, [])
 
 useEffect(() => {
   carregarPets();

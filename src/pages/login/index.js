@@ -33,6 +33,7 @@ export default function Index() {
 
         } catch (err) {
             ref.current.complete();
+            setCarregando(false);
             if (err.response.status === 401) {
                 setErro(err.response.data.erro);
             }

@@ -2,13 +2,19 @@ import './index.scss';
 import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
 
-export default function index() {
 
+
+
+
+export default function Index() {
+
+   
     return(
         <main className="faixaS">
         <header className="faixa-cimaS">
             <img className="logoS" src= '../images/IMG-20220418-WA0079_3.svg'/>
             <Link to='/Login'className="palavraS">LOGIN</Link>
+           
         </header>
         <section className="faixina1S">
             <div className="cassioS">

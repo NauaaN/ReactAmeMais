@@ -10,6 +10,13 @@ import { listarTodosPets, deletarPet } from '../../api/petAPi';
 import { toast } from 'react-toastify';
 
 export default function Index() {
+  function mostrarImagem(imagem) {
+    if (!imagem)
+      return './images/toninhaa.svg'
+    else
+      return `http://localhost:5000/${imagem}`
+  }
+
 
   const [pets, setPets] = useState([]);
 
@@ -17,7 +24,7 @@ export default function Index() {
 
     confirmAlert({
       title: 'Remover Pet',
-      message:`Deseja remover Pet ${nome}?`,
+      message:`Deseja o remover pet ${nome}?`,
       button:[
         {
           label: 'Sim',
@@ -89,7 +96,7 @@ useEffect(() => {
                   <div className='femininojj' >{item.genero} </div>
                </div>
                <div className='toninhajj'>
-                   <img src='./images/toninhaa.svg' />
+                   <img src={mostrarImagem(item.imagem)} />
                </div>
                <div className='textos2jj'>
                  <div className='nijj'>
