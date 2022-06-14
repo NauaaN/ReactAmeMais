@@ -32,7 +32,8 @@ return resposta.affectedRows;
 
 export async function filtrarPet(genero,animal){
     const comando=`
-    SELECT NM_PET   nome,
+    SELECT ID_PET           id,
+    NM_PET   nome,
     DS_ANIMAL   	animal,
     DS_ESPECIE		especie,
     DS_GENERO		genero,
@@ -41,6 +42,7 @@ export async function filtrarPet(genero,animal){
     VL_ALTURA		altura,
     DS_COMENTARIO 	comentario,
     DS_ENDERECO		endereco,
+    NR_CURTIDAS     curtidas,
     DS_TELEFONE		telefone,
     IMG_PET         imagem
 FROM TB_PET		
@@ -86,7 +88,8 @@ export async function alterarPET(pet,id){
 export async function petsCadastrados(){
     const comando=
     `
-    SELECT NM_PET     		nome,
+    SELECT ID_PET           id,
+            NM_PET     		nome,
             DS_ANIMAL   	animal,
             DS_ESPECIE		especie,
             DS_GENERO		genero,
@@ -95,6 +98,7 @@ export async function petsCadastrados(){
             VL_ALTURA		altura,
             DS_COMENTARIO	comentario,
             DS_ENDERECO		endereco,
+            NR_CURTIDAS     curtidas,
             DS_TELEFONE		telefone,
             IMG_PET         imagem
           FROM TB_PET
@@ -107,7 +111,8 @@ export async function petsCadastrados(){
 export async function meusPets(id){
     const comando=
     `
-    SELECT NM_PET              nome,
+    SELECT ID_PET           id,
+            NM_PET              nome,
             DS_ANIMAL          animal,
             DS_ESPECIE         especie,
             DS_GENERO          genero,

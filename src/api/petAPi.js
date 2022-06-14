@@ -1,10 +1,10 @@
 import axios from "axios";
 const api = axios.create({
-    baseURL : 'http://localhost:5000'
+    baseURL : `http://localhost:5000`
 })
  
 export async function cadastrarPet (animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario) {
-    const resposta = await api.post('/pet' ,{
+    const resposta = await api.post(`/pet` ,{
     usuario: usuario,
     nome : nome,
     animal: animal,
@@ -23,7 +23,7 @@ export async function cadastrarPet (animal, especie, nome, genero, idade, peso, 
 
 export async function enviarImagemPet(id, imagem) {
     const formData = new FormData();
-    formData.append('imagem' , imagem);
+    formData.append(`imagem` , imagem);
 
     const resposta = await api.put(`/pet/${id}/imagem`, formData, {
         headers: {
@@ -35,7 +35,7 @@ export async function enviarImagemPet(id, imagem) {
 
 
 export async function listarTodosPets(){
-    const resposta = await api.get('/peta');
+    const resposta = await api.get(`/peta`);
     return resposta.data;
 }
 
@@ -44,6 +44,10 @@ export async function filtrarPets(genero,animal){
     return resposta.data;
 } 
 
+export async function curtirPet(id){
+    const resposta= await api.put(`/curtida/${id}`);
+    return resposta.status;
+}
 
 
 export async function deletarPet(id) {

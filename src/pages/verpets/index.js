@@ -25,8 +25,9 @@ useEffect(() => {
     <div className='principaljj'>
             <div className='loginjj'>
               <div className='simbolojj'>
-              <img className='lljj' src= '../images/IMG-20220418-WA0079_3.svg'/>
-              
+              <Link to='/'>
+                <img className='lljj' src= '../images/IMG-20220418-WA0079_3.svg'/>
+              </Link>
               <Link to='/filtrar'>
                 <img className='filtrarongc' src= '../images/Component 1.svg'/>
               </Link>
@@ -40,10 +41,10 @@ useEffect(() => {
            </div>
     
       
-          <div className='lucaojjn'>
+          <div className='lucaojjnverpets'>
 
           {pets.map(item =>
-           <PetsCards item={item} />
+           <PetsCards item={item}  />
                 )}
             </div>    
          

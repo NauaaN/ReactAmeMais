@@ -2,7 +2,6 @@
 .filtrarxx {
     display: flex;
     flex-direction: row;
-    
 
 .funilxx{
     width: 30vh;
@@ -15,7 +14,6 @@
     background-color: #FEC18A;
     box-shadow: 4px 4px 4px rgb(163, 163, 163);
     position: absolute;
-    margin-top: -2em;
     width: 16em;
     position: relative;
     
@@ -154,6 +152,7 @@ input[type=checkbox]:checked:disabled + label:before {
     font-family: 'rrb';
     font-size: 1.2em;
     margin-top: 3em;
+    cursor: pointer;
 }
 
 .bbxx {
@@ -279,25 +278,14 @@ input[type=checkbox]:checked:disabled + label:before {
     margin-left: 3em;
 }
 
-.cardjj {
-    display: flex;
-    flex-direction: row;
-}
 
-.card1jjj {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 1em;
-    box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
-    margin-left: -10em;
-}
+
+
 
 .lucaojjn{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .card1jjjj {
@@ -306,7 +294,6 @@ input[type=checkbox]:checked:disabled + label:before {
     background-color: white;
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
-    margin-left: 4em;
 }
 
 .card11jj {
@@ -316,7 +303,6 @@ input[type=checkbox]:checked:disabled + label:before {
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
     margin-top: 3em;
-    margin-left: 4em;
 }
 
 .card11jjj {
@@ -326,14 +312,9 @@ input[type=checkbox]:checked:disabled + label:before {
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
     margin-top: 3em;
-    margin-left: -10em;
 }
 
 
-
-.cardjj > * {
-    margin-right: 5em;
-}
 
 .especiejj {
     display: flex;

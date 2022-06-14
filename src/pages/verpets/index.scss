@@ -19,6 +19,7 @@ margin-left: 1.2em;
 
 .lljj {
     mix-blend-mode: lighten;
+    cursor: pointer;
 }
 
 .loginjj {
@@ -74,30 +75,21 @@ margin-left: 1.2em;
     flex-direction: column;
     margin-top: 3em;
     padding: 0em 10em;
-    margin-left: 10em;
     
 }
 
 .cardpjj > * {
     margin-left: 3em;
 }
-.lucaojjn{
-    margin-left: 11em;
+
+.lucaojjnverpets{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
-.cardjj {
-    display: flex;
-    flex-direction: row;
-}
 
-.card1jjj {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 0.7em;
-    box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
-    margin-left: -10em;
-}
+
 
 .card1jjjj {
     display: flex;
@@ -105,7 +97,6 @@ margin-left: 1.2em;
     background-color: white;
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
-    margin-left: 4em;
 }
 
 .card11jj {
@@ -115,7 +106,6 @@ margin-left: 1.2em;
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
     margin-top: 3em;
-    margin-left: 4em;
    
 }
 
@@ -126,14 +116,10 @@ margin-left: 1.2em;
     border-radius: 0.7em;
     box-shadow: 4px 4px 7px 0px rgb(187, 182, 182);
     margin-top: 3em;
-    margin-left: -10em;
 }
 
 
 
-.cardjj > * {
-    margin-right: 5em;
-}
 
 .especiejj {
     display: flex;
