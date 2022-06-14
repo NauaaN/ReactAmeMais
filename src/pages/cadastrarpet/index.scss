@@ -21,9 +21,9 @@
     display: flex;
     justify-content:space-between;
     background-color: rgba(0, 107, 140, 1);
-    padding: 1.5em;
-    padding-bottom: 0.5em;
-    };
+    padding: 1em;
+    padding-bottom: 0px;
+    }
 
 
 
@@ -96,6 +96,7 @@
     color: #000000;
     font-family: 'rrb';
     border-radius: 20px;
+    margin-top: 5px;
 }
 
 .segundov {
@@ -105,6 +106,7 @@
     color: #000000;
     font-family: 'rrb';
     border-radius: 20px;
+    margin-top: 5px;
 }
 
 .terceirov {
@@ -113,6 +115,7 @@
     background-color: #8CC4D6;
     padding: 1em;
     width: 15em;
+    margin-top: 5px;
 }
 
 .quartov {
@@ -122,6 +125,7 @@
     color: #000000;
     font-family: 'rrb';
     border-radius: 20px;
+    margin-top: 5px;
 }
 
 .quintov {
@@ -131,6 +135,7 @@
     width: 15em;
     font-family: 'rrb';
     border-radius: 20px;
+    margin-top: 5px;
 }
 
 .sextov {
@@ -140,6 +145,7 @@
     color: #000000;
     font-family: 'rrb';
     border-radius: 20px;
+    margin-top: 5px;
 }
 
 .setimov {
@@ -149,6 +155,7 @@
     color: #000000;
     font-family: 'rrb';
     border-radius: 20px;
+    margin-top: 5px;
 }
 
 .oitavov {
@@ -158,6 +165,7 @@
     color: #000000;
     font-family: 'rrb';
     border-radius: 20px;
+    margin-top: 5px;
 }
 
 .nonov {
@@ -167,6 +175,7 @@
     color: #000000;
     font-family: 'rrb';
     border-radius: 20px;
+    margin-top: 5px;
 }
 
 .bloco2v {
@@ -181,6 +190,7 @@
     width: 24em;
     border-radius: 20px;
     font-family: 'rrb';
+    margin-top: 5px;
 }
 
 .onzev {
@@ -190,24 +200,129 @@
     color: #000000;
     border-radius: 20px;
     padding-bottom: 12em;
+    margin-top: 5px;
 }
 
-.imagemPet{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #dfdfdf;
-    border-radius: 3px;
-    height: 20em;
-    width: 200px;
-    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3));
-    cursor: pointer;
-} 
 
 .imagem-pet{
-    border-radius: 3px;
-    width: 10em;
-    height: 10em;
+    width: 40em;
+    height: 20em;
 }
 
+.ImagemPetv{
+    width: 40em;
+    height: 20em;  
+}
+
+@media (max-width:400px) {
+    .faivav{
+        width:45vh;
+    }
+
+    .botoesv {
+        padding: 15px 30px;
+        
+    }
+    .botoesu {
+        padding: 15px 30px; 
+    }
+
+    .containerv {
+        display:flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 1em;
+    }
+
+    .letras {
+        font-size: 12px;
+    }
+
+    .especiev {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .NOMEv {
+        display:flex;
+        flex-direction: column;  
+    }
+
+    .PESOv {
+        display:flex;
+        flex-direction: column; 
+    }
+
+    .primeirov {
+        width:20em;
+        padding: 30px;
+        margin-top: 5px;
+    }
+
+    .terceirov {
+        width:20em;
+        padding: 30px;
+        margin-top: 5px;
+    }
+
+    .segundov {
+        padding: 30px;
+        margin-top: 5px;
+    }
+
+    .quartov {
+        width:20em;
+        padding: 30px;
+        margin-top: 5px; 
+    }
+
+    .quintov {
+        width:20em;
+        padding: 30px; 
+        margin-top: 5px;
+    }
+
+    .sextov {
+        padding: 30px; 
+        margin-top: 5px;
+    }
+
+    .setimov {
+        width:20em;
+        padding: 30px;
+        margin-top: 5px; 
+    }
+
+    .oitavov {
+        width:20em;
+        padding: 30px;  
+        margin-top: 5px; 
+    }
+
+    .nonov {
+        width:20em;
+        padding: 30px;
+        margin-top: 5px; 
+    }
+
+    .bloco2v {
+        margin-left: 0em; 
+    }
+
+    .decimov {
+        width: 11em;
+        padding: 25px; 
+        margin-top: 5px;
+    }
+
+    .onzev{
+        width:20em;
+        padding: 30px;
+        margin-left: 0em;
+        margin-top: 5px;
+    }
+    
+}

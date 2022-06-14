@@ -119,9 +119,10 @@ export default function Index() {
                         <p className='letras'>Coméntarios Sobre (Doenças/alergias):</p>
                         <input className='decimov' value={comentario} onChange={e => setComentario(e.target.value)} />
                     </div>
+                    
+                        <div><p className='letras'>Adicione Uma Imagem do Pet:</p></div>
 
                     <div className='ImagemPetv' onClick={escolherImagem}>
-                        <p className='letras'>Adicione Uma Imagem do Pet:</p>
 
                         {!imagem &&
                             <img className='ImagemPet' src="/public/images/R.png" />
@@ -131,7 +132,7 @@ export default function Index() {
                             <img className='imagem-pet' src={mostrarImagem()} alt='' />
                         }
 
-                        <input type="file" id='imagemCapa' onChange={e => setImagem(e.target.files[0])} className='onzev' />
+                        <input type="file" id='imagemCapa' onChange={e => setImagem(e.target.files[0])} className='onzev'/>
                     </div>
                 </section>
 
