@@ -1,6 +1,13 @@
 import './index.scss'
 export default function Index(props){
 
+  function mostrarImagem(imagem) {
+    if (!imagem)
+      return './images/toninhaa.svg'
+    else
+      return `http://localhost:5000/${imagem}`
+  }
+
     return(
         <div className='cardpjj'>
              <div className='cardjj'>
@@ -12,7 +19,7 @@ export default function Index(props){
                   <div className='femininojj' >{props.item.genero} </div>
                </div>
                <div className='toninhajj'>
-                   <img src='./images/toninhaa.svg' />
+                   <img src={mostrarImagem(props.item.imagem)} />
                </div>
                <div className='textos2jj'>
                  <div className='nijj'>

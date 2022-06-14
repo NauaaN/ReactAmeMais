@@ -22,7 +22,8 @@ export default function Index() {
         {
           label: 'Sim',
           onClick: async () => {
-              
+                const resposta = await deletarPet(id, nome);
+                  
             toast('Pet removido!');
 
           }

@@ -1,3 +1,4 @@
+
 .filtrarxx {
     display: flex;
     flex-direction: row;
@@ -152,8 +153,7 @@ input[type=checkbox]:checked:disabled + label:before {
     box-shadow: 4px 4px 4px rgb(168, 168, 168);
     font-family: 'rrb';
     font-size: 1.2em;
-    margin-bottom: 6em;
-    
+    margin-top: 3em;
 }
 
 .bbxx {
@@ -193,15 +193,14 @@ input[type=checkbox]:checked:disabled + label:before {
 }
 .nxx {
     text-align: center;
-    margin-bottom: 4em; 
+    margin-bottom: 3em; 
 }
 }
 .principaljj {
     display: flex;
     flex-direction: column;
     background-color: #F0F0F0;
-   
-    
+    min-width: 80vw;
 }
 
 
