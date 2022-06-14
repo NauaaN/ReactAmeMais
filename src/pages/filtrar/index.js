@@ -1,284 +1,144 @@
 import './index.scss'
 import { Link } from 'react-router-dom'
 import '../../common/common.scss'
+import PetsCards from '../components/petsCard'
+import { filtrarPets, listarTodosPets } from '../../api/petAPi'
+import { useEffect, useState } from 'react'
 
-export default function Index () {
-    return (
-        <div className='filtrarxx'>
-        <div className='filtrar2xx'>
-            <div className='funilxx'>
-                <img src='/images/Union.svg' />
-            </div>
-            <div className='nominhoxx'>
-                FILTRAR
-            </div>
+export default function Index() {
+  const [pets, setPets] = useState([]);
+
+  const [filtroGenero, setFiltroGenero] = useState('');
+  const [filtroAnimal, setFiltroAnimal] = useState('');
+
+
+  async function filtrando() {
+    const resposta = await filtrarPets(filtroGenero, filtroAnimal);
+    setPets(resposta);
+  }
+
+  async function carregarPets() {
+    const resp = await listarTodosPets();
+    console.log(resp);
+    setPets(resp);
+  }
+
+  function estaMarcadoAnimal(filtro) {
+    return filtro == filtroAnimal;
+  }
+
+  function marcarAnimal(filtro) {
+    setFiltroAnimal(filtro);
+  }
+
+  
+  function estaMarcadoGenero(filtro) {
+    return filtro == filtroGenero;
+  }
+
+  function marcarGenero(filtro) {
+    setFiltroGenero(filtro);
+  }
+
+
+  useEffect(() => {
+    carregarPets();
+  }, [])
+
+  return (
+    <div className='filtrarxx'>
+      <div className='filtrar2xx'>
+        <div className='funilxx'>
+          <img src='/images/Union.svg' />
+        </div>
+        <div className='nominhoxx'>
+          FILTRAR
+        </div>
         <div className='t1'>
-            	
-&#709; Espécie
+
+          &#709; Espécie
         </div>
         <div className='checkxx'>
-        <form>
-  <input type="checkbox" id="fruit1" name="fruit-1" value="Apple"/>
-  <label for="fruit1">Aves</label>
-  <input type="checkbox" id="fruit2" name="fruit-2" value="Banana" />
-  <label for="fruit2">Cachorros</label>
-  <input type="checkbox" id="fruit3" name="fruit-3" value="Cherry" />
-  <label for="fruit3">Gatos</label>
-  <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry"/>
-  <label for="fruit4">Roedores</label>
-  <input type="checkbox" id="fruittt3" name="fruit-3" value="Cherry"  />
-  <label for="fruittt3">Todos</label>
-</form>
-         
-         </div>
-                    <div className='t2xx'>                  	
-&#709; Gênero
-                    </div>
-     <div className='checkxx'>
-     <form>
-  <input type="checkbox" id="fruitt1" name="fruit-1" value="Apple" />
-  <label for="fruitt1">Masculino</label>
-  <input type="checkbox" id="fruitt2" name="fruit-2" value="Banana" />
-  <label for="fruitt2">Feminino</label>
-  <input type="checkbox" id="fruitt3" name="fruit-3" value="Cherry"  />
-  <label for="fruitt3">Todos</label>
- 
-</form>
+          <form>
+            <input type="checkbox" id="fruit1" name="fruit-1" checked={estaMarcadoAnimal('Ave')} onChange={e => e.target.checked && marcarAnimal('Ave')} />
+            <label for="fruit1">Aves</label>
+
+            <input type="checkbox" id="fruit2" name="fruit-2" checked={estaMarcadoAnimal('Cachorro')} onChange={e => e.target.checked && marcarAnimal('Cachorro')} />
+            <label for="fruit2">Cachorros</label>
+
+            <input type="checkbox" id="fruit3" name="fruit-3" checked={estaMarcadoAnimal('Gato')} onChange={e => e.target.checked && marcarAnimal('Gato')} />
+            <label for="fruit3">Gatos</label>
+
+            <input type="checkbox" id="fruit4" name="fruit-4" checked={estaMarcadoAnimal('Roedor')} onChange={e => e.target.checked && marcarAnimal('Roedor')} />
+            <label for="fruit4">Roedores</label>
+
+            <input type="checkbox" id="fruittt3" name="fruit-3" checked={estaMarcadoAnimal('Todos')} onChange={e => e.target.checked && marcarAnimal('Todos')} />
+            <label for="fruittt3">Todos</label>
+          </form>
+
+        </div>
+        <div className='t2xx'>
+          &#709; Gênero
+        </div>
+        <div className='checkxx'>
+          <form>
+            <input type="checkbox" id="fruitt1" name="fruit-1"checked={estaMarcadoGenero('macho')} onChange={e => e.target.checked && marcarGenero('macho')}/>
+            <label for="fruitt1">Macho</label>
+            <input type="checkbox" id="fruitt2" name="fruit-2"checked={estaMarcadoGenero('femea')} onChange={e => e.target.checked && marcarGenero('femea')}/>
+            <label for="fruitt2">Femêa</label>
+            <input type="checkbox" id="fruitt3" name="fruit-3"checked={estaMarcadoGenero('todos')} onChange={e => e.target.checked && marcarGenero('todos')}/>
+            <label for="fruitt3">Todos</label>
+
+          </form>
         </div>
 
-    
-      
 
-     <div className='nxx'>
-    <Link className='bxx' to='/verpets'>FILTRAR</Link>
-    </div>
 
-    <div className='nxx'>
-        <Link className='bbxx' to='/'>Voltar ao menu</Link>
-   </div> 
 
-   <div className='nxx'>
-    <Link className='bbbxx' to='/meuspets'>Editar &nbsp; +PETS</Link>
-</div> 
-   
+        <div className='nxx'>
+          <button className='bxx' onClick={filtrando}>FILTRAR</button>
+        </div>
 
-      
-    </div>
-    
+        <div className='nxx' >
+          <Link className='bbxx' to='/'>Voltar ao menu</Link>
+        </div>
 
-    <div className='principaljj'>
-              <div className='loginjjj'>
-                <div className='simbolojj'>
-                <img className='lljj' src='./images/IMG-20220418-WA0079_1.svg' alt=''/>
-                <Link to='/verpets'>
-                  <img className='filtrarongcaa' src= '../images/Component 1.svg'/>
-                </Link>
-                </div>
-               <div className='login1jj'>
-                <Link className='aajj' to='/cadastrarpet'>+ &nbsp; PET</Link>
-                <p className='nomejj'>Nauan dos Santos
-                </p>
-                <img className='nauanjj' src='./images/nauanigual.svg' alt=''/>
-                </div>
-             </div>
-        
-             <div className='editarjj'>
-         
-             </div>
-            <div>
-            
-             </div>
-        
-            <div className='lucaojj'>
-             <div className='cardpjj'>
-               <div className='cardjj'>
-               <div className='card1jjj'>
-                 <div className='especiejj'>
-                    <p className='ejj'>ESPECIE:</p>
-                    <p className='avejj'>AVE, CALOPSITA</p>
-                    <img className='femininojj' src='./images/mulhe.png' alt=''/>
-                 </div>
-                 <div className='toninhajj'>
-                     <img src='./images/toninhaa.svg' alt=''/>
-                 </div>
-                 <div className='textos2jj'>
-                   <div className='nijj'>
-                    <p className='najj'>Toninha</p>
-                    <p className='idadejj'>IDADE: 3</p>
-                   </div>
-                   <div className='psjj'>
-                    <div className='psijj'>
-                      <p className='pijj'>PESO:</p>
-                      <p className='dsjj'>80 g</p>
-                    </div>
-                    <div className='psijj'>
-                      <p className='pijj'>ALTURA:</p>
-                      <p className='dsjj'>9 cm</p>
-                    </div>
-                   </div>
-                 </div>
-                 <div className='dsAjjj'>
-                   <p>“ Toninha é totalmente saudavél, enérgica e está a procura de um lar cheio de amor”</p>
-                 </div>
-                <div className='bujj'>
-                    <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
-                </div>
-        
-                <div className='bujj'>
-                
-                </div>
-                
-                   <div className='curtirirjj'> 
-                     <p className='ed1jj'>São paulo, Sp</p>
-                     <p className='ed2jj'>(11) 9856-4537</p>
-                   </div>
-        
-                   
-                 </div>
-                 <div className='card1jjjj'>
-                  <div className='especiejj'>
-                     <p className='ejj'>ESPÉCIE:</p>
-                     <p className='avejj'>AVE, PAPAGAIO </p>
-                     <img className='MAScULINOjj' src='./images/homi.png' alt=''/>
-                  </div>
-                  <div className='toninhajj'>
-                      <img className='papagaiojj'src='./images/joaop.svg' alt=''/>
-                  </div>
-                  <div className='textos2jj'>
-                    <div className='nijj'>
-                     <p className='na2jj'>João paulo</p>
-                     <p className='idadejj'>IDADE: 7</p>
-                    </div>
-                    <div className='psjj'>
-                     <div className='psijj'>
-                       <p className='pijj'>PESO:</p>
-                       <p className='dsjj'>405 g</p>
-                     </div>
-                     <div className='psijj'>
-                       <p className='pijj'>ALTURA:</p>
-                       <p className='dsjj'>35 cm</p>
-                     </div>
-                    </div>
-                  </div>
-                  <div className='dsAjjj'>
-                    <p>“ João paulo tem alguns problemas de alimentação e é bastante tímido, mas tem muito amor para dar”</p>
-                  </div>
-                 
-                  <div className='bujj'>
-                  <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
-                </div>
-        
-                <div className='bujj'>
-                    
-                </div>
-        
-                    <div className='curtirirjj'> 
-                      <p className='ed1jj'>Brasilia, GO</p>
-                      <p className='ed2jj'>(11) 9856-4537</p>
-                    </div>
-               </div>
-        
-        
-              </div>
-              <div className='cardjj'>
-                <div className='card11jjj'>
-                  <div className='especiejj'>
-                     <p className='ejj'>ESpÉcIE:</p>
-                     <p className='aveejj'>AVE, PERIQUITO AUSTRALIANO</p>
-                     <img className='femininoojjjx' src='./images/mulhe.png' alt=''/>
-                  </div>
-                  <div className='toninhajj'>
-                      <img src='./images/ninotaa.svg' alt=''/>
-                  </div>
-                  <div className='textos2jj'>
-                    <div className='nijj'>
-                     <p className='najj'>Ninota</p>
-                     <p className='idadejj'>IDADE: 2</p>
-                    </div>
-                    <div className='psjj'>
-                     <div className='psijj'>
-                       <p className='pijj'>PESO:</p>
-                       <p className='dsjj'>40 g</p>
-                     </div>
-                     <div className='psijj'>
-                       <p className='pijj'>ALTURA:</p>
-                       <p className='dsjj'>18 cm</p>
-                     </div>
-                    </div>
-                  </div>
-                  <div className='dsAjjj'>
-                    <p>“ Ninota é totalmente saudavél, enérgica e está a procura de um lar cheio de amor”</p>
-                  </div>
-                 
-                  <div className='bujj'>
-                  <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
-                </div>
-        
-                <div className='bujj'>
-                   
-                </div>
-        
-        
-                    <div className='curtirirjj'> 
-                      <p className='ed1jj'>São paulo, Sp</p>
-                      <p className='ed2jj'>(11) 9856-4537</p>
-                    </div>
-         
-                    
-                  </div>
-        
-                  <div className='card11jj'>
-                   <div className='especiejj'>
-                      <p className='ejj'>ESPÉCIE:</p>
-                      <p className='avejj'>AVE, POMBO </p>
-                      <img className='femininoojjj' src='./images/mulhe.png' alt=''/>
-                   </div>
-                   <div className='toninhajj'>
-                       <img className='papagaiojj' src='./images/pomba.svg' alt=''/>
-                   </div>
-                   <div className='textos2jj'>
-                     <div className='nijj'>
-                      <p className='na2jj'>Bernarda</p>
-                      <p className='idadejj'>IDADE: 3</p>
-                     </div>
-                     <div className='psjj'>
-                      <div className='psijj'>
-                        <p className='pijj'>PESO:</p>
-                        <p className='dsjj'>80 g</p>
-                      </div>
-                      <div className='psijj'>
-                        <p className='pijj'>ALTURA:</p>
-                        <p className='dsjj'>9,2 cm</p>
-                      </div>
-                     </div>
-                   </div>
-                   <div className='dsAjjj'>
-                     <p>“ Bernarda tem alguns problemas de alimentação e é bastante tímida, mas tem muito amor para dar”</p>
-                   </div>
-                   <div className='bujj'>
-                   <img className='curtir' alt='' src='./images/Like.svg'/>
-                    <p className='idadejj'>30</p>
-                </div>
-        
-                <div className='bujj'>
-                    
-                </div>
-                     <div className='curtirirjj'> 
-                       <p className='ed1jj'>Brasilia, </p>
-                       <p className='ed2jj'>(11) 9856-4537</p>
-                     </div>
-                </div>
-              
-              <div>
-              </div>
-              </div>
-             </div>
-           </div>
-           </div>
+        <div className='nxx'>
+          <Link className='bbbxx' to='/meuspets'>Editar &nbsp; +PETS</Link>
+        </div>
+      </div>
+
+
+      <div className='principaljj'>
+        <div className='loginjjj'>
+          <div className='simbolojj'>
+            <img className='lljj' src='./images/IMG-20220418-WA0079_1.svg' alt='' />
+            <Link to='/verpets'>
+              <img className='filtrarongcaa' src='../images/Component 1.svg' />
+            </Link>
+          </div>
+          <div className='login1jj'>
+            <Link className='aajj' to='/cadastrarpet'>+ &nbsp; PET</Link>
+            <p className='nomejj'>Nauan dos Santos
+            </p>
+            <img className='nauanjj' src='./images/nauanigual.svg' alt='' />
+          </div>
+        </div>
+
+        <div className='editarjj'>
+
+        </div>
+        <div>
+
+        </div>
+
+        <div className='lucaojjn'>
+          {pets.map(item =>
+            <PetsCards item={item} />
+          )}
+        </div>
+      </div>
 
     </div>
-    )
+  )
 }

@@ -80,9 +80,7 @@
         font-size: 1.1em;
         
     }
-    .parte2{
-        margin: em;
-    }
+    
     .butaorg{
         color: white;
         margin-top: 3.5em;
@@ -98,7 +96,16 @@
         margin-bottom: 2em;
     }
     
-   
+    @media (max-width: 1280px) {
+        .fundo{
+            height: 55em;
+        }
+
+        .input1{
+            width: 30em;
+        }
+
+     }
   
     
     

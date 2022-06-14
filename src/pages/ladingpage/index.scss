@@ -327,7 +327,7 @@
         background-image: url('../../../public/images/fundolaranjafofo.png');
         background-repeat: no-repeat;
         background-position: bottom;
-        background-size:contain;        
+        background-size:contain;      
     }
     
     .titulojc {
@@ -355,6 +355,7 @@
         min-height: 38em;
         align-items: center;
         justify-content: space-around;
+       
     }
     
     .c2jc {
@@ -422,7 +423,7 @@
         border-color: #DDD7D7;
         border-radius: 17px;
         border-width: 1px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         box-shadow: 4px 4px 4px #ddd7d7;
         margin-left: 12em;
     }
@@ -612,7 +613,17 @@
 
 
     @media (max-width: 1280px) {
-        main {
-            font-size: .96em;
+       .c2jc {
+           width: max-content;
+        }
+        .juntarjc{
+            margin-left: 0.8em;
+        }
+
+        .pe{
+            font-size: 1.2em;
+        }
+        .cardjc{
+            width: 40em;
         }
     }

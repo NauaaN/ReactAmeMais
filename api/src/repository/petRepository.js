@@ -31,7 +31,9 @@ return resposta.affectedRows;
 }
 
 export async function filtrarPet(genero,animal){
-    const comando=`SELECT NM_PET     		nome,
+    const comando=`
+    SELECT ID_PET           id,
+    NM_PET   nome,
     DS_ANIMAL   	animal,
     DS_ESPECIE		especie,
     DS_GENERO		genero,
@@ -40,7 +42,9 @@ export async function filtrarPet(genero,animal){
     VL_ALTURA		altura,
     DS_COMENTARIO 	comentario,
     DS_ENDERECO		endereco,
-    DS_TELEFONE		telefone
+    NR_CURTIDAS     curtidas,
+    DS_TELEFONE		telefone,
+    IMG_PET         imagem
 FROM TB_PET		
 WHERE (? = 'todos' || DS_GENERO = ?)
  AND (? = 'todos' || DS_ANIMAL = ?)
@@ -81,10 +85,11 @@ export async function alterarPET(pet,id){
     return resposta.affectedRows;
 }
 
-export async function petsCadsastrados(){
+export async function petsCadastrados(){
     const comando=
     `
-    SELECT NM_PET     		nome,
+    SELECT ID_PET           id,
+            NM_PET     		nome,
             DS_ANIMAL   	animal,
             DS_ESPECIE		especie,
             DS_GENERO		genero,
@@ -93,11 +98,35 @@ export async function petsCadsastrados(){
             VL_ALTURA		altura,
             DS_COMENTARIO	comentario,
             DS_ENDERECO		endereco,
+            NR_CURTIDAS     curtidas,
             DS_TELEFONE		telefone,
             IMG_PET         imagem
           FROM TB_PET
-
     `;
-    const [linhas] = await con.query(comando,[ ]);
+    const [linhas] = await con.query(comando);
+    return linhas;
+}
+
+
+export async function meusPets(id){
+    const comando=
+    `
+    SELECT ID_PET           id,
+            NM_PET              nome,
+            DS_ANIMAL          animal,
+            DS_ESPECIE         especie,
+            DS_GENERO          genero,
+            NR_IDADE           idade,
+            VL_PESO            peso,
+            VL_ALTURA          altura,
+            DS_COMENTARIO      comentario,
+            DS_ENDERECO        endereco,
+            DS_TELEFONE        telefone,
+            IMG_PET            imagem
+          FROM TB_PET
+          WHERE (ID_USUARIO = ?)
+          `
+    ;
+    const [linhas] = await con.query(comando,[ id ]);
     return linhas;
 }
