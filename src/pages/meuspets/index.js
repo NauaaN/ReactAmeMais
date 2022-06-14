@@ -16,7 +16,7 @@ export default function Index() {
   async function deletarPetClick(id, nome) {
 
     confirmAlert({
-      title: 'Remove Pet',
+      title: 'Remover Pet',
       message:`Deseja remover Pet ${nome}?`,
       button:[
         {
@@ -85,7 +85,7 @@ useEffect(() => {
              
                     <div className='especiejj'>
                   <p className='ejj'>ESPÉCIE:</p>
-                  <p className='avejj'>{item.animal}</p>
+                  <p className='avejj'>{item.animal},{item.especie}</p>
                   <div className='femininojj' >{item.genero} </div>
                </div>
                <div className='toninhajj'>

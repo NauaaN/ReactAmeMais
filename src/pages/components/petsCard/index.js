@@ -29,7 +29,7 @@ export default function Index(props){
              
                     <div className='especiejj'>
                   <p className='ejj'>ESPÉCIE:</p>
-                  <p className='avejj'>{props.item.especie}</p>
+                  <p className='avejj'>{props.item.animal},{props.item.especie}</p>
                   <div className='femininojj' >{props.item.genero} </div>
                </div>
                <div className='toninhajj'>
@@ -60,7 +60,7 @@ export default function Index(props){
               </div>
               
                  <div className='curtirirjj'> 
-                   <p className='ed1jj'>{props.item.enderco}</p>
+                   <p className='ed1jj'>{props.item.endereco}</p>
                    <p className='ed2jj'>{props.item.telefone}</p>
                  </div>
                  </div>
