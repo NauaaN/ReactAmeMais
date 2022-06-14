@@ -1,5 +1,5 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../../common/common.scss';
 import { useState } from 'react';
 import { cadastrarPet, enviarImagemPet } from '../../api/petAPi'
@@ -21,7 +21,7 @@ export default function Index() {
     const [comentario, setComentario] = useState('');
     const [imagem, setImagem] = useState();
 
-
+  
 
     async function salvarClick() {
         try {
@@ -35,6 +35,7 @@ export default function Index() {
             const r = await enviarImagemPet(novoPet.id, imagem);
 
             toast('Pet cadastrado com sucesso!');
+           
         } catch (err) {
             if (err.response)
                 toast.error(err.response.data.erro);

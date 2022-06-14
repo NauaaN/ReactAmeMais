@@ -4,6 +4,9 @@ import '../../common/common.scss'
 import PetsCards from '../components/petsCard'
 import { filtrarPets, listarTodosPets } from '../../api/petAPi'
 import { useEffect, useState } from 'react'
+import storage from 'local-storage'
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Index() {
   const [pets, setPets] = useState([]);
@@ -44,6 +47,14 @@ export default function Index() {
   useEffect(() => {
     carregarPets();
   }, [])
+
+  const navigate = useNavigate();
+  function sairClick(){
+      storage.remove('usuario-logado');
+      navigate('/')
+  }
+  
+  
 
   return (
     <div className='filtrarxx'>
@@ -106,7 +117,11 @@ export default function Index() {
         <div className='nxx'>
           <Link className='bbbxx' to='/meuspets'>Editar &nbsp; +PETS</Link>
         </div>
-      </div>
+     
+      <div className='nxx' onClick={sairClick}>
+                <div className='botaosair'>Sair</div>
+            </div>
+            </div>
 
 
       <div className='principaljj'>
