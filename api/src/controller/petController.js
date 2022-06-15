@@ -52,6 +52,8 @@ try{
             throw new Error('informar o endereco é obrigatorio');
         if(!PetParaInserir.telefone)
             throw new Error('telefone é obrigatorio');
+        
+        
 
     const pet = await inserirPet(PetParaInserir);
     resp.send (pet);

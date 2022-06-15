@@ -31,7 +31,7 @@ export default function Index() {
             const novoPet = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
             
             console.log(novoPet);
-            
+           
             const r = await enviarImagemPet(novoPet.id, imagem);
 
             toast('Pet cadastrado com sucesso!');

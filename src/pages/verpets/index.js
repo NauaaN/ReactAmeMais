@@ -6,6 +6,8 @@ import PetsCards from '../components/petsCard'
 import { listarTodosPets } from '../../api/petAPi';
 import { useNavigate } from 'react-router-dom';
 import storage from 'local-storage'
+
+
 export default function Index() {
   const [pets, setPets] = useState([]);
   const navigate = useNavigate();
