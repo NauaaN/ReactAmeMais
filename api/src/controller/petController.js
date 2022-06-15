@@ -47,7 +47,7 @@ try{
         if(!PetParaInserir.peso)
             throw new Error('informar o peso é obrigatorio');
         if(!PetParaInserir.altura)
-            throw new Error('usuario é obrigatorio');
+            throw new Error('altura é obrigatorio');
         if(!PetParaInserir.endereco)
             throw new Error('informar o endereco é obrigatorio');
         if(!PetParaInserir.telefone)

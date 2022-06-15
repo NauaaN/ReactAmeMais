@@ -111,7 +111,7 @@ export async function petsCadastrados(){
 export async function meusPets(id){
     const comando=
     `
-    SELECT ID_PET           id,
+    SELECT ID_PET               id,
             NM_PET              nome,
             DS_ANIMAL          animal,
             DS_ESPECIE         especie,
@@ -122,7 +122,8 @@ export async function meusPets(id){
             DS_COMENTARIO      comentario,
             DS_ENDERECO        endereco,
             DS_TELEFONE        telefone,
-            IMG_PET            imagem
+            IMG_PET            imagem,
+            ID_USUARIO         idusu   
           FROM TB_PET
           WHERE (ID_USUARIO = ?)
           `

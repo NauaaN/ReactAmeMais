@@ -18,7 +18,7 @@ export default function Index() {
     
     useEffect(() => {
         if(storage('usuario-logado')) {
-            navigate('/');
+           
         }
     })
 
@@ -30,6 +30,7 @@ export default function Index() {
             
             const asnwer = await login(email, senha);
             storage('usuario-logado', asnwer);
+            console.log(storage('usuario-logado'))
 
             setTimeout(() =>{
                 navigate('/Verpets');

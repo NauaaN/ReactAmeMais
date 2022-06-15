@@ -1,15 +1,27 @@
 import './index.scss';
 import{ Link } from 'react-router-dom';
-
 import {confirmAlert } from 'react-confirm-alert'
-
 import '../../common/common.scss';
 import { useEffect, useState } from 'react';
-
-import { listarTodosPets, deletarPet } from '../../api/petAPi';
+import { meusPets, deletarPet } from '../../api/petAPi';
 import { toast } from 'react-toastify';
+import storage from 'local-storage'
 
 export default function Index() {
+
+  
+  const [pets, setPets] = useState([]);
+
+  async function carregarMeusPets(){
+    const resposta = await meusPets(storage('usuario-logado').id);
+    setPets(resposta);
+}
+
+  useEffect(() => {
+    carregarMeusPets();
+  }, [])
+
+
   function mostrarImagem(imagem) {
     if (!imagem)
       return './images/toninhaa.svg'
@@ -18,7 +30,7 @@ export default function Index() {
   }
 
 
-  const [pets, setPets] = useState([]);
+
 
   async function deletarPetClick(id, nome) {
 
@@ -44,19 +56,6 @@ export default function Index() {
     })
   }
 
-async function carregarPets(){
-      const resp = await listarTodosPets();
-      console.log(resp);
-      setPets(resp);
-}
-
-
-
-
-
-useEffect(() => {
-  carregarPets();
-}, [])
 
   return(
      

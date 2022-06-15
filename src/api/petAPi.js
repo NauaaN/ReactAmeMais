@@ -49,6 +49,11 @@ export async function curtirPet(id){
     return resposta.status;
 }
 
+export async function meusPets(idusu){
+    const resposta= await api.get(`/petusu/${idusu}`);
+    return resposta.data;
+}
+
 
 export async function deletarPet(id) {
     const resposta = await api.delete(`/pet${id}`);
