@@ -37,8 +37,9 @@ export default function Index() {
            
 
 
-            if (!storage)throw new Error('Você não é um usuario logado.');
+            
             const usuario = storage('usuario-logado').id;
+            if (!usuario)throw new Error('Você não é um usuario logado.');
 
             const novoPet = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
             
