@@ -30,7 +30,15 @@ export default function Index(props){
                     <div className='especiejj'>
                   <p className='ejj'>ESPÉCIE:</p>
                   <p className='avejj'>{props.item.animal},{props.item.especie}</p>
-                  <div className='femininojj' >{props.item.genero} </div>
+                  <div className='femininojj' >{props.item.genero} 
+                  {props.item.genero  === 'macho' &&
+                            <img src="./images/homi.png" />
+                        }
+
+                  {props.item.genero &&
+                          <img src="./images/mulhe.png" /> 
+                        }
+                  </div>
                </div>
                <div className='toninhajj'>
                    <img src={mostrarImagem(props.item.imagem)} />

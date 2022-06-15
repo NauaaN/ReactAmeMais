@@ -26,6 +26,15 @@ export default function Index() {
     async function salvarClick() {
         try {
             if (!imagem) throw new Error('Escolha a imagem do pet.');
+            if (!nome) throw new Error('O campo nome é obrigatório.');
+            if (!genero) throw new Error('O campo genero é obrigatório.');
+            if (!idade) throw new Error('O campo idade é obrigatório..');
+            if (!peso) throw new Error('O campo peso é obrigatório.');
+            if (!altura) throw new Error('O campo altura é obrigatório..');
+            if (!telefone) throw new Error('O campo telefone é obrigatório.');
+            if (!endereco) throw new Error('O campo endereço é obrigatório.');
+           
+
 
             if (!storage)throw new Error('Você não é um usuario logado.');
             const usuario = storage('usuario-logado').id;
