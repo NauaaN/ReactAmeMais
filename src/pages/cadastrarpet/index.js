@@ -1,7 +1,7 @@
 import './index.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import '../../common/common.scss';
-import { useState } from 'react';
+import { useState,  useEffect } from 'react';
 import { cadastrarPet, enviarImagemPet } from '../../api/petAPi'
 import storage from 'local-storage'
 import { ToastContainer, toast } from 'react-toastify';
@@ -20,6 +20,7 @@ export default function Index() {
     const [endereco, setEndereco] = useState('');
     const [comentario, setComentario] = useState('');
     const [imagem, setImagem] = useState();
+    const navigate = useNavigate();
 
   
 
@@ -61,6 +62,12 @@ export default function Index() {
     function mostrarImagem() {
         return URL.createObjectURL(imagem);
     }
+
+    useEffect(() => {
+        if(!storage('usuario-logado')) {
+            navigate('/');
+        }
+      }, [])
 
     return (
         <div className='fundox'>
