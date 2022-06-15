@@ -16,12 +16,7 @@ export default function Index() {
     const navigate = useNavigate();
     const ref= useRef();
     
-    useEffect(() => {
-        if(storage('usuario-logado')) {
-            navigate('/');
-        }
-    })
-
+  
     async function entrarClick() {
         ref.current.continuousStart()
         setCarregando(true);
@@ -32,8 +27,8 @@ export default function Index() {
             storage('usuario-logado', asnwer);
 
             setTimeout(() =>{
-                navigate('/Verpets');
-            }, 3000);
+                navigate('/verpets');
+            }, 2000);
        
 
         } catch (err) {

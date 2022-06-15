@@ -6,7 +6,7 @@ import {confirmAlert } from 'react-confirm-alert'
 import '../../common/common.scss';
 import { useEffect, useState } from 'react';
 
-import { listarTodosPets, deletarPet } from '../../api/petAPi';
+import { listarTodosPets, deletarPet, filtrarPets } from '../../api/petAPi';
 import { toast } from 'react-toastify';
 
 export default function Index() {
@@ -19,18 +19,23 @@ export default function Index() {
 
 
   const [pets, setPets] = useState([]);
+  const [filtro, setFiltro] = useState('');
 
   async function deletarPetClick(id, nome) {
-
+    
     confirmAlert({
       title: 'Remover Pet',
       message:`Deseja o remover pet ${nome}?`,
-      button:[
+      button: [
         {
           label: 'Sim',
           onClick: async () => {
                 const resposta = await deletarPet(id, nome);
-                  
+                if(filtro === '')
+                    carregarPets();
+                else
+                    filtrarPets();
+
             toast('Pet removido!');
 
           }
@@ -128,7 +133,7 @@ useEffect(() => {
               
               
                  <div className='curtirirjj'> 
-                   <p className='ed1jj'>{item.enderco}</p>
+                   <p className='ed1jj'>{item.endereco}</p>
                    <p className='ed2jj'>{item.telefone}</p>
                  </div>
                  </div>
