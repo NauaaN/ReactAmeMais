@@ -193,12 +193,12 @@
     margin-top: 5px;
 }
 
-.onzev {
+.ImagemPetv{
     width: 40em;
     height: 20em;
     background-color: #8CC4D6;
     color: #000000;
-    border-radius: 20px;
+    border-radius: 40px;
     padding-bottom: 12em;
     margin-top: 5px;
 }
@@ -208,11 +208,23 @@
 .imagem-pet{
     width: 40em;
     height: 20em;
+    border-radius: 2.6em;
 }
 
-.ImagemPetv{
+.ImagemPett {
     width: 40em;
-    height: 20em;  
+    height: 20em;
+    cursor: pointer;
+ 
+}
+
+#imagemCapa{
+    position: absolute;
+    visibility: hidden;
+    
+    
+    
+    
 }
 
 @media (max-width:400px) {
@@ -221,11 +233,14 @@
     }
 
     .botoesv {
-        padding: 15px 30px;
-        
+        padding: 10px 25px; 
+        margin-left: 2.5em; 
     }
+
+    
     .botoesu {
-        padding: 15px 30px; 
+        margin-top: 1em;
+        padding: 10px 25px; 
     }
 
     .containerv {
@@ -324,5 +339,20 @@
         margin-left: 0em;
         margin-top: 5px;
     }
+}
+
+@media (max-width: 1280px) {
+    .fundox {
+        height: 60em;
+    }
+
+    .containerv {
+        margin-left: 0em;
+    }
+
+    .bloco2v {
+        margin-left: 2em;
+    }
+
     
 }

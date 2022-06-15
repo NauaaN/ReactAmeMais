@@ -27,7 +27,9 @@ export default function Index() {
         try {
             if (!imagem) throw new Error('Escolha a imagem do pet.');
 
+            if (!storage)throw new Error('Você não é um usuario logado.');
             const usuario = storage('usuario-logado').id;
+
             const novoPet = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
             
             console.log(novoPet);
@@ -56,7 +58,7 @@ export default function Index() {
 
             <header className='faixav'>
                 <img className='logov' src='./images/IMG-20220418-WA0079_3.svg' />
-                <div>
+                <div className='juh'>
                     <Link to='/' className="botoesv">Voltar</Link>
                     <button onClick={salvarClick} className="botoesu">Finalizar</button>
                     <ToastContainer />
@@ -126,14 +128,14 @@ export default function Index() {
                     <div className='ImagemPetv' onClick={escolherImagem}>
 
                         {!imagem &&
-                            <img className='ImagemPet' src="/public/images/R.png" />
+                            <img className='ImagemPett' src="./images/upload (1).svg" />
                         }
 
                         {imagem &&
                             <img className='imagem-pet' src={mostrarImagem()} alt='' />
                         }
 
-                        <input type="file" id='imagemCapa' onChange={e => setImagem(e.target.files[0])} className='onzev'/>
+                        <input className='onzev' type="file" id='imagemCapa' onChange={e => setImagem(e.target.files[0])} />
                     </div>
                 </section>
 
