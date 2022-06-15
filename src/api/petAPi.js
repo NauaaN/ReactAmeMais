@@ -56,7 +56,7 @@ export async function meusPets(idusu){
 
 
 export async function deletarPet(id) {
-    const resposta = await api.delete(`/pet${id}`);
+    const resposta = await api.delete(`/pet/${id}`);
     return resposta.status;
 }
 

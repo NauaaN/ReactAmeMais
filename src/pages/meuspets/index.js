@@ -40,10 +40,10 @@ export default function Index() {
         {
           label: 'Sim',
           onClick: async () => {
-                const resposta = await deletarPet(id, nome);
+                const resposta = await deletarPet(id);
+             carregarMeusPets();
                
             toast('Pet removido!');
-
           }
         },
         {
