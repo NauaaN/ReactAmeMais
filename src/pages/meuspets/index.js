@@ -31,18 +31,17 @@ export default function Index() {
 
 
 
-
   async function deletarPetClick(id, nome) {
-
+    
     confirmAlert({
       title: 'Remover Pet',
       message:`Deseja o remover pet ${nome}?`,
-      button:[
+      button: [
         {
           label: 'Sim',
           onClick: async () => {
                 const resposta = await deletarPet(id, nome);
-                  
+               
             toast('Pet removido!');
 
           }
@@ -127,7 +126,7 @@ export default function Index() {
               
               
                  <div className='curtirirjj'> 
-                   <p className='ed1jj'>{item.enderco}</p>
+                   <p className='ed1jj'>{item.endereco}</p>
                    <p className='ed2jj'>{item.telefone}</p>
                  </div>
                  </div>

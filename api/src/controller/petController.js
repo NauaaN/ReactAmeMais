@@ -54,6 +54,8 @@ try{
             throw new Error('telefone é obrigatorio');
         
         
+        
+        
 
     const pet = await inserirPet(PetParaInserir);
     resp.send (pet);

@@ -33,8 +33,8 @@ export default function Index() {
             console.log(storage('usuario-logado'))
 
             setTimeout(() =>{
-                navigate('/Verpets');
-            }, 3000);
+                navigate('/verpets');
+            }, 2000);
        
 
         } catch (err) {
