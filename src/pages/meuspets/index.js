@@ -2,15 +2,22 @@ import './index.scss';
 import{ Link } from 'react-router-dom';
 import {confirmAlert } from 'react-confirm-alert'
 import '../../common/common.scss';
+
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { meusPets, deletarPet } from '../../api/petAPi';
 import { toast } from 'react-toastify';
 import storage from 'local-storage'
 
 export default function Index() {
-
-  
   const [pets, setPets] = useState([]);
+
+  const navigate = useNavigate();
+
+  function editarPet(id) {
+      navigate(`//alterar/${id}`);
+  }
   
   
 
@@ -119,7 +126,7 @@ export default function Index() {
                  <p>{item.comentario}</p>
                </div>
               <div className='bujj'>
-              <p className='edjj'>EDITAR</p>
+              <p className='edjj' onClick={() => editarPet(item.id)}>EDITAR</p>
                 </div>
         
                 <div className='bujj'>
