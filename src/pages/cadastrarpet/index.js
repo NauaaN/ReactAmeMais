@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../../common/common.scss';
 import { useState,  useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { cadastrarPet, enviarImagemPet, alterarPet, buscarPorId} from '../../api/petAPi'
+import { cadastrarPet, enviarImagemPet, alterarPet, buscarPorId, buscarImagem} from '../../api/petAPi'
 import storage, { set } from 'local-storage'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -23,6 +23,7 @@ export default function Index() {
     const [imagem, setImagem] = useState();
     const navigate = useNavigate();
     const [id, setId] = useState(0);
+    
     const {idParam} = useParams();
     
     useEffect(() => {
@@ -43,6 +44,7 @@ export default function Index() {
         setTelefone(resposta.telefone);
         setEndereco(resposta.endereco);
         setComentario(resposta.comentario);
+        
         setImagem(resposta.imagem);
         setId(resposta.id);
     }
@@ -71,9 +73,11 @@ export default function Index() {
 
             } else{
                 await alterarPet(id, animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
-                await enviarImagemPet(id, imagem);
-                toast('Pet alterado com sucesso!');
+                
+                if (typeof (imagem) == 'object')
+                    await enviarImagemPet(id, imagem);
 
+                toast('Pet alterado com sucesso!');
             }
            
         } catch (err) {
@@ -90,7 +94,13 @@ export default function Index() {
         document.getElementById('imagemCapa').click();
     }
     function mostrarImagem() {
-        return URL.createObjectURL(imagem);
+        if (typeof (imagem) == 'object'){
+            return URL.createObjectURL(imagem);
+        }
+        else {
+            return buscarImagem(imagem);
+        }
+        
     }
 
     useEffect(() => {

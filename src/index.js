@@ -24,7 +24,7 @@ root.render(
   <Route path='/registrar' element={<Registrar/>} /> 
   <Route path='/' element={<Ladingpage/>} />
   <Route path='/cadastrarpet' element={<Cadastrarpet/>} />
-  <Route path='//alterar/:idParam' element={<Cadastrarpet/>} />
+  <Route path='alterar///:idParam' element={<Cadastrarpet/>} />
   <Route path='/login' element={<Login/>} />
   <Route path='/verpets' element={<Verpets/>} />
   <Route path='/meuspets' element={<Meuspets/>} />
