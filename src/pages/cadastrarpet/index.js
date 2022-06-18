@@ -2,8 +2,9 @@ import './index.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import '../../common/common.scss';
 import { useState,  useEffect } from 'react';
-import { cadastrarPet, enviarImagemPet } from '../../api/petAPi'
-import storage from 'local-storage'
+import { useParams } from 'react-router-dom';
+import { cadastrarPet, enviarImagemPet, alterarPet, buscarPorId} from '../../api/petAPi'
+import storage, { set } from 'local-storage'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -21,7 +22,30 @@ export default function Index() {
     const [comentario, setComentario] = useState('');
     const [imagem, setImagem] = useState();
     const navigate = useNavigate();
+    const [id, setId] = useState(0);
+    const {idParam} = useParams();
+    
+    useEffect(() => {
+        if(idParam) {
+            carregarPet();
+        }
+    }, [])
 
+    async function carregarPet(){
+        const resposta = await buscarPorId(idParam);
+        setAnimal(resposta.animal);
+        setEspecie(resposta.especie);
+        setNome(resposta.nome);
+        setGenero(resposta.genero);
+        setIdade(resposta.idade);
+        setPeso(resposta.peso);
+        setAltura(resposta.altura);
+        setTelefone(resposta.telefone);
+        setEndereco(resposta.endereco);
+        setComentario(resposta.comentario);
+        setImagem(resposta.imagem);
+        setId(resposta.id);
+    }
   
 
     async function salvarClick() {
@@ -36,18 +60,21 @@ export default function Index() {
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
            
 
-
-            
             const usuario = storage('usuario-logado').id;
             if (!usuario)throw new Error('Você não é um usuario logado.');
 
+            if(id=== 0) {
             const novoPet = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
-            
-            console.log(novoPet);
-           
             const r = await enviarImagemPet(novoPet.id, imagem);
 
             toast('Pet cadastrado com sucesso!');
+
+            } else{
+                await alterarPet(id, animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
+                await enviarImagemPet(id, imagem);
+                toast('Pet alterado com sucesso!');
+
+            }
            
         } catch (err) {
             if (err.response)
@@ -56,6 +83,8 @@ export default function Index() {
             else
                 toast.error(err.message)
         }
+
+       
     }
     function escolherImagem() {
         document.getElementById('imagemCapa').click();
@@ -69,6 +98,20 @@ export default function Index() {
             navigate('/');
         }
       }, [])
+
+      function novoClick(){
+        setAnimal('')
+        setEspecie('')
+        setNome('');
+        setGenero('')
+        setPeso('');
+        setAltura('');
+        setTelefone('');
+        setEndereco('');
+        setComentario('');
+        setImagem();
+        setId(0);
+      }
 
     return (
         <div className='fundox'>

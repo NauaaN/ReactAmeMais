@@ -11,6 +11,8 @@ export default function Index() {
 
   
   const [pets, setPets] = useState([]);
+  
+  
 
   async function carregarMeusPets(){
     const resposta = await meusPets(storage('usuario-logado').id);

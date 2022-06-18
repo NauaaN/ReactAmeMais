@@ -60,4 +60,11 @@ export async function deletarPet(id) {
     return resposta.status;
 }
 
+export async function buscarPorId(id) {
+    const resposta = await api.get(`/pet/${id}`);
+    return resposta.data;
+}
+
+
+
 
