@@ -118,8 +118,11 @@ export default function Index() {
           <Link className='bbbxx' to='/meuspets'>Editar &nbsp; +PETS</Link>
         </div>
      
-      <div className='nxx' onClick={sairClick}>
-                <div className='botaosair'>Sair</div>
+        <div className='alinharbj' onClick={sairClick}>
+               <div className='botaosair1'>
+                <img alt='' src='/images/Logout.svg' />
+                <p className='textobotaoj'>&nbsp;SAIR</p>
+                </div>
             </div>
             </div>
 

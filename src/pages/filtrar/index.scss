@@ -567,3 +567,30 @@ p {
     margin-left: 16em;
     
 }
+
+.botaosair1{
+    text-decoration: none;
+    color: white;
+    background-color:#19a2cc;
+    border-radius: 1.2em;
+    box-shadow: 4px 4px 4px rgb(139, 139, 139);
+    font-size: 0.8em;
+    font-family: 'rrb';
+    font-size: 1.2em;
+    margin-top: -0.4em;
+    align-items: center;
+    padding: 0.5em 2em;
+    display: flex;
+    flex-direction: row;
+   margin-left: 2.8em;
+ }
+
+ .alinharbj{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textobotaoj{
+    color: #fff;
+}
