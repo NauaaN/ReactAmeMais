@@ -38,7 +38,7 @@ export default function Index() {
     confirmAlert({
       title: 'Remover Pet',
       message:`Deseja o remover pet ${nome}?`,
-      button: [
+      buttons: [
         {
           label: 'Sim',
           onClick: async () => {
