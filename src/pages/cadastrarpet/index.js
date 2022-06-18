@@ -21,8 +21,9 @@ export default function Index() {
     const [endereco, setEndereco] = useState('');
     const [comentario, setComentario] = useState('');
     const [imagem, setImagem] = useState();
-    const navigate = useNavigate();
     const [id, setId] = useState(0);
+
+    const navigate = useNavigate();
     
     const {idParam} = useParams();
     
@@ -63,15 +64,19 @@ export default function Index() {
            
 
             const usuario = storage('usuario-logado').id;
+
             if (!usuario)throw new Error('Você não é um usuario logado.');
 
-            if(id=== 0) {
+            if(id === 0) {
             const novoPet = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
             const r = await enviarImagemPet(novoPet.id, imagem);
 
+            setId(novoPet.id);
+
             toast('Pet cadastrado com sucesso!');
 
-            } else{
+            }
+             else{
                 await alterarPet(id, animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
                 
                 if (typeof (imagem) == 'object')
@@ -110,6 +115,7 @@ export default function Index() {
       }, [])
 
       function novoClick(){
+        setId(0);
         setAnimal('')
         setEspecie('')
         setNome('');
@@ -120,7 +126,7 @@ export default function Index() {
         setEndereco('');
         setComentario('');
         setImagem();
-        setId(0);
+        
       }
 
     return (
@@ -130,7 +136,10 @@ export default function Index() {
                 <img className='logov' src='./images/IMG-20220418-WA0079_3.svg' />
                 <div className='juh'>
                     <Link to='/' className="botoesv">Voltar</Link>
-                    <button onClick={salvarClick} className="botoesu">Finalizar</button>
+                    <button onClick={salvarClick} className="botoesu"> {id === 0 ? 'Finalizar' : 'Alterar' } </button>
+                    <button onClick={novoClick} className="botoesu">NOVO</button>
+
+
                     <ToastContainer />
                 </div>
             </header>
