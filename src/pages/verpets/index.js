@@ -22,7 +22,7 @@ async function carregarPets(){
 
 useEffect(() => {
   if(!storage('usuario-logado')) {
-      navigate('/');
+      navigate('/login');
   }else{
     const usuarioLogado= storage('usuario-logado');
     setUsuario(usuarioLogado.nome);
