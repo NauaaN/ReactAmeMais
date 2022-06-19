@@ -9,7 +9,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 export default function Index() {
+    const {parse, stringify, toJSON, fromJSON} = require('flatted');
     const [animal, setAnimal] = useState('');
     const [especie, setEspecie] = useState('');
     const [nome, setNome] = useState('');
@@ -26,12 +28,15 @@ export default function Index() {
     const navigate = useNavigate();
     
     const {idParam} = useParams();
+
     
     useEffect(() => {
         if(idParam) {
             carregarPet();
         }
     }, [])
+
+
 
     async function carregarPet(){
         const resposta = await buscarPorId(idParam);
@@ -74,6 +79,7 @@ export default function Index() {
             setId(novoPet.id);
 
             toast('Pet cadastrado com sucesso!');
+            
 
             }
              else{
@@ -159,7 +165,12 @@ export default function Index() {
                         </div>
                         <div className='testev'>
                             <p className='letras'>Gênero:</p>
-                            <input className='terceirov' value={genero} onChange={e => setGenero(e.target.value)} />
+                             <select className='terceirov' onChange={e => setGenero(e.target.options)} >
+                             <option value={genero} onChange={e => setGenero(e.target.option)}>MACHO</option>
+                            
+                             <option value={genero} onChange={e => setGenero(e.target.option)}>FEMEA</option>
+                              </select>
+                           
                         </div>
                     </div>
 
