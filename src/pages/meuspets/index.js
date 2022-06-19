@@ -107,7 +107,15 @@ export default function Index() {
                     <div className='especiejj'>
                   <p className='ejj'>ESPÉCIE:</p>
                   <p className='avejj'>{item.animal},{item.especie}</p>
-                  <div className='femininojj' >{item.genero} </div>
+                  <div className='femininojj' > 
+                  {item.genero  === 'macho' &&
+                            <img className='hominn' src="./images/homi.png" />
+                        }
+
+                  {item.genero === 'femea' &&
+                          <img className='muienn' src="./images/mulhe.png" /> 
+                        }
+                  </div>
                </div>
                <div className='toninhajj'>
                    <img src={mostrarImagem(item.imagem)} />
