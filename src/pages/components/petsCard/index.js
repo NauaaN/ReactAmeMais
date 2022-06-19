@@ -5,18 +5,8 @@ import { useState } from 'react'
 
 export default function Index(props){
 
-  const heart = document.querySelector(".heart");
-  const animationheart =  document.querySelector(".animation-heart");
-
-  heart.addEventListener('click', () => {
-    animationheart.classList.add('animation');
-    heart.classList.add('fill-color');
-  });
-
-  animationheart.addEventListener('click', () => {
-    animationheart.classList.remove('animation');
-    heart.classList.remove('fill-color');
-  });
+  const heart = document.querySelector('.heart');
+  const animationheart =  document.querySelector('.animation-heart');
 
   const [curtidas, setCurtidas] = useState(props.item.curtidas);
 
@@ -25,6 +15,7 @@ export default function Index(props){
     setCurtidas(curtidas+1);
   }
 
+  
 
   function mostrarImagem(imagem) {
     if (!imagem)
@@ -33,6 +24,17 @@ export default function Index(props){
       return `http://localhost:5000/${imagem}`
   }
 
+  
+  
+   heart.addEventListener('click', () => {
+    animationheart.classList.add('animation');
+    heart.classList.add('fill-color');
+  });
+
+  animationheart.addEventListener('click', () => {
+    animationheart.classList.remove('animation');
+    heart.classList.remove('fill-color');
+  });
 
 
     return(
@@ -92,6 +94,8 @@ export default function Index(props){
     
            </div>
     )
+
+    
 }
 
 
