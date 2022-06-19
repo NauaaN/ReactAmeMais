@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Index() {
   const [pets, setPets] = useState([]);
-
+  const [usuario, setUsuario] = useState('');
   const [filtroGenero, setFiltroGenero] = useState('');
   const [filtroAnimal, setFiltroAnimal] = useState('');
 
@@ -44,7 +44,13 @@ export default function Index() {
   }
 
 
-  useEffect(() => {
+  useEffect(() => {    if(!storage('usuario-logado')) {
+    navigate('/');
+}else{
+   const usuarioLogado= storage('usuario-logado');
+     setUsuario(usuarioLogado.nome);
+}
+    
     carregarPets();
   }, [])
 
@@ -137,9 +143,9 @@ export default function Index() {
           </div>
           <div className='login1jj'>
             <Link className='aajj' to='/cadastrarpet'>+ &nbsp; PET</Link>
-            <p className='nomejj'>Nauan dos Santos
+            <p className='nomejj'>{usuario}
             </p>
-            <img className='nauanjj' src='./images/nauanigual.svg' alt='' />
+            <span className='nauanjj'> {usuario[0]}</span>
           </div>
         </div>
 
