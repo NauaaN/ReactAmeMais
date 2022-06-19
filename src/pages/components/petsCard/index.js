@@ -5,6 +5,19 @@ import { useState } from 'react'
 
 export default function Index(props){
 
+  const heart = document.querySelector(".heart");
+  const animationheart =  document.querySelector(".animation-heart");
+
+  heart.addEventListener('click', () => {
+    animationheart.classList.add('animation');
+    heart.classList.add('fill-color');
+  });
+
+  animationheart.addEventListener('click', () => {
+    animationheart.classList.remove('animation');
+    heart.classList.remove('fill-color');
+  });
+
   const [curtidas, setCurtidas] = useState(props.item.curtidas);
 
   async function curtindo(){
@@ -63,7 +76,8 @@ export default function Index(props){
                  <p>{props.item.comentario}</p>
                </div>
               <div className='bujj'>
-                  <img className='curtir' onClick={curtindo} alt='' src='./images/Like.svg'/>
+                  <div className='heart' onClick={curtindo}> </div>
+                  <div className='animation-heart' onClick={curtindo}> </div>
                   <p className='idadejj'>{curtidas}</p>
               </div>
               
