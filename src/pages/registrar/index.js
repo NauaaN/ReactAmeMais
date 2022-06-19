@@ -1,4 +1,3 @@
-
 import './index.scss';
 import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
@@ -22,7 +21,7 @@ export default function Index() {
         try{
         const usuario = storage('usuario-logado').id;
          const resposta = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
-   
+        
          alert('Usuario cadastrado com sucesso!');
         }
         catch(err){

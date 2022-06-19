@@ -4,10 +4,6 @@ import { useState } from 'react'
 
 
 export default function Index(props){
-
-  const heart = document.querySelector('.heart');
-  const animationheart =  document.querySelector('.animation-heart');
-
   const [curtidas, setCurtidas] = useState(props.item.curtidas);
 
   async function curtindo(){

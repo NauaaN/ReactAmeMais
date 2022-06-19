@@ -12,11 +12,11 @@ import storage from 'local-storage'
 
 export default function Index() {
   const [pets, setPets] = useState([]);
-
+  const [usuario, setUsuario] = useState('');
   const navigate = useNavigate();
 
   function editarPet(id) {
-      navigate(`//alterar/${id}`);
+      navigate(`/cadastrarpet/alterar/${id}`);
   }
   
   
@@ -26,7 +26,13 @@ export default function Index() {
     setPets(resposta);
 }
 
-  useEffect(() => {
+  useEffect(() => {  
+    if(!storage('usuario-logado')) {
+    navigate('/');
+}else{
+   const usuarioLogado= storage('usuario-logado');
+     setUsuario(usuarioLogado.nome);
+}
     carregarMeusPets();
   }, [])
 
@@ -80,9 +86,9 @@ export default function Index() {
               </div>
              <div className='login1jj'>
               <Link className="aajj" to='/cadastrarpet'>+ &nbsp; PET</Link>
-              <p className='nomejj'>Nauan dos Santos
+              <p className='nomejj'>{usuario}
               </p>
-              <img className='nauanjj' src='./images/nauanigual.svg'/>
+              <span className='nauanjj'> {usuario[0]}</span>
               </div>
               
            </div>
@@ -101,7 +107,15 @@ export default function Index() {
                     <div className='especiejj'>
                   <p className='ejj'>ESPÉCIE:</p>
                   <p className='avejj'>{item.animal},{item.especie}</p>
-                  <div className='femininojj' >{item.genero} </div>
+                  <div className='femininojj' > 
+                  {item.genero  === 'macho' &&
+                            <img className='hominn' src="./images/homi.png" />
+                        }
+
+                  {item.genero === 'femea' &&
+                          <img className='muienn' src="./images/mulhe.png" /> 
+                        }
+                  </div>
                </div>
                <div className='toninhajj'>
                    <img src={mostrarImagem(item.imagem)} />

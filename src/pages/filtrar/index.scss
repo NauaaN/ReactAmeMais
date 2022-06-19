@@ -57,7 +57,22 @@
     font-family: 'rrb';
 }
 
+.nauanjj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #7773F2;
+    border-radius: 100%;
+    
+    font: 500 20px;
+    color: #fff;
 
+    height: 50px;
+    width: 50px;
+
+    font-size: 1.6em;
+}
 
 .checkxx {
  display: flex;
@@ -583,6 +598,7 @@ p {
     display: flex;
     flex-direction: row;
    margin-left: 2.8em;
+   cursor: pointer;
  }
 
  .alinharbj{
