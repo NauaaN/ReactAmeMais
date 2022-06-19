@@ -1,5 +1,5 @@
 import './index.scss'
-import {curtirPet} from'../../../api/petAPi'
+import { curtirPet } from'../../../api/petAPi'
 import { useState } from 'react'
 
 

@@ -11,15 +11,21 @@ import storage from 'local-storage'
 export default function Index() {
   const [pets, setPets] = useState([]);
   const navigate = useNavigate();
+  const [usuario, setUsuario] = useState('');
+
 async function carregarPets(){
       const resp = await listarTodosPets();
       console.log(resp);
       setPets(resp);
 }
 
+
 useEffect(() => {
   if(!storage('usuario-logado')) {
       navigate('/');
+  }else{
+    const usuarioLogado= storage('usuario-logado');
+    setUsuario(usuarioLogado.nome);
   }
 }, [])
 
@@ -42,9 +48,9 @@ useEffect(() => {
               </div>
              <div className='login1jj'>
               <Link className="aajj" to='/cadastrarpet'>+ &nbsp; PET</Link>
-              <p className='nomejj'>Nauan dos Santos
+              <p className='nomejj'>{usuario}
               </p>
-              <img className='nauanjj' src='./images/nauanigual.svg'/>
+              <span className='nauanjj'> {usuario[0]}</span>
               </div>
            </div>
     
