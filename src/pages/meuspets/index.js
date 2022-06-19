@@ -112,7 +112,7 @@ export default function Index() {
                             <img className='hominn' src="./images/homi.png" />
                         }
 
-                  {item.genero === 'aa' &&
+                  {item.genero === 'femea' &&
                           <img className='muienn' src="./images/mulhe.png" /> 
                         }
                   </div>
