@@ -165,10 +165,10 @@ export default function Index() {
                         </div>
                         <div className='testev'>
                             <p className='letras'>Gênero:</p>
-                             <select className='terceirov' onChange={e => setGenero(e.target.options)} >
-                             <option value={genero} onChange={e => setGenero(e.target.option)}>MACHO</option>
+                             <select className='terceirov' value={genero} onChange={e => setGenero(e.target.options)} >
+                             <option value='macho'>MACHO</option>
                             
-                             <option value={genero} onChange={e => setGenero(e.target.option)}>FEMEA</option>
+                             <option value='femea'>FEMEA</option>
                               </select>
                            
                         </div>

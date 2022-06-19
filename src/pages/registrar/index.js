@@ -5,6 +5,7 @@ import '../../common/common.scss';
 import { cadastrarUsuario } from '../../api/registroApi';
 import storage from 'local-storage'
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Index() {
 
@@ -23,11 +24,11 @@ export default function Index() {
         const usuario = storage('usuario-logado').id;
          const resposta = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
    
-         alert('Usuario cadastrado com sucesso!');
+         toast('Usuario cadastrado com sucesso!');
         }
         catch(err){
             console.log(err);
-            alert(err.message);
+            toast(err.message);
         }
        }
 
@@ -36,7 +37,11 @@ export default function Index() {
     <header className='faixa-cima'>
         <img className='img134' src=''/>
         <Link to='/' className='palavra'>Voltar</Link>
+
     </header>
+    
+    <ToastContainer />
+    
     <section className='fundo'>
         <p className='registrar'>Informe seus dados, para te cadastrarmos em nosso site!</p>
         <div className='alinhamento'>

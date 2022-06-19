@@ -51,7 +51,7 @@ export default function Index(props){
                             <img src="./images/homi.png" />
                         }
 
-                  {props.item.genero &&
+                  {props.item.genero === 'femea' &&
                           <img src="./images/mulhe.png" /> 
                         }
                   </div>
