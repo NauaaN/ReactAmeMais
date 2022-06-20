@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../../common/common.scss';
 import { useState,  useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { cadastrarPet, enviarImagemPet, alterarPet, buscarPorId, buscarImagem} from '../../api/petAPi'
+import { cadastrarPet, enviarImagemPet, buscarPorId, buscarImagem, alterarPete} from '../../api/petAPi'
 import storage, { set } from 'local-storage'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -27,19 +27,12 @@ export default function Index() {
 
     const navigate = useNavigate();
     
-    const {idParam} = useParams();
-
-    
-    useEffect(() => {
-        if(idParam) {
-            carregarPet();
-        }
-    }, [])
+    const {idParam} = useParams();    
 
 
 
     async function carregarPet(){
-        const resposta = await buscarPorId(idParam);
+        const [resposta]= await buscarPorId(Number(idParam));
         setAnimal(resposta.animal);
         setEspecie(resposta.especie);
         setNome(resposta.nome);
@@ -54,6 +47,12 @@ export default function Index() {
         setImagem(resposta.imagem);
         setId(resposta.id);
     }
+
+    useEffect(() => {
+        if(idParam !=0) {
+            carregarPet();
+        }
+    }, [])
   
 
     async function salvarClick() {
@@ -66,9 +65,7 @@ export default function Index() {
             if (!altura) throw new Error('O campo altura é obrigatório..');
             if (!telefone) throw new Error('O campo telefone é obrigatório.');
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
-            if (genero != 'macho' || 'femea') throw new Error('Coloque os campos macho ou femea');
            
-        
             const usuario = storage('usuario-logado').id;
 
             if (!usuario)throw new Error('Você não é um usuario logado.');
@@ -79,17 +76,16 @@ export default function Index() {
 
             setId(novoPet.id);
 
-            toast('Pet cadastrado com sucesso!');
-            
+            toast.success('Pet cadastrado com sucesso!');
 
             }
              else{
-                await alterarPet(id, animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
-                
+                await alterarPete(id,animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario,usuario);
+               
                 if (typeof (imagem) == 'object')
                     await enviarImagemPet(id, imagem);
 
-                toast('Pet alterado com sucesso!');
+                toast.success('Pet alterado com sucesso!');
             }
            
         } catch (err) {
@@ -122,13 +118,13 @@ export default function Index() {
       }, [])
 
       function novoClick(){
-        setId(0);
-        setAnimal('')
-        setEspecie('')
+        setAnimal('');
+        setEspecie('');
         setNome('');
-        setGenero('')
+        setGenero('');
         setPeso('');
         setAltura('');
+        setIdade('');
         setTelefone('');
         setEndereco('');
         setComentario('');
@@ -144,7 +140,7 @@ export default function Index() {
                 <div className='juh'>
                     <Link to='/' className="botoesv">Voltar</Link>
                     <button onClick={salvarClick} className="botoesu"> {id === 0 ? 'Finalizar' : 'Alterar' } </button>
-                    <button onClick={novoClick} className="botoesu">NOVO</button>
+                    <button onClick={novoClick} className="botoesu">Resetar</button>
 
 
                     <ToastContainer />

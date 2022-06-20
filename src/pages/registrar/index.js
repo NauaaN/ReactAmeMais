@@ -3,6 +3,10 @@ import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
 import { cadastrarUsuario } from '../../api/registroApi';
 import storage from 'local-storage'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -34,6 +38,7 @@ export default function Index() {
     return(
       <main className='faixa1'>
     <header className='faixa-cima'>
+    <ToastContainer />
         <img className='img134' src=''/>
         <Link to='/' className='palavra'>Voltar</Link>
 
