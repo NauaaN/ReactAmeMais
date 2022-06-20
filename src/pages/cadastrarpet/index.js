@@ -57,7 +57,7 @@ export default function Index() {
     async function salvarClick() {
         try {
             if (!imagem) throw new Error('Escolha a imagem do pet.');
-            if (!nome) throw new Error('O campo nome é obrigatório.');
+            if (!nome || !nome.trim()) throw new Error('O campo nome é obrigatório.');
             if (!genero) throw new Error('O campo genero é obrigatório.');
             if (!idade) throw new Error('O campo idade é obrigatório..');
             if (!peso) throw new Error('O campo peso é obrigatório.');
@@ -169,7 +169,7 @@ export default function Index() {
                     <div className='NOMEv'>
                         <div>
                             <p className='letras'>Nome:</p>
-                            <input className='quartov' value={nome} onChange={e => setNome(e.target.value)} />
+                            <input className='quartov' value={nome} maxLength={10} onChange={e => setNome(e.target.value)} />
                         </div>
                         <div className='testev'>
                             <p className='letras'>Idade:</p>
