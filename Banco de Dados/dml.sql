@@ -76,4 +76,19 @@ SELECT NM_PET     		nome,
       FROM TB_PET
       WHERE(ID_USUARIO = 1);   
 
+--pet por id
+
+      SELECT 
+		   NM_PET    		 nome,
+        DS_ANIMAL   	animal,
+        DS_ESPECIE		especie,
+        DS_GENERO		genero,
+        NR_IDADE 		idade,
+        VL_PESO 		peso,
+        VL_ALTURA		altura,
+        DS_COMENTARIO 	comentarios,
+        DS_ENDERECO		endereco,
+        DS_TELEFONE		telefone
+      FROM TB_PET
+      WHERE(ID_PET= 4);   
       

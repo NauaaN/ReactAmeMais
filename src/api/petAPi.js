@@ -33,21 +33,20 @@ export async function enviarImagemPet(id, imagem) {
     return resposta.status;
 }
 
-export async function alterarPet (id, animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario) {
+export async function alterarPete (id,animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario,usuario) {
     const resposta = await api.put(`/pet/${id}` ,{
-    usuario: usuario,
-    nome : nome,
     animal: animal,
     especie: especie,
+    nome : nome,
     genero: genero,
     idade: idade,
     peso: peso,
     altura: altura,
     comentario: comentario,
     endereco: endereco,
-    telefone: telefone })
+    telefone: telefone,})
 
-    return resposta.data;
+    return resposta.status;
 }
 
 
