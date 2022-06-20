@@ -1,4 +1,3 @@
-
 import './index.scss';
 import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
@@ -39,7 +38,7 @@ export default function Index() {
         <Link to='/' className='palavra'>Voltar</Link>
 
     </header>
-    
+
     <ToastContainer />
     
     <section className='fundo'>
