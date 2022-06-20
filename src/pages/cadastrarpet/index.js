@@ -11,7 +11,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Index() {
-    const {parse, stringify, toJSON, fromJSON} = require('flatted');
     const [animal, setAnimal] = useState('');
     const [especie, setEspecie] = useState('');
     const [nome, setNome] = useState('');
