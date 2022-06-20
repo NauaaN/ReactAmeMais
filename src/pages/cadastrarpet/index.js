@@ -58,11 +58,11 @@ export default function Index() {
         try {
             if (!imagem) throw new Error('Escolha a imagem do pet.');
             if (!nome || !nome.trim()) throw new Error('O campo nome é obrigatório.');
-            if (!genero) throw new Error('O campo genero é obrigatório.');
-            if (!idade) throw new Error('O campo idade é obrigatório..');
-            if (!peso) throw new Error('O campo peso é obrigatório.');
-            if (!altura) throw new Error('O campo altura é obrigatório..');
-            if (!telefone) throw new Error('O campo telefone é obrigatório.');
+            if (!genero) throw new Error('O campo gênero é obrigatório.');
+            if (isNaN(idade)) throw new Error('O campo idade é obrigatório..');
+            if (isNaN(peso)) throw new Error('O campo peso é obrigatório.');
+            if (isNaN (altura)) throw new Error('O campo altura é obrigatório.');
+            if (isNaN (telefone)) throw new Error('O campo telefone é obrigatório.');
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
            
             const usuario = storage('usuario-logado').id;
