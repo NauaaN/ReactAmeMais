@@ -91,9 +91,14 @@ server.put('/pet/:id', async (req, resp)=>{
     try{
        const {id}= req.params;
        const pet= req.body;
+       if(pet.genero === 'Macho' || pet.genero === 'Femea'){
        const resposta= await alterarPET(pet,id);
-            if (resposta != 1)    throw new Error('A alteração não pode ser salva.');
-       resp.    status(204).send()
+            if (resposta != 1)   
+             throw new Error('A alteração não pode ser salva.');
+       resp.status(204).send()}
+       else{
+        throw new Error('genero deve ser informado como Macho ou Femea ');
+    }
    }catch(err){
        resp.status(400).send({
            erro: err.message
