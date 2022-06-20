@@ -16,7 +16,7 @@ export default function Index() {
   const navigate = useNavigate();
 
   function editarPet(id) {
-      navigate(`/cadastrarpet/alterar/${id}`);
+      navigate(`/cadastrarpet/${id}`);
   }
   
   
@@ -108,11 +108,11 @@ export default function Index() {
                   <p className='ejj'>ESPÉCIE:</p>
                   <p className='avejj'>{item.animal},{item.especie}</p>
                   <div className='femininojj' > 
-                  {item.genero  === 'MACHO' &&
+                  {item.genero  === 'Macho' &&
                             <img className='hominn' src="./images/homi.png" />
                         }
 
-                  {item.genero === 'FEMEA' &&
+                  {item.genero === 'Femea' &&
                           <img className='muienn' src="./images/mulhe.png" /> 
                         }
                   </div>

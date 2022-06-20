@@ -11,7 +11,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Index() {
-    const {parse, stringify, toJSON, fromJSON} = require('flatted');
     const [animal, setAnimal] = useState('');
     const [especie, setEspecie] = useState('');
     const [nome, setNome] = useState('');
@@ -136,7 +135,7 @@ export default function Index() {
         <div className='fundox'>
 
             <header className='faixav'>
-                <img className='logov' src='./images/IMG-20220418-WA0079_3.svg' />
+                <img className='logov' src='../images/IMG-20220418-WA0079_3.svg' />
                 <div className='juh'>
                     <Link to='/' className="botoesv">Voltar</Link>
                     <button onClick={salvarClick} className="botoesu"> {id === 0 ? 'Finalizar' : 'Alterar' } </button>
@@ -211,7 +210,7 @@ export default function Index() {
                     <div className='ImagemPetv' onClick={escolherImagem}>
 
                         {!imagem &&
-                            <img className='ImagemPett' src="./images/upload (1).svg" />
+                            <img className='ImagemPett' src="../images/upload (1).svg" />
                         }
 
                         {imagem &&
