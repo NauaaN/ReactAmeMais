@@ -61,7 +61,7 @@ export default function Index() {
             if (!altura) throw new Error('O campo altura é obrigatório..');
             if (!telefone) throw new Error('O campo telefone é obrigatório.');
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
-           
+            
 
             const usuario = storage('usuario-logado').id;
 

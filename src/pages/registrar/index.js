@@ -3,6 +3,7 @@ import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
 import { cadastrarUsuario } from '../../api/registroApi';
 import storage from 'local-storage'
+
 import { useState } from 'react';
 
 export default function Index() {
@@ -19,7 +20,7 @@ export default function Index() {
 
     async function salvarClick () {
         try{
-        const usuario = storage('usuario-logado').id;
+        const usuario = storage('usuario-logado');
          const resposta = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
         
          alert('Usuario cadastrado com sucesso!');
