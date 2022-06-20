@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { useState } from 'react';
 
+
 export default function Index() {
 
     const [nome, setNome]= useState('');
@@ -30,7 +31,7 @@ export default function Index() {
         }
         catch(err){
             console.log(err);
-            toast.error(err.message);
+            toast(err.message);
         }
        }
 
@@ -40,7 +41,11 @@ export default function Index() {
     <ToastContainer />
         <img className='img134' src=''/>
         <Link to='/' className='palavra'>Voltar</Link>
+
     </header>
+
+    <ToastContainer />
+    
     <section className='fundo'>
         <p className='registrar'>Informe seus dados, para te cadastrarmos em nosso site!</p>
         <div className='alinhamento'>
@@ -49,7 +54,7 @@ export default function Index() {
                 <input className='input1' type='text'  value={nome} onChange={ e => setNome(e.target.value)}/>
                 <p className='informa'>CPF:</p>
                 <input className='input1' type="text"  value={cpf} onChange={ e => setCpf(e.target.value)}/>
-                <p className='informa'>Endereço:</p>
+                <p className='informa'>Email:</p>
                 <input className='input1' type="text"  value={endereco} onChange={ e => setEndereco(e.target.value)}/>
                 <p className='informa'>Senha:</p>
                 <input className='input1' type="password"  value={senha} onChange={ e => setSenha(e.target.value)}/>
@@ -57,9 +62,9 @@ export default function Index() {
             <div className='parte2'>
             <p className='informa'>Telefone:</p>
                 <input className='input1' type='text'  value={telefone} onChange={ e => setTelefone(e.target.value)}/>
-                <p className='informa'> Sexo:</p>
+                <p className='informa'> Endereço:</p>
                 <input className='input1' type='text'  value={sexo} onChange={ e => setSexo(e.target.value)}/>
-                <p className='informa'>Email:</p>
+                <p className='informa'>Sexo:</p>
                 <input className='input1' type='text'  value={email} onChange={ e => setEmail(e.target.value)}/>
                 <p className='informa'>Confirme sua senha:</p>
                 <input className='input1' type='password'  value={senha2} onChange={ e => setSenha2(e.target.value)}/>

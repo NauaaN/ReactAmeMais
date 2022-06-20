@@ -9,7 +9,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 export default function Index() {
+    const {parse, stringify, toJSON, fromJSON} = require('flatted');
     const [animal, setAnimal] = useState('');
     const [especie, setEspecie] = useState('');
     const [nome, setNome] = useState('');
@@ -26,6 +28,8 @@ export default function Index() {
     const navigate = useNavigate();
     
     const {idParam} = useParams();    
+
+
 
     async function carregarPet(){
         const [resposta]= await buscarPorId(Number(idParam));
@@ -61,8 +65,7 @@ export default function Index() {
             if (!altura) throw new Error('O campo altura é obrigatório..');
             if (!telefone) throw new Error('O campo telefone é obrigatório.');
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
-            
-
+           
             const usuario = storage('usuario-logado').id;
 
             if (!usuario)throw new Error('Você não é um usuario logado.');
@@ -160,6 +163,7 @@ export default function Index() {
                         <div className='testev'>
                             <p className='letras'>Gênero:</p>
                             <input className='terceirov' value={genero} onChange={e => setGenero(e.target.value)} />
+                           
                         </div>
                     </div>
 
