@@ -107,6 +107,8 @@ margin-left: 1.2em;
 
 
 
+
+
 .card1jjjj {
     display: flex;
     flex-direction: column;
@@ -371,5 +373,30 @@ p {
    
     margin-left: 16em;
     
+}
+
+@media (max-width:400px) {
+    .lucaojjnverpets{
+        display: flex;
+        
+        flex-direction: column;
+        
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+
+    .aajj {
+        text-decoration: none;
+        background-color: white;
+        font-family: 'rb';
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #006B8C;
+        padding: 0.2em 1em 2px;
+        font-size: 1em;
+        border-radius: 2em;
+    }
 }
 
