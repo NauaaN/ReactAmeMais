@@ -3,6 +3,9 @@ import{ Link } from 'react-router-dom';
 import '../../common/common.scss';
 import { cadastrarUsuario } from '../../api/registroApi';
 import storage from 'local-storage'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 import { useState } from 'react';
 
@@ -23,17 +26,18 @@ export default function Index() {
         const usuario = storage('usuario-logado');
          const resposta = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
         
-         alert('Usuario cadastrado com sucesso!');
+         toast.success('Usuario cadastrado com sucesso!');
         }
         catch(err){
             console.log(err);
-            alert(err.message);
+            toast.error(err.message);
         }
        }
 
     return(
       <main className='faixa1'>
     <header className='faixa-cima'>
+    <ToastContainer />
         <img className='img134' src=''/>
         <Link to='/' className='palavra'>Voltar</Link>
     </header>

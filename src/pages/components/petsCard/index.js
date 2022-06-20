@@ -1,33 +1,22 @@
 import './index.scss'
-import { curtirPet } from'../../../api/petAPi'
+import {curtirPet} from'../../../api/petAPi'
 import { useState } from 'react'
 
 
 export default function Index(props){
 
-  const [curtidas, setCurtidas] = useState(props.item.curtidas);
   const heart = document.querySelector('.heart');
-  const animationHeart =  document.querySelector('.animation-heart');
+  const animationheart =  document.querySelector('.animation-heart');
   
+
+  const [curtidas, setCurtidas] = useState(props.item.curtidas);
 
   async function curtindo(){
     await curtirPet(props.item.id)
     setCurtidas(curtidas+1);
-
-    heart.addEventListener('click', () => {
-      animationHeart.classList.add('animation');
-      heart.classList.add('fill-color');
-    });
-  
-    animationHeart.addEventListener('click', () => 
-    {
-      animationHeart.classList.remove('animation');
-      heart.classList.remove('fill-color');
-    });
-
-
   }
 
+  
 
   function mostrarImagem(imagem) {
     if (!imagem)
@@ -95,6 +84,8 @@ export default function Index(props){
     
            </div>
     )
+
+    
 }
 
 
