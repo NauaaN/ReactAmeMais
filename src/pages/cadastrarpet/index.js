@@ -61,7 +61,7 @@ export default function Index() {
             if (!altura) throw new Error('O campo altura é obrigatório..');
             if (!telefone) throw new Error('O campo telefone é obrigatório.');
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
-           
+            
 
             const usuario = storage('usuario-logado').id;
 
@@ -73,7 +73,7 @@ export default function Index() {
 
             setId(novoPet.id);
 
-            toast('Pet cadastrado com sucesso!');
+            toast.success('Pet cadastrado com sucesso!');
 
             }
              else{
@@ -82,7 +82,7 @@ export default function Index() {
                 if (typeof (imagem) == 'object')
                     await enviarImagemPet(id, imagem);
 
-                toast('Pet alterado com sucesso!');
+                toast.success('Pet alterado com sucesso!');
             }
            
         } catch (err) {
