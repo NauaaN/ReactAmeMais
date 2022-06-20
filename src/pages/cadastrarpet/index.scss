@@ -228,6 +228,10 @@
 }
 
 @media (max-width:400px) {
+
+    .bloco2v {
+        margin-left: 2em;
+    }
     .fundox {
         height: 102em;
     }
@@ -354,7 +358,7 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
     .fundox {
         height: 60em;
     }
