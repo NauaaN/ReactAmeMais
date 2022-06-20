@@ -66,8 +66,9 @@ export default function Index() {
             if (!altura) throw new Error('O campo altura é obrigatório..');
             if (!telefone) throw new Error('O campo telefone é obrigatório.');
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
+            if (genero != 'macho' || 'femea') throw new Error('Coloque os campos macho ou femea');
            
-
+        
             const usuario = storage('usuario-logado').id;
 
             if (!usuario)throw new Error('Você não é um usuario logado.');
@@ -165,11 +166,7 @@ export default function Index() {
                         </div>
                         <div className='testev'>
                             <p className='letras'>Gênero:</p>
-                             <select className='terceirov' value={genero} onChange={e => setGenero(e.target.options)} >
-                             <option value='macho'>MACHO</option>
-                            
-                             <option value='femea'>FEMEA</option>
-                              </select>
+                            <input className='terceirov' value={genero} onChange={e => setGenero(e.target.value)} />
                            
                         </div>
                     </div>
