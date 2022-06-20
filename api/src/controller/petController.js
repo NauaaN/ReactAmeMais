@@ -52,13 +52,12 @@ try{
             throw new Error('informar o endereco é obrigatorio');
         if(!PetParaInserir.telefone)
             throw new Error('telefone é obrigatorio');
-        
-        
-        
-        
-
-    const pet = await inserirPet(PetParaInserir);
-    resp.send (pet);
+        if(PetParaInserir.genero === 'Macho' || PetParaInserir.genero === 'Femea'){
+        const pet = await inserirPet(PetParaInserir);
+        resp.send (pet);
+    }else{
+        throw new Error('genero deve ser informado como Macho ou Femea ');
+    }
 }catch(err){
     resp.status(400).send({
         erro : err.message

@@ -24,7 +24,7 @@ export default function Index() {
     async function salvarClick () {
         try{
         const usuario = storage('usuario-logado');
-         const resposta = await cadastrarUsuario(usuario, nome, cpf, endereco, senha, telefone, sexo, email);
+         const resposta = await cadastrarUsuario(usuario, nome, cpf,email,senha,sexo,endereco,telefone);
         
          toast.success('Usuario cadastrado com sucesso!');
         }
