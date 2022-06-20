@@ -201,6 +201,8 @@
     border-radius: 40px;
     padding-bottom: 12em;
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -212,7 +214,7 @@
 }
 
 .ImagemPett {
-    width: 40em;
+    width: 15em;
     height: 20em;
     cursor: pointer;
  
@@ -228,6 +230,14 @@
 }
 
 @media (max-width:400px) {
+
+    .bloco2v {
+        margin-left: 2em;
+    }
+    .fundox {
+        height: 102em;
+    }
+
     .faivav{
         width:45vh;
     }
@@ -337,7 +347,6 @@
 
     .ImagemPetv{
         width:16em;
-        padding: 30px;
         margin-left: -1em;
         margin-top: 5px;
     }
@@ -348,9 +357,15 @@
         margin-left: -2em;
         margin-top: -2em;
     }
+
+    .imagem-pet{
+        width: 18em;
+        height: 22em;
+        border-radius: 2.6em;
+    }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
     .fundox {
         height: 60em;
     }

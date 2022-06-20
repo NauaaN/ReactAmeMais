@@ -16,7 +16,7 @@ export default function Index() {
   const navigate = useNavigate();
 
   function editarPet(id) {
-      navigate(`/cadastrarpet/alterar/${id}`);
+      navigate(`/cadastrarpet/${id}`);
   }
   
   

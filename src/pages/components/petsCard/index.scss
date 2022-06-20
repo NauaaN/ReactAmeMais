@@ -483,3 +483,39 @@ p {
         opacity: 0;
     }
 }
+
+@media (max-width:400px) {
+    .toninhajj img {
+        width: 300px;
+        height: 237px;
+        border-radius: 1.3em;
+    }
+
+
+    .toninhajj {
+        margin-left: 0em;
+        
+    }
+
+    p{
+        font-size: 0.9em;
+    }
+
+
+    .cardpjja {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        padding: 0em 0em;
+    }
+
+    .filtrarongc{
+        margin-top: 1em;
+        width: 1.7em;
+        margin-left: 0em;
+    }
+
+    .lljj{
+        width: 4.4em;
+    }
+}
