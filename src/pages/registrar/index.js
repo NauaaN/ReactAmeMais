@@ -26,7 +26,7 @@ export default function Index() {
         try{
             
             if (!nome || !nome.trim()) throw new Error('O campo nome é obrigatório.');
-            if (isNaN(cpf)) throw new Error('O CPF é obrigatório.');
+            if (isNaN(cpf)|| !cpf.trim()) throw new Error('O CPF é obrigatório.');
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
             if (!senha) throw new Error('O campo senha é obrigatório.');
             if (!senha2) throw new Error('Por favor confirme sua senha.');
@@ -34,6 +34,8 @@ export default function Index() {
             if (!sexo) throw new Error('O campo sexo é obrigatório.');
             if (!email) throw new Error('O campo email é obrigatório.');
             
+            if(senha !=senha2)
+            throw new Error('As senhas devem ser iguais')
 
         const usuario = storage('usuario-logado');
          const resposta = await cadastrarUsuario(usuario, nome, cpf,email,senha,sexo,endereco,telefone);
