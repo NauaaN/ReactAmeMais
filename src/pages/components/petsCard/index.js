@@ -47,10 +47,10 @@ export default function Index(props){
                   <p className='ejj'>ESPÉCIE:</p>
                   <p className='avejj'>{props.item.animal},{props.item.especie}</p>
                   <div className='femininojj' > 
-                  {props.item.genero  === 'Macho' || props.item.genero === 'homi' || props.item.genero === 'masculino' &&
+                  {props.item.genero  === 'Macho' || props.item.genero === 'macho' || props.item.genero === 'masculino' &&
                             <img className='hominn' src="./images/homi.png" />
                         }
-                  {props.item.genero === 'Femea' || props.item.genero === 'mulher' &&
+                  {props.item.genero === 'Femea' || props.item.genero === 'femea' || props.item.genero === 'feminino' &&
                           <img className='muienn' src="./images/mulhe.png" /> 
                         }
                   </div>

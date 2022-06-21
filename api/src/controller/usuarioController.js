@@ -8,25 +8,26 @@ server.post('/usuario', async (req,resp)=>{
     try{
     const userNovo= req.body;
     if(!userNovo.nome)
-    throw new Error('nome obrigatorio');
+    throw new Error('Nome obrigatório');
     if(!userNovo.cpf)
-    throw new Error('cpf obrigatorio');
+    throw new Error('Cpf obrigatório');
     if(!userNovo.email)
-    throw new Error('email obrigatorio');
+    throw new Error('Email obrigatório');
     if(!userNovo.senha)
-    throw new Error('senha obrigatorio');
+    throw new Error('Senha obrigatório');
     if(!userNovo.sexo)
-    throw new Error('sexo obrigatorio');
+    throw new Error('Sexo obrigatório');
     if(!userNovo.endereco)
-    throw new Error('endereço obrigatorio');
+    throw new Error('Endereço obrigatório');
     if(!userNovo.telefone)
-    throw new Error('telefone obrigatorio');
+    throw new Error('Telefone obrigatório');
 
     const user= await inserirUsuario(userNovo);
+
     if(user===1)
     resp.status(204).send();
     else{
-        throw new Error('não cadastrado')
+        throw new Error('Não cadastrado')
     }
 
 }catch(err){

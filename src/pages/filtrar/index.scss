@@ -2,7 +2,7 @@
 .filtrarxx {
     display: flex;
     flex-direction: row;
-
+    
 .funilxx{
     width: 30vh;
     margin-left: 3.5em;
@@ -13,10 +13,8 @@
     flex-direction: column;
     background-color: #FEC18A;
     box-shadow: 4px 4px 4px rgb(163, 163, 163);
-    position: absolute;
-    width: 16em;
+    width: 17em;
     position: relative;
-    
 }
 .bb{
     text-decoration: none;
@@ -26,12 +24,12 @@
     margin-bottom: 1.2em;
     color: #006B8C;
     padding: 0.2em 1.7em 2px;
-    border-radius: 2em
+    border-radius: 2em;
 }
 
 .funilxx {
    padding: 3em;
-    width: 30vh;
+    width: 10vh;
     margin-left: 2em;
 }
 
@@ -215,7 +213,7 @@ input[type=checkbox]:checked:disabled + label:before {
 .simbolojj {
     display: flex;
     flex-direction:row;
-
+    width: 3em;
     .filtrarongcaa { 
         margin-top: 1em;
         width: 3em;

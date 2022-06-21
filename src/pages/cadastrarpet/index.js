@@ -57,17 +57,19 @@ export default function Index() {
     async function salvarClick() {
         try {
             if (!imagem) throw new Error('Escolha a imagem do pet.');
-            if (!nome || !nome.trim()) throw new Error('O campo nome é obrigatório.');
-            if (!genero) throw new Error('O campo gênero é obrigatório.');
-            if (isNaN(idade)) throw new Error('O campo idade é obrigatório..');
+            if (!nome ) throw new Error('O campo nome é obrigatório.');
+            if (!genero || !genero.trim()) throw new Error('O campo gênero é obrigatório.');
+            if (isNaN(idade) )throw new Error('O campo idade é obrigatório..');
             if (isNaN(peso)) throw new Error('O campo peso é obrigatório.');
             if (isNaN (altura)) throw new Error('O campo altura é obrigatório.');
             if (isNaN (telefone)) throw new Error('O campo telefone é obrigatório.');
             if (!endereco) throw new Error('O campo endereço é obrigatório.');
+
+
            
             const usuario = storage('usuario-logado').id;
 
-            if (!usuario)throw new Error('Você não é um usuario logado.');
+            if (usuario === 0 )throw new Error('Você não é um usuario logado.');
 
             if(id === 0) {
             const novoPet = await cadastrarPet(animal, especie, nome, genero, idade, peso, altura, telefone, endereco, comentario, usuario);
@@ -152,12 +154,12 @@ export default function Index() {
                 <section className='bloco1v'>
                     <div className='animalzinhov'>
                         <p className='letras'>Animal:</p>
-                        <input className='primeirov' value={animal} onChange={e => setAnimal(e.target.value)} />
+                        <input className='primeirov' value={animal} maxLength={10} onChange={e => setAnimal(e.target.value)} />
                     </div>
                     <div className='especiev'>
                         <div>
                             <p className='letras'>Espécie:</p>
-                            <input className='segundov' value={especie} onChange={e => setEspecie(e.target.value)} />
+                            <input className='segundov' value={especie} maxLength={10} onChange={e => setEspecie(e.target.value)} />
                         </div>
                         <div className='testev'>
                             <p className='letras'>Gênero:</p>
@@ -169,40 +171,40 @@ export default function Index() {
                     <div className='NOMEv'>
                         <div>
                             <p className='letras'>Nome:</p>
-                            <input className='quartov' value={nome} maxLength={10} onChange={e => setNome(e.target.value)} />
+                            <input className='quartov' value={nome} maxLength={13} onChange={e => setNome(e.target.value)} />
                         </div>
                         <div className='testev'>
                             <p className='letras'>Idade:</p>
-                            <input className='quintov' value={idade} onChange={e => setIdade(e.target.value)} />
+                            <input className='quintov' value={idade} maxLength={2} onChange={e => setIdade(e.target.value)} />
                         </div>
                     </div>
 
                     <div className='PESOv'>
                         <div>
                             <p className='letras'>Peso:</p>
-                            <input className='sextov' value={peso} onChange={e => setPeso(e.target.value)} />
+                            <input className='sextov' value={peso} maxLength={4} onChange={e => setPeso(e.target.value)} />
                         </div>
                         <div className='testev'>
                             <p className='letras'>Altura:</p>
-                            <input className='setimov' value={altura} onChange={e => setAltura(e.target.value)} />
+                            <input className='setimov' value={altura} maxLength={4} onChange={e => setAltura(e.target.value)} />
                         </div>
                     </div>
 
                     <div className='PhoneNumberv'>
                         <p className='letras'>Telefone para Contato:</p>
-                        <input className='oitavov' value={telefone} onChange={e => setTelefone(e.target.value)} />
+                        <input className='oitavov' value={telefone} maxLength={16} onChange={e => setTelefone(e.target.value)} />
                     </div>
 
                     <div className='CEPv'>
                         <p className='letras'>Endereço:</p>
-                        <input className='nonov' value={endereco} onChange={e => setEndereco(e.target.value)} />
+                        <input className='nonov' value={endereco} maxLength={10} onChange={e => setEndereco(e.target.value)} />
                     </div>
                 </section>
 
                 <section className='bloco2v'>
                     <div className='Cometariosv'>
                         <p className='letras'>Coméntarios Sobre (Doenças/alergias):</p>
-                        <input className='decimov' value={comentario} onChange={e => setComentario(e.target.value)} />
+                        <input className='decimov' value={comentario} maxLength={35} onChange={e => setComentario(e.target.value)} />
                     </div>
                     
                         <div><p className='letras'>Adicione Uma Imagem do Pet:</p></div>
