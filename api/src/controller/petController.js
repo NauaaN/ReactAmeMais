@@ -44,6 +44,8 @@ try{
             throw new Error('informar o genero é obrigatorio');
         if(!PetParaInserir.idade)
             throw new Error(' informar a idade é obrigatorio');
+        if(isNaN(PetParaInserir.idade))
+            throw new Error(' informar a idade é obrigatorio');
         if(!PetParaInserir.peso)
             throw new Error('informar o peso é obrigatorio');
         if(!PetParaInserir.altura)
