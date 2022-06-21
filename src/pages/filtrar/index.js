@@ -136,8 +136,8 @@ export default function Index() {
       <div className='principaljj'>
         <div className='loginjjj'>
           <div className='simbolojj'>
+          <Link to='/verpets'>
             <img className='lljj' src='./images/IMG-20220418-WA0079_1.svg' alt='' />
-            <Link to='/verpets'>
               <img className='filtrarongcaa' src='../images/Component 1.svg' />
             </Link>
           </div>
