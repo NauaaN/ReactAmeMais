@@ -55,7 +55,7 @@ export default function Index() {
 
     </header>
 
-    <ToastContainer />
+  
     
     <section className='fundo'>
         <p className='registrar'>Informe seus dados, para te cadastrarmos em nosso site!</p>

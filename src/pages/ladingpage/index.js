@@ -7,13 +7,12 @@ import '../../common/common.scss';
 
 
 export default function Index() {
-
    
     return(
         <main className="faixaS">
         <header className="faixa-cimaS">
             <img className="logoS" src= '../images/IMG-20220418-WA0079_3.svg'/>
-            <Link to='/login'className="palavraS">LOGIN</Link>
+            <Link to='/login'className="palavraS"><span>LOGIN</span></Link>
            
         </header>
         <section className="faixina1S">
@@ -29,8 +28,10 @@ export default function Index() {
             <div className="cassio2S">
                 <h1 className="txt4S">Pronto para escolher o seu novo amigo?</h1>
                 <div className="cassio3S">
-                    <Link to='/Registrar'className="bot2S">REGISTRAR-SE</Link>
-                    <Link to='/verpets' className="bot2S">VER PETS</Link>
+                    <Link to='/Registrar'className="bot2S"><span>REGISTRAR-SE</span></Link>
+                  
+                    <Link to='/verpets' className="bot2S"><span>VER PETS</span></Link>
+                  
                 </div>
             </div>
         </section>
@@ -42,7 +43,8 @@ export default function Index() {
                     colocando suas informações básicas<br/> 
                     para que o encontrem de forma rápida!
                      </p>
-                <Link to='/Cadastrarpet'className="bot4S">Cadastrar PET </Link>
+                     <Link to='/Cadastrarpet'className="bot4S"><span></span> Cadastrar PET</Link>
+              
             </div>
         </section>
   
@@ -51,9 +53,10 @@ export default function Index() {
         <section className="faixae">
             
              <div>
+                 <div className='containerj'>
                  <h1 className="tituloe">Por quê decidimos</h1>
                  <h1 className="titulo2e"> criar? </h1>
-    
+             </div>
             </div>
             <div>
                 <p className="pe">   Decidimos criar esse projeto pois percebemos o quão precario e não muito lembrado é o sistema de adoção, alem da alta demanda de animais desabrigados na rua, abrigos não dão conta de abrigar todos. 
