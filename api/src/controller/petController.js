@@ -58,11 +58,11 @@ try{
             throw new Error('Informar o endereço é obrigatório');
         if(!PetParaInserir.telefone)
             throw new Error('Telefone é obrigatório');
-        if(PetParaInserir.genero === 'Macho' || PetParaInserir.genero === 'Fêmea'  || PetParaInserir.genero === 'Femea' || PetParaInserir.genero === 'femea' || PetParaInserir.genero === 'macho' || PetParaInserir.genero === 'masculino' || PetParaInserir.genero === 'feminino'){
+        if(PetParaInserir.genero === 'Macho' || PetParaInserir.genero === 'Femea' ){
         const pet = await inserirPet(PetParaInserir);
         resp.send (pet);
     }else{
-        throw new Error('Gênero deve ser informado como Macho ou Fêmea ');
+        throw new Error('Gênero deve ser informado como Macho ou Femea ');
     }
 }catch(err){
     resp.status(400).send({
@@ -122,7 +122,7 @@ server.put('/pet/:id', async (req, resp)=>{
     if(!pet.telefone)
        throw new Error('Telefone é obrigatório');
 
-    if(pet.genero === 'Macho' || pet.genero === 'Fêmea'  || pet.genero === 'Femea' || pet.genero === 'femea' || pet.genero === 'macho' || pet.genero === 'masculino' || pet.genero === 'feminino' ){
+    if(pet.genero === 'Macho'   || pet.genero === 'Femea' ){
        
         const resposta= await alterarPET(pet,id);
             if (resposta != 1) throw new Error('A alteração não pode ser salva.');
@@ -130,7 +130,7 @@ server.put('/pet/:id', async (req, resp)=>{
        resp.status(204).send()}
 
     else{
-        throw new Error('Gênero deve ser informado como Macho ou Fêmea ');
+        throw new Error('Gênero deve ser informado como Macho ou Femea ');
     }
    }catch(err){
        resp.status(400).send({
