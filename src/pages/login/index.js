@@ -71,7 +71,7 @@ export default function Index() {
                     <Link to='/Registrar' className='c2k'>Registre-se</Link>
                 </div>
                 <div className='Lk'>
-                    <button className='botaok t2' onClick={entrarClick} disabled={carregando}>Login</button>  
+                    <button className='botaok t2' onClick={entrarClick} disabled={carregando}>Login</button>   
                 </div>
                 <div className='form-entrar'>{erro}</div>
                 </div>
