@@ -99,7 +99,7 @@ server.put('/pet/:id', async (req, resp)=>{
        const pet= req.body;
     if(!pet.nome)
        throw new Error('Nome é obrigatório');
-    if(!pet.animal)
+    if(!pet.animal )
        throw new Error('Informar o animal é obrigatório');
     if(!pet.especie)
        throw new Error('Informar a espécie é obrigatório');
